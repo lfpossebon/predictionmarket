@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📊 Polymarket — Análise Histórica de Traders</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+<style>
+:root {
+  --bg: #0f1117;
+  --card: #1a1d28;
+  --border: #2a2d3a;
+  --text: #e1e4ea;
+  --muted: #8b8fa3;
+  --green: #00d26a;
+  --red: #ff4757;
+  --blue: #4a9eff;
+  --purple: #a855f7;
+  --orange: #ff9f43;
+  --yellow: #ffc312;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:var(--bg); color:var(--text); font-family:'Inter',-apple-system,sans-serif; padding:16px; }
+h1 { font-size:24px; margin-bottom:4px; }
+.subtitle { color:var(--muted); font-size:13px; margin-bottom:20px; }
+.kpi-row { display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:12px; margin-bottom:20px; }
+.kpi { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:16px; text-align:center; }
+.kpi-value { font-size:24px; font-weight:700; color:var(--blue); }
+.kpi-label { font-size:11px; color:var(--muted); margin-top:4px; text-transform:uppercase; letter-spacing:0.5px; }
+.grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:16px; }
+.grid-3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:16px; margin-bottom:16px; }
+@media(max-width:900px) { .grid-2,.grid-3 { grid-template-columns:1fr; } }
+.card { background:var(--card); border:1px solid var(--border); border-radius:10px; padding:16px; }
+.card h3 { font-size:14px; margin-bottom:12px; color:var(--muted); }
+canvas { width:100%!important; }
+table { width:100%; border-collapse:collapse; font-size:12px; }
+th { text-align:left; padding:8px 6px; border-bottom:1px solid var(--border); color:var(--muted); font-size:11px; text-transform:uppercase; }
+td { padding:7px 6px; border-bottom:1px solid var(--border); }
+tr:hover { background:rgba(74,158,255,0.05); }
+.pos { color:var(--green); }
+.neg { color:var(--red); }
+.tag { display:inline-block; padding:2px 8px; border-radius:4px; font-size:10px; font-weight:600; }
+.tag-high { background:rgba(0,210,106,0.15); color:var(--green); }
+.tag-mid { background:rgba(255,159,67,0.15); color:var(--orange); }
+.tag-low { background:rgba(255,71,87,0.15); color:var(--red); }
+.search-box { background:var(--card); border:1px solid var(--border); border-radius:8px; padding:10px 14px; color:var(--text); width:100%; font-size:14px; margin-bottom:16px; }
+.search-box:focus { outline:none; border-color:var(--blue); }
+.tabs { display:flex; gap:8px; margin-bottom:16px; flex-wrap:wrap; }
+.tab { padding:8px 16px; border-radius:8px; background:var(--card); border:1px solid var(--border); cursor:pointer; font-size:13px; color:var(--muted); transition:all 0.2s; }
+.tab:hover { border-color:var(--blue); color:var(--text); }
+.tab.active { background:var(--blue); color:#fff; border-color:var(--blue); }
+.section { display:none; }
+.section.active { display:block; }
+#loading { text-align:center; padding:60px; color:var(--muted); font-size:16px; }
+.trader-link { cursor:pointer; color:var(--blue); text-decoration:none; }
+.trader-link:hover { text-decoration:underline; }
+.mini-chart { height:40px; width:120px; display:inline-block; }
+.back-btn { background:var(--card); border:1px solid var(--border); color:var(--blue); padding:6px 14px; border-radius:6px; cursor:pointer; font-size:12px; margin-bottom:12px; }
+.back-btn:hover { background:var(--blue); color:#fff; }
+</style>
+</head>
+<body>
+
+<h1>📊 Análise Histórica — Polymarket Traders</h1>
+<p class="subtitle">Dashboard interativo com dados de 788 traders • <span id="date-range"></span></p>
+
+<div id="loading">⏳ Carregando dados dos traders... isso pode levar alguns segundos.</div>
+
+<div id="app" style="display:none;">
+
+<div class="kpi-row">
+  <div class="kpi"><div class="kpi-value" id="kpi-traders">-</div><div class="kpi-label">Traders</div></div>
+  <div class="kpi"><div class="kpi-value" id="kpi-trades">-</div><div class="kpi-label">Trades</div></div>
+  <div class="kpi"><div class="kpi-value" id="kpi-volume">-</div><div class="kpi-label">Volume Total</div></div>
+  <div class="kpi"><div class="kpi-value" id="kpi-positions">-</div><div class="kpi-label">Posições Ativas</div></div>
+  <div class="kpi"><div class="kpi-value" id="kpi-top-pnl">-</div><div class="kpi-label">Top PnL</div></div>
+  <div class="kpi"><div class="kpi-value" id="kpi-markets">-</div><div class="kpi-label">Mercados Únicos</div></div>
+</div>
+
+<div class="tabs">
+  <div class="tab active" data-tab="overview">🏆 Ranking</div>
+  <div class="tab" data-tab="timeline">📈 Timeline</div>
+  <div class="tab" data-tab="markets">🎯 Mercados</div>
+  <div class="tab" data-tab="strategies">🧠 Estratégias</div>
+  <div class="tab" data-tab="deepdive">🔍 Deep Dive</div>
+</div>
+
+<!-- TAB: RANKING -->
+<div class="section active" id="sec-overview">
+  <input type="text" class="search-box" id="search-traders" placeholder="🔎 Buscar trader por nome...">
+  <div class="card">
+    <h3>🏆 Ranking por PnL</h3>
+    <table id="ranking-table">
+      <thead><tr><th>#</th><th>Trader</th><th>PnL</th><th>Trades</th><th>Posições</th><th>Mercados</th><th>Perfil</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- TAB: TIMELINE -->
+<div class="section" id="sec-timeline">
+  <div class="grid-2">
+    <div class="card">
+      <h3>📈 Volume Diário (USDC)</h3>
+      <canvas id="chart-daily-volume" height="250"></canvas>
+    </div>
+    <div class="card">
+      <h3>👥 Traders Ativos por Dia</h3>
+      <canvas id="chart-daily-traders" height="250"></canvas>
+    </div>
+  </div>
+  <div class="grid-2">
+    <div class="card">
+      <h3>🕐 Volume por Hora (UTC)</h3>
+      <canvas id="chart-hourly" height="200"></canvas>
+    </div>
+    <div class="card">
+      <h3>📅 Volume por Dia da Semana</h3>
+      <canvas id="chart-dow" height="200"></canvas>
+    </div>
+  </div>
+  <div class="card">
+    <h3>🏆 Evolução de PnL Acumulado — Top 10</h3>
+    <canvas id="chart-cum-pnl" height="300"></canvas>
+  </div>
+</div>
+
+<!-- TAB: MERCADOS -->
+<div class="section" id="sec-markets">
+  <div class="card">
+    <h3>🎯 Mercados com Mais Capital dos Top Traders (posições ativas)</h3>
+    <table id="markets-table">
+      <thead><tr><th>Mercado</th><th>Capital</th><th>PnL</th><th>% PnL</th><th>Traders</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- TAB: ESTRATÉGIAS -->
+<div class="section" id="sec-strategies">
+  <div class="grid-2">
+    <div class="card">
+      <h3>🧠 Diversificação vs Frequência</h3>
+      <canvas id="chart-strategy-scatter" height="300"></canvas>
+    </div>
+    <div class="card">
+      <h3>📊 Distribuição de Estilos</h3>
+      <canvas id="chart-strategy-dist" height="300"></canvas>
+    </div>
+  </div>
+  <div class="card">
+    <h3>📋 Perfil dos Traders</h3>
+    <table id="strategy-table">
+      <thead><tr><th>Trader</th><th>PnL</th><th>Mercados</th><th>Trades/Dia</th><th>Trade Médio</th><th>Diversificação</th><th>Frequência</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- TAB: DEEP DIVE -->
+<div class="section" id="sec-deepdive">
+  <div id="deepdive-select">
+    <p style="color:var(--muted);margin-bottom:12px;">Clique em qualquer trader no ranking para ver o deep dive, ou selecione abaixo:</p>
+    <select id="dd-trader-select" style="background:var(--card);border:1px solid var(--border);color:var(--text);padding:8px 12px;border-radius:8px;font-size:14px;width:300px;">
+    </select>
+    <button onclick="loadDeepDive()" style="background:var(--blue);color:#fff;border:none;padding:8px 16px;border-radius:8px;cursor:pointer;margin-left:8px;">Analisar</button>
+  </div>
+  <div id="dd-content" style="margin-top:16px;">
+    <div class="kpi-row" id="dd-kpis"></div>
+    <div class="grid-2">
+      <div class="card"><h3>📈 Volume Diário</h3><canvas id="dd-volume" height="200"></canvas></div>
+      <div class="card"><h3>🎯 Top Mercados</h3><canvas id="dd-markets" height="200"></canvas></div>
+    </div>
+    <div class="card" style="margin-top:16px;">
+      <h3>💼 Posições Atuais</h3>
+      <table id="dd-positions">
+        <thead><tr><th>Mercado</th><th>Valor</th><th>PnL</th><th>%</th><th>Outcome</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+</div><!-- /app -->
+
+<script>
+// ========== DATA LOADING ==========
+const TRADERS_DIR = 'historical/traders/';
+let allTraders = [];
+let allTrades = [];
+let allPositions = [];
+let traderMap = {};
+let charts = {};
+
+let liteData = null; // consolidated_lite.json
+
+async function loadData() {
+  try {
+    // Load lite consolidated (4MB, pre-aggregated)
+    const resp = await fetch('historical/consolidated_lite.json');
+    if (!resp.ok) {
+      document.getElementById('loading').innerHTML = '⚠️ Arquivo consolidado não encontrado.<br>Rode: <code>python3 consolidate_lite.py</code>';
+      return;
+    }
+    liteData = await resp.json();
+    
+    // Map traders
+    allTraders = liteData.traders.map(t => ({
+      wallet: t.w, username: t.u, pnl: t.pnl,
+      categories: t.cat, trades_count: t.tc,
+      positions_count: t.pc, unique_markets: t.um,
+    }));
+    
+    allPositions = (liteData.positions || []).map(p => ({
+      username: p.u, title: p.t, current_value: p.cv,
+      cash_pnl: p.pnl, percent_pnl: p.pct, outcome: p.o,
+    }));
+    
+    // Build trader map
+    allTraders.forEach(t => { traderMap[t.username] = t; });
+    
+    document.getElementById('loading').style.display = 'none';
+    document.getElementById('app').style.display = 'block';
+    
+    renderKPIs();
+    renderRanking();
+    populateDeepDiveSelect();
+    
+  } catch(e) {
+    document.getElementById('loading').innerHTML = `❌ Erro: ${e.message}<br><br>Rode: <code>python3 consolidate_lite.py</code>`;
+  }
+}
+
+function processTraderData(data) {
+  const info = data.info || {};
+  const profile = data.profile || {};
+  const username = info.username || 'unknown';
+  const wallet = data.wallet || '';
+  
+  const trader = {
+    wallet, username,
+    pnl: info.pnl || 0,
+    categories: info.categories || [],
+    ranks: info.ranks || {},
+    trades_count: data.trades_count || 0,
+    positions_count: data.positions_count || 0,
+  };
+  allTraders.push(trader);
+  
+  let traderTrades = [];
+  let uniqueMarkets = new Set();
+  (data.trades || []).forEach(t => {
+    if (t.type === 'TRADE') {
+      const trade = {
+        username, ts: t.timestamp, side: t.side,
+        size: t.size, usdc: t.usdcSize, price: t.price,
+        title: t.title, slug: t.slug, outcome: t.outcome,
+      };
+      allTrades.push(trade);
+      traderTrades.push(trade);
+      uniqueMarkets.add(t.slug);
+    }
+  });
+  trader.unique_markets = uniqueMarkets.size;
+  trader.trades = traderTrades;
+  
+  (data.positions || []).forEach(p => {
+    allPositions.push({
+      username, title: p.title, slug: p.slug,
+      size: p.size, avg_price: p.avgPrice,
+      current_value: p.currentValue, cash_pnl: p.cashPnl,
+      percent_pnl: p.percentPnl, outcome: p.outcome,
+      cur_price: p.curPrice,
+    });
+  });
+}
+
+// ========== FORMATTING ==========
+function fmt(n) {
+  if (Math.abs(n) >= 1e6) return `$${(n/1e6).toFixed(1)}M`;
+  if (Math.abs(n) >= 1e3) return `$${(n/1e3).toFixed(0)}K`;
+  return `$${n.toFixed(0)}`;
+}
+function fmtN(n) { return n.toLocaleString(); }
+function pnlClass(n) { return n >= 0 ? 'pos' : 'neg'; }
+
+// ========== KPIs ==========
+function renderKPIs() {
+  document.getElementById('kpi-traders').textContent = fmtN(allTraders.length);
+  const totalTrades = allTraders.reduce((s,t) => s + (t.trades_count||0), 0);
+  document.getElementById('kpi-trades').textContent = fmtN(totalTrades);
+  const daily = liteData.daily || {};
+  const totalVol = Object.values(daily).reduce((s,d) => s + (d.v||0), 0);
+  document.getElementById('kpi-volume').textContent = fmt(totalVol);
+  document.getElementById('kpi-positions').textContent = fmtN(allPositions.length);
+  const topPnl = Math.max(...allTraders.map(t => t.pnl));
+  document.getElementById('kpi-top-pnl').textContent = fmt(topPnl);
+  const totalMarkets = allTraders.reduce((s,t) => s + (t.unique_markets||0), 0);
+  document.getElementById('kpi-markets').textContent = fmtN(totalMarkets);
+  
+  const dates = Object.keys(daily).sort();
+  if (dates.length > 0) {
+    const d1 = new Date(dates[0]).toLocaleDateString('pt-BR');
+    const d2 = new Date(dates[dates.length-1]).toLocaleDateString('pt-BR');
+    document.getElementById('date-range').textContent = `${d1} → ${d2}`;
+  }
+}
+
+// ========== RANKING ==========
+function renderRanking(filter='') {
+  const sorted = [...allTraders].sort((a,b) => b.pnl - a.pnl);
+  const tbody = document.querySelector('#ranking-table tbody');
+  tbody.innerHTML = '';
+  
+  sorted.forEach((t, i) => {
+    if (filter && !t.username.toLowerCase().includes(filter.toLowerCase())) return;
+    const cats = (t.categories || []).join(', ');
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td>${i+1}</td>
+      <td><a class="trader-link" onclick="openDeepDive('${t.username}')">${t.username}</a></td>
+      <td class="${pnlClass(t.pnl)}">${fmt(t.pnl)}</td>
+      <td>${fmtN(t.trades_count)}</td>
+      <td>${t.positions_count}</td>
+      <td>${t.unique_markets || '-'}</td>
+      <td style="color:var(--muted);font-size:11px;">${cats}</td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
+
+// ========== TABS ==========
+document.querySelectorAll('.tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    tab.classList.add('active');
+    document.getElementById('sec-' + tab.dataset.tab).classList.add('active');
+    
+    // Lazy render charts
+    if (tab.dataset.tab === 'timeline') renderTimelineCharts();
+    if (tab.dataset.tab === 'markets') renderMarkets();
+    if (tab.dataset.tab === 'strategies') renderStrategies();
+  });
+});
+
+document.getElementById('search-traders').addEventListener('input', e => {
+  renderRanking(e.target.value);
+});
+
+// ========== TIMELINE CHARTS ==========
+let timelineRendered = false;
+function renderTimelineCharts() {
+  if (timelineRendered) return;
+  timelineRendered = true;
+  
+  const daily = liteData.daily || {};
+  const dates = Object.keys(daily).sort();
+  
+  // Volume chart
+  charts.dailyVol = new Chart(document.getElementById('chart-daily-volume'), {
+    type: 'bar',
+    data: {
+      labels: dates,
+      datasets: [{
+        data: dates.map(d => daily[d].v),
+        backgroundColor: 'rgba(0,210,106,0.4)',
+        borderColor: 'rgba(0,210,106,0.8)',
+        borderWidth: 1,
+      }]
+    },
+    options: {
+      plugins: { legend: { display: false } },
+      scales: {
+        x: { type: 'time', time: { unit: 'week' }, ticks: { color: '#8b8fa3' }, grid: { color: 'rgba(255,255,255,0.05)' } },
+        y: { ticks: { color: '#8b8fa3', callback: v => fmt(v) }, grid: { color: 'rgba(255,255,255,0.05)' } }
+      }
+    }
+  });
+  
+  // Active traders chart
+  charts.dailyTraders = new Chart(document.getElementById('chart-daily-traders'), {
+    type: 'line',
+    data: {
+      labels: dates,
+      datasets: [{
+        data: dates.map(d => daily[d].t),
+        borderColor: '#e74c3c',
+        backgroundColor: 'rgba(231,76,60,0.1)',
+        fill: true,
+        tension: 0.3,
+        pointRadius: 0,
+      }]
+    },
+    options: {
+      plugins: { legend: { display: false } },
+      scales: {
+        x: { type: 'time', time: { unit: 'week' }, ticks: { color: '#8b8fa3' }, grid: { color: 'rgba(255,255,255,0.05)' } },
+        y: { ticks: { color: '#8b8fa3' }, grid: { color: 'rgba(255,255,255,0.05)' } }
+      }
+    }
+  });
+  
+  // Hourly
+  const hourlyData = liteData.hourly || {};
+  const hourly = Array.from({length:24}, (_,i) => hourlyData[String(i)] || 0);
+  charts.hourly = new Chart(document.getElementById('chart-hourly'), {
+    type: 'bar',
+    data: {
+      labels: Array.from({length:24}, (_,i) => `${i}h`),
+      datasets: [{ data: hourly, backgroundColor: 'rgba(74,158,255,0.5)', borderRadius: 4 }]
+    },
+    options: { plugins:{legend:{display:false}}, scales:{x:{ticks:{color:'#8b8fa3'}},y:{ticks:{color:'#8b8fa3',callback:v=>fmt(v)},grid:{color:'rgba(255,255,255,0.05)'}}} }
+  });
+  
+  // Day of week (liteData uses Monday=0, JS getUTCDay uses Sunday=0)
+  const dowData = liteData.dow || {};
+  const dowLabels = ['Seg','Ter','Qua','Qui','Sex','Sáb','Dom'];
+  const dow = Array.from({length:7}, (_,i) => dowData[String(i)] || 0);
+  charts.dow = new Chart(document.getElementById('chart-dow'), {
+    type: 'bar',
+    data: {
+      labels: dowLabels,
+      datasets: [{ data: dow, backgroundColor: 'rgba(255,71,87,0.5)', borderRadius: 4 }]
+    },
+    options: { plugins:{legend:{display:false}}, scales:{x:{ticks:{color:'#8b8fa3'}},y:{ticks:{color:'#8b8fa3',callback:v=>fmt(v)},grid:{color:'rgba(255,255,255,0.05)'}}} }
+  });
+  
+  // Cumulative PnL Top 10
+  renderCumPnlChart();
+}
+
+function renderCumPnlChart() {
+  const top10 = [...allTraders].sort((a,b) => b.pnl - a.pnl).slice(0, 10);
+  const colors = ['#4a9eff','#00d26a','#ff4757','#ff9f43','#a855f7','#ffc312','#1abc9c','#e056fd','#686de0','#f8a5c2'];
+  const details = liteData.details || {};
+  
+  const datasets = top10.map((trader, i) => {
+    const td = details[trader.username];
+    if (!td || !td.cum) return null;
+    const points = Object.entries(td.cum).map(([d,v]) => ({x:d, y:v}));
+    return {
+      label: trader.username,
+      data: points,
+      borderColor: colors[i],
+      backgroundColor: 'transparent',
+      tension: 0.3,
+      pointRadius: 0,
+      borderWidth: 2,
+    };
+  }).filter(Boolean);
+  
+  charts.cumPnl = new Chart(document.getElementById('chart-cum-pnl'), {
+    type: 'line',
+    data: { datasets },
+    options: {
+      plugins: { legend: { labels: { color: '#e1e4ea', font: { size: 11 } } } },
+      scales: {
+        x: { type: 'time', time: { unit: 'month' }, ticks: { color: '#8b8fa3' }, grid: { color: 'rgba(255,255,255,0.05)' } },
+        y: { ticks: { color: '#8b8fa3', callback: v => fmt(v) }, grid: { color: 'rgba(255,255,255,0.05)' } }
+      }
+    }
+  });
+}
+
+// ========== MARKETS ==========
+function renderMarkets() {
+  const top30 = new Set([...allTraders].sort((a,b) => b.pnl - a.pnl).slice(0,50).map(t=>t.username));
+  const byMarket = {};
+  allPositions.filter(p => top30.has(p.username)).forEach(p => {
+    if (!p.title) return;
+    if (!byMarket[p.title]) byMarket[p.title] = { value:0, pnl:0, pnlPct:[], traders:new Set() };
+    byMarket[p.title].value += p.current_value || 0;
+    byMarket[p.title].pnl += p.cash_pnl || 0;
+    byMarket[p.title].pnlPct.push(p.percent_pnl || 0);
+    byMarket[p.title].traders.add(p.username);
+  });
+  
+  const sorted = Object.entries(byMarket).sort((a,b) => b[1].value - a[1].value).slice(0, 30);
+  const tbody = document.querySelector('#markets-table tbody');
+  tbody.innerHTML = '';
+  sorted.forEach(([title, d]) => {
+    const avgPct = d.pnlPct.reduce((s,v) => s+v, 0) / d.pnlPct.length;
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td style="max-width:300px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${title}</td>
+      <td>${fmt(d.value)}</td>
+      <td class="${pnlClass(d.pnl)}">${fmt(d.pnl)}</td>
+      <td class="${pnlClass(avgPct)}">${avgPct.toFixed(1)}%</td>
+      <td>${d.traders.size}</td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
+
+// ========== STRATEGIES ==========
+let strategiesRendered = false;
+function renderStrategies() {
+  if (strategiesRendered) return;
+  strategiesRendered = true;
+  
+  // Calculate per-trader metrics from lite data details + trader info
+  const metrics = [];
+  const details = liteData.details || {};
+  
+  allTraders.forEach(t => {
+    if (t.trades_count < 5) return;
+    const td = details[t.username];
+    let days = 1, tpd = 0, medianUsdc = 0;
+    if (td && td.daily) {
+      const dkeys = Object.keys(td.daily).sort();
+      if (dkeys.length > 1) {
+        const d1 = new Date(dkeys[0]), d2 = new Date(dkeys[dkeys.length-1]);
+        days = Math.max(1, (d2 - d1) / 86400000);
+      }
+      const totalTrades = Object.values(td.daily).reduce((s,d) => s + d.n, 0);
+      tpd = totalTrades / days;
+      const vols = Object.values(td.daily).map(d => d.v / Math.max(1, d.n));
+      vols.sort((a,b)=>a-b);
+      medianUsdc = vols[Math.floor(vols.length/2)] || 0;
+    } else {
+      // Estimate from global
+      tpd = t.trades_count / 30; // rough estimate
+    }
+    metrics.push({ username: t.username, pnl: t.pnl, markets: t.unique_markets||0, tpd, medianUsdc, trades: t.trades_count });
+  });
+  
+  // Scatter
+  const scatterData = metrics.filter(m => m.pnl > 100).map(m => ({
+    x: m.markets, y: m.tpd, r: Math.min(Math.max(Math.log10(m.pnl)*2, 3), 20),
+    label: m.username, pnl: m.pnl,
+  }));
+  
+  charts.strategyScatter = new Chart(document.getElementById('chart-strategy-scatter'), {
+    type: 'bubble',
+    data: {
+      datasets: [{
+        data: scatterData,
+        backgroundColor: scatterData.map(d => {
+          const l = Math.log10(d.pnl);
+          return l > 6 ? 'rgba(0,210,106,0.6)' : l > 4 ? 'rgba(74,158,255,0.6)' : 'rgba(255,159,67,0.4)';
+        }),
+      }]
+    },
+    options: {
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: ctx => `${ctx.raw.label}: PnL ${fmt(ctx.raw.pnl)} | ${ctx.raw.x} mercados | ${ctx.raw.y.toFixed(1)} trades/dia`
+          }
+        }
+      },
+      scales: {
+        x: { title: { display: true, text: 'Mercados Únicos', color: '#8b8fa3' }, type: 'logarithmic', ticks: { color: '#8b8fa3' }, grid: { color: 'rgba(255,255,255,0.05)' } },
+        y: { title: { display: true, text: 'Trades / Dia', color: '#8b8fa3' }, type: 'logarithmic', ticks: { color: '#8b8fa3' }, grid: { color: 'rgba(255,255,255,0.05)' } },
+      }
+    }
+  });
+  
+  // Distribution
+  const divThresholds = [5, 20];
+  const freqThresholds = [1, 5];
+  const distData = { conc:0, mod:0, div:0, lf:0, mf:0, hf:0 };
+  metrics.forEach(m => {
+    if (m.markets <= divThresholds[0]) distData.conc++;
+    else if (m.markets <= divThresholds[1]) distData.mod++;
+    else distData.div++;
+    if (m.tpd <= freqThresholds[0]) distData.lf++;
+    else if (m.tpd <= freqThresholds[1]) distData.mf++;
+    else distData.hf++;
+  });
+  
+  charts.strategyDist = new Chart(document.getElementById('chart-strategy-dist'), {
+    type: 'bar',
+    data: {
+      labels: ['Concentrado\n(≤5 mkts)', 'Moderado\n(6-20)', 'Diversificado\n(>20)', 'Low-Freq\n(≤1/dia)', 'Mid-Freq\n(2-5/dia)', 'High-Freq\n(>5/dia)'],
+      datasets: [{
+        data: [distData.conc, distData.mod, distData.div, distData.lf, distData.mf, distData.hf],
+        backgroundColor: ['#ff4757','#ff9f43','#00d26a','#4a9eff','#a855f7','#ffc312'],
+        borderRadius: 6,
+      }]
+    },
+    options: { plugins:{legend:{display:false}}, scales:{x:{ticks:{color:'#8b8fa3'}},y:{ticks:{color:'#8b8fa3'},grid:{color:'rgba(255,255,255,0.05)'}}} }
+  });
+  
+  // Strategy table
+  const tbody = document.querySelector('#strategy-table tbody');
+  tbody.innerHTML = '';
+  metrics.sort((a,b) => b.pnl - a.pnl).slice(0, 50).forEach(m => {
+    const divTag = m.markets <= 5 ? '<span class="tag tag-low">Concentrado</span>' :
+                   m.markets <= 20 ? '<span class="tag tag-mid">Moderado</span>' :
+                   '<span class="tag tag-high">Diversificado</span>';
+    const freqTag = m.tpd <= 1 ? '<span class="tag tag-low">Low-Freq</span>' :
+                    m.tpd <= 5 ? '<span class="tag tag-mid">Mid-Freq</span>' :
+                    '<span class="tag tag-high">High-Freq</span>';
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td><a class="trader-link" onclick="openDeepDive('${m.username}')">${m.username}</a></td>
+      <td class="${pnlClass(m.pnl)}">${fmt(m.pnl)}</td>
+      <td>${m.markets}</td>
+      <td>${m.tpd.toFixed(1)}</td>
+      <td>${fmt(m.medianUsdc)}</td>
+      <td>${divTag}</td>
+      <td>${freqTag}</td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
+
+// ========== DEEP DIVE ==========
+function populateDeepDiveSelect() {
+  const sel = document.getElementById('dd-trader-select');
+  [...allTraders].sort((a,b) => b.pnl - a.pnl).forEach(t => {
+    const opt = document.createElement('option');
+    opt.value = t.username;
+    opt.textContent = `${t.username} (${fmt(t.pnl)})`;
+    sel.appendChild(opt);
+  });
+}
+
+function openDeepDive(username) {
+  document.getElementById('dd-trader-select').value = username;
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelector('[data-tab="deepdive"]').classList.add('active');
+  document.getElementById('sec-deepdive').classList.add('active');
+  loadDeepDive();
+}
+
+let ddCharts = {};
+function loadDeepDive() {
+  const name = document.getElementById('dd-trader-select').value;
+  if (!name) return;
+  
+  const trader = traderMap[name];
+  const positions = allPositions.filter(p => p.username === name);
+  const details = (liteData.details || {})[name];
+  
+  if (!trader) return;
+  
+  const td = details ? details.daily || {} : {};
+  const dkeys = Object.keys(td).sort();
+  const totalVol = Object.values(td).reduce((s,d) => s + (d.v||0), 0);
+  const d1 = dkeys.length ? new Date(dkeys[0]).toLocaleDateString('pt-BR') : '-';
+  const d2 = dkeys.length ? new Date(dkeys[dkeys.length-1]).toLocaleDateString('pt-BR') : '-';
+  const days = dkeys.length > 1 ? Math.max(1, (new Date(dkeys[dkeys.length-1]) - new Date(dkeys[0])) / 86400000) : 1;
+  const totalTrades = Object.values(td).reduce((s,d) => s + (d.n||0), 0);
+  const markets = { size: trader.unique_markets || 0 };
+  
+  // KPIs
+  document.getElementById('dd-kpis').innerHTML = `
+    <div class="kpi"><div class="kpi-value" style="color:${trader.pnl>=0?'var(--green)':'var(--red)'}">${fmt(trader.pnl)}</div><div class="kpi-label">PnL</div></div>
+    <div class="kpi"><div class="kpi-value">${fmtN(totalTrades || trader.trades_count)}</div><div class="kpi-label">Trades</div></div>
+    <div class="kpi"><div class="kpi-value">${fmt(totalVol)}</div><div class="kpi-label">Volume</div></div>
+    <div class="kpi"><div class="kpi-value">${markets.size}</div><div class="kpi-label">Mercados</div></div>
+    <div class="kpi"><div class="kpi-value">${((totalTrades||trader.trades_count)/days).toFixed(1)}</div><div class="kpi-label">Trades/Dia</div></div>
+    <div class="kpi"><div class="kpi-value">${d1} → ${d2}</div><div class="kpi-label">Período</div></div>
+  `;
+  
+  // Volume chart
+  if (ddCharts.volume) ddCharts.volume.destroy();
+  const dailyDates = dkeys;
+  ddCharts.volume = new Chart(document.getElementById('dd-volume'), {
+    type: 'bar',
+    data: {
+      labels: dailyDates,
+      datasets: [{ data: dailyDates.map(d=>td[d].v), backgroundColor: 'rgba(0,210,106,0.5)', borderRadius: 2 }]
+    },
+    options: {
+      plugins:{legend:{display:false}},
+      scales: {
+        x:{type:'time',time:{unit:'week'},ticks:{color:'#8b8fa3'},grid:{color:'rgba(255,255,255,0.05)'}},
+        y:{ticks:{color:'#8b8fa3',callback:v=>fmt(v)},grid:{color:'rgba(255,255,255,0.05)'}}
+      }
+    }
+  });
+  
+  // Top markets chart
+  if (ddCharts.markets) ddCharts.markets.destroy();
+  const topMkts = details ? (details.markets || []).map(m => [m.t, m.v]) : [];
+  ddCharts.markets = new Chart(document.getElementById('dd-markets'), {
+    type: 'bar',
+    data: {
+      labels: topMkts.map(m => m[0].length > 30 ? m[0].slice(0,30)+'...' : m[0]),
+      datasets: [{ data: topMkts.map(m=>m[1]), backgroundColor: 'rgba(74,158,255,0.5)', borderRadius: 4 }]
+    },
+    options: {
+      indexAxis: 'y',
+      plugins:{legend:{display:false}},
+      scales: {
+        x:{ticks:{color:'#8b8fa3',callback:v=>fmt(v)},grid:{color:'rgba(255,255,255,0.05)'}},
+        y:{ticks:{color:'#8b8fa3',font:{size:10}}}
+      }
+    }
+  });
+  
+  // Positions table
+  const tbody = document.querySelector('#dd-positions tbody');
+  tbody.innerHTML = '';
+  positions.sort((a,b) => (b.current_value||0) - (a.current_value||0)).forEach(p => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td style="max-width:250px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${p.title||'-'}</td>
+      <td>${fmt(p.current_value||0)}</td>
+      <td class="${pnlClass(p.cash_pnl||0)}">${fmt(p.cash_pnl||0)}</td>
+      <td class="${pnlClass(p.percent_pnl||0)}">${(p.percent_pnl||0).toFixed(1)}%</td>
+      <td>${p.outcome||'-'}</td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
+
+// ========== INIT ==========
+loadData();
+</script>
+</body>
+</html>
