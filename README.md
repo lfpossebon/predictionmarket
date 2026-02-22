@@ -82,9 +82,10 @@ Servir localmente e acessar no browser:
 cd data/polymarket
 python3 -m http.server 8899
 ```
-- **Explorer:** http://localhost:8899/explorer2.html
-- **Plano:** http://localhost:8899/plano.html
-- **Benchmark:** http://localhost:8899/benchmark.html
+- **Monitor Real-Time:** http://localhost:8899/monitor_dashboard.html — alertas, consenso, feed de atividade
+- **Explorer:** http://localhost:8899/explorer2.html — traders com sistema de basket
+- **Plano:** http://localhost:8899/plano.html — plano visual do projeto
+- **Benchmark:** http://localhost:8899/benchmark.html — benchmark de estratégias
 
 ---
 
@@ -113,6 +114,30 @@ python3 -m http.server 8899
 | 9 | Modelo S5 — Arbitragem |
 | 10 | Meta-Estratégia (Blend) |
 | 11 | Backtest Integrado |
+
+---
+
+## 🔔 Monitor Real-Time
+
+Sistema de monitoramento contínuo dos top 50 traders:
+
+- 🟢🔴 **Trades** — detecta novas compras e vendas
+- 🆕 **Posições** — detecta posições abertas e fechadas
+- 🎯 **Consenso** — alerta quando 60%+ dos traders concordam
+- 📨 **Alertas Telegram** — notificações em tempo real
+- 📊 **Dashboard visual** — painel web com feed, consenso, heatmap
+
+```bash
+# Setup inicial (cria snapshot base)
+cd src/polymarket
+python3 realtime_monitor.py --setup
+
+# Scan único
+python3 realtime_monitor.py
+
+# Loop contínuo (scan a cada 5min)
+python3 realtime_monitor.py --loop
+```
 
 ---
 
