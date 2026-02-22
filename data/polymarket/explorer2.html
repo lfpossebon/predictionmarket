@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Polymarket Trader Explorer v2</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0d1117; color: #c9d1d9; padding: 20px; }
+h1 { color: #58a6ff; margin-bottom: 5px; font-size: 22px; }
+.subtitle { color: #8b949e; margin-bottom: 15px; font-size: 13px; }
+.section { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 15px; margin-bottom: 15px; }
+.section h2 { color: #58a6ff; font-size: 15px; margin-bottom: 10px; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 8px; margin-bottom: 15px; }
+.stat { background: #161b22; border: 1px solid #30363d; border-radius: 6px; padding: 10px; text-align: center; }
+.stat .v { font-size: 20px; font-weight: bold; color: #58a6ff; }
+.stat .l { font-size: 11px; color: #8b949e; }
+.filters { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 15px; align-items: end; }
+.fg { display: flex; flex-direction: column; gap: 2px; }
+.fg label { font-size: 11px; color: #8b949e; }
+.fg select, .fg input { background: #0d1117; color: #c9d1d9; border: 1px solid #30363d; padding: 6px 8px; border-radius: 4px; font-size: 13px; }
+table { width: 100%; border-collapse: collapse; font-size: 12px; }
+th { background: #161b22; color: #79c0ff; padding: 8px 6px; text-align: left; cursor: pointer; position: sticky; top: 0; z-index: 2; border-bottom: 2px solid #30363d; font-size: 11px; white-space: nowrap; }
+th:hover { color: #58a6ff; }
+th.asc::after { content: ' ▲'; color: #3fb950; }
+th.desc::after { content: ' ▼'; color: #3fb950; }
+td { padding: 6px; border-bottom: 1px solid #21262d; }
+tr:hover { background: #1a2332; }
+tr.selected { background: #1f2d1f !important; border-left: 3px solid #3fb950; }
+.pos { color: #3fb950; }
+.neg { color: #f85149; }
+.tag { display: inline-block; padding: 1px 5px; border-radius: 3px; font-size: 10px; margin: 1px; }
+.tag-POLITICS { background: #2d1b30; color: #e94560; }
+.tag-CRYPTO { background: #1b2d1b; color: #50fa7b; }
+.tag-SPORTS { background: #2d2b1b; color: #f1fa8c; }
+.tag-ECONOMICS { background: #1b2d2d; color: #8be9fd; }
+.tag-FINANCE { background: #2d1b2d; color: #ff79c6; }
+.tag-TECH { background: #1b1b2d; color: #bd93f9; }
+.tag-CULTURE { background: #2d2d1b; color: #ffb86c; }
+.tag-WEATHER { background: #1b2d20; color: #69ff94; }
+.bar { height: 4px; background: #21262d; border-radius: 2px; min-width: 50px; display: inline-block; vertical-align: middle; margin-left: 5px; }
+.bar i { display: block; height: 100%; border-radius: 2px; }
+.dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin: 0 1px; }
+.dot.on { background: #3fb950; }
+.dot.off { background: #21262d; }
+canvas { display: block; }
+.chart-row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 15px; }
+@media (max-width: 800px) { .chart-row { grid-template-columns: 1fr; } }
+.count { color: #8b949e; font-size: 12px; margin-bottom: 8px; }
+.btn { background: #238636; color: white; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer; font-size: 12px; }
+.btn:hover { background: #2ea043; }
+.btn-outline { background: transparent; border: 1px solid #30363d; color: #c9d1d9; }
+.btn-outline:hover { border-color: #58a6ff; color: #58a6ff; }
+.btn-danger { background: #da3633; }
+.btn-danger:hover { background: #f85149; }
+.basket-panel { background: #1a2332; border: 2px solid #238636; border-radius: 8px; padding: 15px; margin-bottom: 15px; }
+.basket-panel h2 { color: #3fb950; }
+.basket-list { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0; }
+.basket-chip { background: #238636; color: white; padding: 3px 10px; border-radius: 12px; font-size: 11px; cursor: pointer; display: flex; align-items: center; gap: 4px; }
+.basket-chip:hover { background: #da3633; }
+.basket-chip::after { content: '✕'; font-size: 9px; }
+.basket-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 8px; margin-top: 10px; }
+.basket-stat { text-align: center; }
+.basket-stat .v { font-size: 16px; font-weight: bold; color: #3fb950; }
+.basket-stat .l { font-size: 10px; color: #8b949e; }
+.detail-panel { background: #161b22; border: 1px solid #58a6ff; border-radius: 8px; padding: 15px; margin-bottom: 15px; display: none; }
+.detail-panel h2 { color: #58a6ff; margin-bottom: 10px; }
+.detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+.detail-markets { margin-top: 10px; }
+.detail-markets li { color: #8b949e; font-size: 12px; margin: 3px 0; }
+.rank-cell { font-size: 10px; color: #8b949e; }
+.rank-cell span { display: inline-block; margin-right: 4px; }
+.wallet-link { color: #58a6ff; text-decoration: none; font-size: 10px; }
+.wallet-link:hover { text-decoration: underline; }
+.add-btn { background: none; border: 1px solid #238636; color: #3fb950; padding: 2px 8px; border-radius: 3px; cursor: pointer; font-size: 11px; }
+.add-btn:hover { background: #238636; color: white; }
+.add-btn.in-basket { background: #238636; color: white; }
+</style>
+</head>
+<body>
+
+<h1>📊 Polymarket Trader Explorer v2</h1>
+<p class="subtitle" id="headerSub">Carregando...</p>
+
+<div class="stats" id="stats"></div>
+
+<!-- BASKET PANEL -->
+<div class="basket-panel" id="basketPanel" style="display:none">
+<h2>🧺 Basket de Traders Selecionados</h2>
+<div class="basket-list" id="basketList"></div>
+<div class="basket-stats" id="basketStats"></div>
+<div style="margin-top:10px; display:flex; gap:8px;">
+  <button class="btn" onclick="exportBasket()">📋 Exportar JSON</button>
+  <button class="btn btn-outline" onclick="exportCSV()">📄 CSV</button>
+  <button class="btn btn-danger" onclick="clearBasket()">🗑 Limpar</button>
+</div>
+<pre id="basketExport" style="display:none; margin-top:10px; background:#0d1117; padding:10px; border-radius:4px; font-size:11px; max-height:200px; overflow:auto;"></pre>
+</div>
+
+<!-- DETAIL PANEL -->
+<div class="detail-panel" id="detailPanel">
+<div style="display:flex; justify-content:space-between; align-items:center;">
+  <h2 id="detailName">Trader</h2>
+  <div>
+    <button class="add-btn" id="detailAddBtn" onclick="toggleBasketFromDetail()">+ Basket</button>
+    <button class="btn-outline btn" onclick="closeDetail()" style="margin-left:8px;">✕</button>
+  </div>
+</div>
+<div class="detail-grid" id="detailGrid"></div>
+<div class="detail-markets" id="detailMarkets"></div>
+</div>
+
+<div class="section">
+<h2>🔍 Filtros</h2>
+<div class="filters">
+  <div class="fg"><label>Categoria</label><select id="fCat"><option value="">Todas</option></select></div>
+  <div class="fg"><label>Min PnL</label><select id="fPnl">
+    <option value="0">Qualquer</option><option value="1000">$1K+</option><option value="10000">$10K+</option>
+    <option value="100000" selected>$100K+</option><option value="500000">$500K+</option><option value="1000000">$1M+</option>
+  </select></div>
+  <div class="fg"><label>Min Eficiência</label><select id="fEff">
+    <option value="0">Qualquer</option><option value="0.01">1%+</option><option value="0.05">5%+</option>
+    <option value="0.1">10%+</option><option value="0.2">20%+</option><option value="0.5">50%+</option>
+  </select></div>
+  <div class="fg"><label>Min Períodos</label><select id="fPer">
+    <option value="1">1+</option><option value="2">2+</option><option value="3" selected>3+</option><option value="4">4</option>
+  </select></div>
+  <div class="fg"><label>Min Categorias</label><select id="fNCat">
+    <option value="0">Qualquer</option><option value="1">1+</option><option value="2">2+</option><option value="3">3+</option><option value="5">5+</option>
+  </select></div>
+  <div class="fg"><label>Leaderboard Recente</label><select id="fRecent">
+    <option value="">Qualquer</option><option value="day">Hoje (DAY)</option><option value="week">Esta semana</option><option value="month">Este mês</option>
+  </select></div>
+  <div class="fg"><label>Min Aparições</label><select id="fApp">
+    <option value="1">1+</option><option value="3">3+</option><option value="5">5+</option><option value="10">10+</option>
+  </select></div>
+  <div class="fg"><label>Tem Posições</label><select id="fPos">
+    <option value="">Qualquer</option><option value="yes">Sim</option><option value="no">Sem posições</option>
+  </select></div>
+  <div class="fg"><label>Buscar Nome</label><input id="fSearch" type="text" placeholder="nome..." style="width:120px;"></div>
+</div>
+</div>
+
+<div class="chart-row">
+  <div class="section"><h2>PnL vs Eficiência</h2><canvas id="c1" height="280"></canvas></div>
+  <div class="section"><h2>Distribuição por Categoria</h2><canvas id="c2" height="280"></canvas></div>
+</div>
+
+<div class="section">
+<h2>📋 Traders <span class="count" id="tcount"></span></h2>
+<div style="overflow-x:auto; max-height: 700px; overflow-y: auto;">
+<table>
+<thead><tr>
+  <th style="width:30px;"></th>
+  <th data-c="rank">#</th>
+  <th data-c="name">Trader</th>
+  <th data-c="pnl">PnL</th>
+  <th data-c="volume">Volume</th>
+  <th data-c="efficiency">Eficiência</th>
+  <th data-c="n_positions">Posições</th>
+  <th data-c="n_appearances">Aparições</th>
+  <th data-c="n_periods">Períodos</th>
+  <th data-c="n_categories">Categorias</th>
+  <th data-c="best_overall_rank">Rank</th>
+  <th>Timeline</th>
+  <th>Tags</th>
+</tr></thead>
+<tbody id="tb"></tbody>
+</table>
+</div>
+</div>
+
+<script>
+let D=[], sortC='pnl', sortD='desc', basket=new Set(), detailWallet=null;
+const CATS=['POLITICS','CRYPTO','SPORTS','ECONOMICS','FINANCE','TECH','CULTURE','WEATHER'];
+const CATCOL={POLITICS:'#e94560',CRYPTO:'#50fa7b',SPORTS:'#f1fa8c',ECONOMICS:'#8be9fd',FINANCE:'#ff79c6',TECH:'#bd93f9',CULTURE:'#ffb86c',WEATHER:'#69ff94'};
+
+// Load saved basket from localStorage
+try { const saved = JSON.parse(localStorage.getItem('pm_basket')||'[]'); saved.forEach(w=>basket.add(w)); } catch(e){}
+
+fetch('eda_broad.json').then(r=>r.json()).then(d=>{
+  D=d;
+  document.getElementById('headerSub').textContent = `${d.length} traders • ${CATS.length} categorias • 4 períodos • Atualizado: ${new Date().toLocaleDateString('pt-BR')}`;
+  const sel=document.getElementById('fCat');
+  CATS.forEach(c=>{const o=document.createElement('option');o.value=c;o.textContent=c;sel.appendChild(o);});
+  go();
+  updateBasketPanel();
+});
+
+function fmt(n){if(n==null)return'-';if(Math.abs(n)>=1e6)return'$'+(n/1e6).toFixed(1)+'M';if(Math.abs(n)>=1e3)return'$'+(n/1e3).toFixed(0)+'K';return'$'+n.toFixed(0);}
+function pct(n){return(n*100).toFixed(1)+'%';}
+
+function filt(){
+  const cat=document.getElementById('fCat').value;
+  const mp=+document.getElementById('fPnl').value;
+  const me=+document.getElementById('fEff').value;
+  const mper=+document.getElementById('fPer').value;
+  const mnc=+document.getElementById('fNCat').value;
+  const rec=document.getElementById('fRecent').value;
+  const mapp=+document.getElementById('fApp').value;
+  const fpos=document.getElementById('fPos').value;
+  const search=document.getElementById('fSearch').value.toLowerCase().trim();
+  return D.filter(t=>{
+    if(cat&&!t.categories.includes(cat))return false;
+    if(t.pnl<mp)return false;
+    if(t.efficiency<me)return false;
+    if(t.n_periods<mper)return false;
+    if(t.n_categories<mnc)return false;
+    if(rec==='day'&&!t.in_day)return false;
+    if(rec==='week'&&!t.in_week)return false;
+    if(rec==='month'&&!t.in_month)return false;
+    if(t.n_appearances<mapp)return false;
+    if(fpos==='yes'&&!t.n_positions)return false;
+    if(fpos==='no'&&t.n_positions>0)return false;
+    if(search&&!(t.name||'').toLowerCase().includes(search)&&!t.wallet.toLowerCase().includes(search))return false;
+    return true;
+  });
+}
+
+function stats(f){
+  const act=f.filter(t=>t.in_day||t.in_week).length;
+  const tp=f.reduce((s,t)=>s+t.pnl,0);
+  const ae=f.length?f.reduce((s,t)=>s+t.efficiency,0)/f.length:0;
+  const mp=f.filter(t=>t.n_periods>=3).length;
+  const wp=f.filter(t=>t.n_positions>0).length;
+  document.getElementById('stats').innerHTML=`
+    <div class="stat"><div class="v">${f.length}</div><div class="l">Traders</div></div>
+    <div class="stat"><div class="v">${act}</div><div class="l">Recentes</div></div>
+    <div class="stat"><div class="v">${fmt(tp)}</div><div class="l">PnL Total</div></div>
+    <div class="stat"><div class="v">${pct(ae)}</div><div class="l">Efic. Média</div></div>
+    <div class="stat"><div class="v">${mp}</div><div class="l">Consistentes (3+per)</div></div>
+    <div class="stat"><div class="v">${wp}</div><div class="l">Com Posições</div></div>
+    <div class="stat"><div class="v">${basket.size}</div><div class="l">🧺 No Basket</div></div>
+  `;
+}
+
+function table(f){
+  f.sort((a,b)=>{let va=a[sortC]??999,vb=b[sortC]??999;if(typeof va==='string')return sortD==='asc'?va.localeCompare(vb):vb.localeCompare(va);return sortD==='asc'?va-vb:vb-va;});
+  const mx=Math.max(...f.map(t=>t.pnl),1);
+  const me=Math.max(...f.map(t=>t.efficiency),0.01);
+  document.getElementById('tcount').textContent=`(${f.length} traders)`;
+  document.getElementById('tb').innerHTML=f.slice(0,500).map((t,i)=>{
+    const tags=t.categories.map(c=>`<span class="tag tag-${c}">${c.slice(0,4)}</span>`).join('');
+    const pb=Math.round(t.pnl/mx*100);
+    const eb=Math.round(t.efficiency/me*100);
+    const inB=basket.has(t.wallet);
+    return`<tr class="${inB?'selected':''}" data-w="${t.wallet}">
+      <td><button class="add-btn ${inB?'in-basket':''}" onclick="toggleBasket('${t.wallet}',event)">${inB?'✓':'+'}</button></td>
+      <td>${i+1}</td>
+      <td><b style="cursor:pointer" onclick="showDetail('${t.wallet}')">${t.name||t.wallet.slice(0,10)+'…'}</b>
+        <a class="wallet-link" href="https://polymarket.com/profile/${t.wallet}" target="_blank">↗</a></td>
+      <td class="pos">${fmt(t.pnl)} <span class="bar" style="width:60px"><i style="width:${pb}%;background:#3fb950"></i></span></td>
+      <td>${fmt(t.volume)}</td>
+      <td>${pct(t.efficiency)} <span class="bar" style="width:40px"><i style="width:${eb}%;background:#58a6ff"></i></span></td>
+      <td>${t.n_positions||'-'}</td>
+      <td>${t.n_appearances}</td>
+      <td><span class="dot ${t.in_all?'on':'off'}" title="ALL"></span><span class="dot ${t.in_month?'on':'off'}" title="MONTH"></span><span class="dot ${t.in_week?'on':'off'}" title="WEEK"></span><span class="dot ${t.in_day?'on':'off'}" title="DAY"></span> ${t.n_periods}/4</td>
+      <td>${t.n_categories}</td>
+      <td>${t.best_overall_rank<999?'#'+t.best_overall_rank:'-'}</td>
+      <td><span class="dot ${t.in_all?'on':'off'}"></span><span class="dot ${t.in_month?'on':'off'}"></span><span class="dot ${t.in_week?'on':'off'}"></span><span class="dot ${t.in_day?'on':'off'}"></span></td>
+      <td>${tags}</td>
+    </tr>`;
+  }).join('');
+}
+
+// BASKET MANAGEMENT
+function toggleBasket(wallet, e){
+  if(e) e.stopPropagation();
+  if(basket.has(wallet)) basket.delete(wallet); else basket.add(wallet);
+  localStorage.setItem('pm_basket', JSON.stringify([...basket]));
+  updateBasketPanel();
+  go();
+}
+
+function toggleBasketFromDetail(){
+  if(detailWallet) toggleBasket(detailWallet);
+  const btn=document.getElementById('detailAddBtn');
+  btn.textContent = basket.has(detailWallet) ? '✓ No Basket' : '+ Basket';
+  btn.className = 'add-btn' + (basket.has(detailWallet) ? ' in-basket' : '');
+}
+
+function clearBasket(){
+  if(!confirm('Limpar todo o basket?')) return;
+  basket.clear();
+  localStorage.removeItem('pm_basket');
+  updateBasketPanel();
+  go();
+}
+
+function updateBasketPanel(){
+  const panel = document.getElementById('basketPanel');
+  if(basket.size===0){ panel.style.display='none'; return; }
+  panel.style.display='block';
+  const bTraders = D.filter(t=>basket.has(t.wallet));
+  document.getElementById('basketList').innerHTML = bTraders.map(t=>
+    `<span class="basket-chip" onclick="toggleBasket('${t.wallet}')">${t.name||t.wallet.slice(0,10)}</span>`
+  ).join('');
+  const totalPnl = bTraders.reduce((s,t)=>s+t.pnl,0);
+  const avgEff = bTraders.length ? bTraders.reduce((s,t)=>s+t.efficiency,0)/bTraders.length : 0;
+  const allCats = [...new Set(bTraders.flatMap(t=>t.categories))];
+  const consistent = bTraders.filter(t=>t.n_periods>=3).length;
+  document.getElementById('basketStats').innerHTML=`
+    <div class="basket-stat"><div class="v">${bTraders.length}</div><div class="l">Traders</div></div>
+    <div class="basket-stat"><div class="v">${fmt(totalPnl)}</div><div class="l">PnL Total</div></div>
+    <div class="basket-stat"><div class="v">${pct(avgEff)}</div><div class="l">Efic. Média</div></div>
+    <div class="basket-stat"><div class="v">${allCats.length}</div><div class="l">Categorias</div></div>
+    <div class="basket-stat"><div class="v">${consistent}/${bTraders.length}</div><div class="l">Consistentes</div></div>
+  `;
+}
+
+function exportBasket(){
+  const bTraders = D.filter(t=>basket.has(t.wallet)).map(t=>({
+    wallet: t.wallet, name: t.name, pnl: t.pnl, volume: t.volume,
+    efficiency: t.efficiency, categories: t.categories, n_periods: t.n_periods,
+    n_positions: t.n_positions, best_overall_rank: t.best_overall_rank
+  }));
+  const el = document.getElementById('basketExport');
+  el.style.display = el.style.display==='none' ? 'block' : 'none';
+  el.textContent = JSON.stringify(bTraders, null, 2);
+}
+
+function exportCSV(){
+  const bTraders = D.filter(t=>basket.has(t.wallet));
+  let csv = 'wallet,name,pnl,volume,efficiency,categories,periods,positions,rank\n';
+  bTraders.forEach(t=>{
+    csv += `${t.wallet},${t.name},${t.pnl},${t.volume},${t.efficiency},"${t.categories.join(';')}",${t.n_periods},${t.n_positions||0},${t.best_overall_rank}\n`;
+  });
+  const blob = new Blob([csv], {type:'text/csv'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'polymarket_basket.csv';
+  a.click();
+}
+
+// DETAIL PANEL
+function showDetail(wallet){
+  const t = D.find(d=>d.wallet===wallet);
+  if(!t) return;
+  detailWallet = wallet;
+  const panel = document.getElementById('detailPanel');
+  panel.style.display = 'block';
+  document.getElementById('detailName').textContent = `${t.name||'Anônimo'} — ${t.wallet.slice(0,8)}…${t.wallet.slice(-6)}`;
+  const btn=document.getElementById('detailAddBtn');
+  btn.textContent = basket.has(wallet) ? '✓ No Basket' : '+ Basket';
+  btn.className = 'add-btn' + (basket.has(wallet) ? ' in-basket' : '');
+
+  // Rankings detail
+  const rankRows = Object.entries(t.best_ranks||{}).map(([k,v])=>{
+    const alpha = t.alpha?.[k];
+    return `<tr><td style="font-size:11px">${k}</td><td>#${v}</td><td>${alpha!=null?pct(alpha):'-'}</td></tr>`;
+  }).join('');
+
+  document.getElementById('detailGrid').innerHTML = `
+    <div>
+      <table style="font-size:12px;">
+        <tr><td style="color:#8b949e">PnL</td><td class="pos" style="font-size:16px;font-weight:bold">${fmt(t.pnl)}</td></tr>
+        <tr><td style="color:#8b949e">Volume</td><td>${fmt(t.volume)}</td></tr>
+        <tr><td style="color:#8b949e">Eficiência</td><td>${pct(t.efficiency)}</td></tr>
+        <tr><td style="color:#8b949e">Posições Ativas</td><td>${t.n_positions||0}</td></tr>
+        <tr><td style="color:#8b949e">Mercados Únicos</td><td>${t.unique_markets||0}</td></tr>
+        <tr><td style="color:#8b949e">Tamanho Total</td><td>${fmt(t.total_position_size||0)}</td></tr>
+        <tr><td style="color:#8b949e">Aparições</td><td>${t.n_appearances} (${t.n_periods}/4 períodos)</td></tr>
+        <tr><td style="color:#8b949e">Categorias</td><td>${t.categories.map(c=>`<span class="tag tag-${c}">${c}</span>`).join(' ')}</td></tr>
+      </table>
+      <div style="margin-top:8px">
+        <a class="wallet-link" href="https://polymarket.com/profile/${t.wallet}" target="_blank" style="font-size:12px">🔗 Ver no Polymarket ↗</a>
+      </div>
+    </div>
+    <div>
+      <h3 style="font-size:13px;color:#79c0ff;margin-bottom:5px;">Rankings por Categoria/Período</h3>
+      <table style="font-size:11px;"><thead><tr><th>Cat/Período</th><th>Rank</th><th>Alpha</th></tr></thead><tbody>${rankRows}</tbody></table>
+    </div>
+  `;
+
+  const markets = (t.market_titles_sample||[]).filter(m=>m);
+  document.getElementById('detailMarkets').innerHTML = markets.length ?
+    `<h3 style="font-size:13px;color:#79c0ff;margin:10px 0 5px;">📈 Mercados Ativos (amostra)</h3><ul>${markets.map(m=>`<li>${m}</li>`).join('')}</ul>` : '';
+
+  panel.scrollIntoView({behavior:'smooth', block:'start'});
+}
+
+function closeDetail(){
+  document.getElementById('detailPanel').style.display='none';
+  detailWallet=null;
+}
+
+function scatter(f){
+  const cv=document.getElementById('c1'),cx=cv.getContext('2d');
+  cv.width=cv.parentElement.clientWidth-30;cx.clearRect(0,0,cv.width,280);
+  if(!f.length)return;
+  const p={l:55,r:15,t:10,b:35},w=cv.width-p.l-p.r,h=280-p.t-p.b;
+  const mx=Math.max(...f.map(t=>t.pnl));
+  const me=Math.max(...f.map(t=>t.efficiency));
+  cx.strokeStyle='#30363d';cx.beginPath();cx.moveTo(p.l,p.t);cx.lineTo(p.l,280-p.b);cx.lineTo(cv.width-p.r,280-p.b);cx.stroke();
+  cx.fillStyle='#8b949e';cx.font='10px sans-serif';
+  cx.fillText('Eficiência →',cv.width/2-30,275);
+  cx.save();cx.translate(12,140);cx.rotate(-Math.PI/2);cx.fillText('PnL →',0,0);cx.restore();
+  f.forEach(t=>{
+    const x=p.l+(t.efficiency/me)*w;
+    const y=280-p.b-(t.pnl/mx)*h;
+    const r=Math.max(3,Math.min(10,Math.sqrt(t.n_appearances)*1.5));
+    const mainCat=t.categories[0]||'OVERALL';
+    const inB=basket.has(t.wallet);
+    cx.beginPath();cx.arc(x,y,r,0,Math.PI*2);
+    if(inB){
+      cx.fillStyle='#3fb950';cx.fill();
+      cx.strokeStyle='#fff';cx.lineWidth=2;cx.stroke();
+    } else {
+      cx.fillStyle=(CATCOL[mainCat]||'#58a6ff')+'88';cx.fill();
+    }
+    if(t.pnl>mx*0.3||inB){cx.fillStyle=inB?'#3fb950':'#c9d1d9';cx.font=(inB?'bold ':'')+' 9px sans-serif';cx.fillText(t.name||'',x+r+2,y-2);}
+  });
+}
+
+function catChart(f){
+  const cv=document.getElementById('c2'),cx=cv.getContext('2d');
+  cv.width=cv.parentElement.clientWidth-30;cx.clearRect(0,0,cv.width,280);
+  const counts={};CATS.forEach(c=>counts[c]=0);
+  f.forEach(t=>t.categories.forEach(c=>{if(counts[c]!==undefined)counts[c]++;}));
+  const sorted=Object.entries(counts).sort((a,b)=>b[1]-a[1]);
+  const mx=Math.max(...sorted.map(s=>s[1]),1);
+  const bw=30,gap=15,startX=50,startY=260;
+  sorted.forEach(([cat,cnt],i)=>{
+    const x=startX+i*(bw+gap);
+    const bh=(cnt/mx)*220;
+    cx.fillStyle=CATCOL[cat]||'#58a6ff';
+    cx.fillRect(x,startY-bh,bw,bh);
+    cx.fillStyle='#c9d1d9';cx.font='10px sans-serif';
+    cx.fillText(cnt,x+5,startY-bh-5);
+    cx.save();cx.translate(x+bw/2,275);cx.rotate(-0.5);
+    cx.fillStyle='#8b949e';cx.font='9px sans-serif';cx.fillText(cat,0,0);
+    cx.restore();
+  });
+}
+
+function go(){const f=filt();stats(f);table(f);scatter(f);catChart(f);}
+
+document.querySelectorAll('th[data-c]').forEach(th=>th.addEventListener('click',()=>{
+  const c=th.dataset.c;if(sortC===c)sortD=sortD==='asc'?'desc':'asc';else{sortC=c;sortD='desc';}
+  document.querySelectorAll('th').forEach(t=>t.className='');th.className=sortD;go();
+}));
+
+['fCat','fPnl','fEff','fPer','fNCat','fRecent','fApp','fPos'].forEach(id=>
+  document.getElementById(id).addEventListener('change',go));
+document.getElementById('fSearch').addEventListener('input', go);
+</script>
+</body>
+</html>

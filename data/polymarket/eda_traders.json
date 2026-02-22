@@ -1,0 +1,585 @@
+[
+  {
+    "wallet": "0x56687bf447db6ffa42ffe2204a05edaa20f55839",
+    "name": "Theo4",
+    "pnl": 22053933.752321757,
+    "volume": 43251303.174663,
+    "periods": [
+      "ALL"
+    ],
+    "categories": [
+      "POLITICS"
+    ],
+    "n_positions": 0,
+    "n_recent_buys": 35,
+    "n_recent_sells": 0,
+    "total_position_size": 0,
+    "unique_markets": 0,
+    "avg_position_size": 0.0,
+    "efficiency": 0.5099021794386336
+  },
+  {
+    "wallet": "0x1f2dd6d473f3e824cd2f8a89d9c69fb96f6ad0cf",
+    "name": "Fredi9999",
+    "pnl": 16619506.63173015,
+    "volume": 76643457.173084,
+    "periods": [
+      "ALL"
+    ],
+    "categories": [
+      "POLITICS"
+    ],
+    "n_positions": 1,
+    "n_recent_buys": 20,
+    "n_recent_sells": 0,
+    "total_position_size": 0.0588,
+    "unique_markets": 1,
+    "avg_position_size": 0.0588,
+    "efficiency": 0.21684181852859663
+  },
+  {
+    "wallet": "0x6a72f61820b26b1fe4d956e17b6dc2a1ea3033ee",
+    "name": "kch123",
+    "pnl": 10911691.564469479,
+    "volume": 231052602.19063336,
+    "periods": [
+      "ALL",
+      "MONTH"
+    ],
+    "categories": [
+      "SPORTS"
+    ],
+    "n_positions": 100,
+    "n_recent_buys": 49,
+    "n_recent_sells": 0,
+    "total_position_size": 44865768.9175,
+    "unique_markets": 100,
+    "avg_position_size": 448657.68917499995,
+    "efficiency": 0.0472260059441643
+  },
+  {
+    "wallet": "0x78b9ac44a6d7d7a076c14e0ad518b301b63c6b76",
+    "name": "Len9311238",
+    "pnl": 8709972.988069998,
+    "volume": 16415857.236186,
+    "periods": [
+      "ALL"
+    ],
+    "categories": [
+      "POLITICS"
+    ],
+    "n_positions": 0,
+    "n_recent_buys": 39,
+    "n_recent_sells": 0,
+    "total_position_size": 0,
+    "unique_markets": 0,
+    "avg_position_size": 0.0,
+    "efficiency": 0.5305828908447331
+  },
+  {
+    "wallet": "0xd235973291b2b75ff4070e9c0b01728c520b0f29",
+    "name": "zxgngl",
+    "pnl": 7807265.589240883,
+    "volume": 40654925.811618,
+    "periods": [
+      "ALL"
+    ],
+    "categories": [
+      "POLITICS"
+    ],
+    "n_positions": 1,
+    "n_recent_buys": 49,
+    "n_recent_sells": 0,
+    "total_position_size": 11077378.1828,
+    "unique_markets": 1,
+    "avg_position_size": 11077378.1828,
+    "efficiency": 0.1920373837457549
+  },
+  {
+    "wallet": "0x863134d00841b2e200492805a01e1e2f5defaa53",
+    "name": "RepTrump",
+    "pnl": 7532409.671579,
+    "volume": 13983244.543425005,
+    "periods": [
+      "ALL"
+    ],
+    "categories": [
+      "POLITICS"
+    ],
+    "n_positions": 0,
+    "n_recent_buys": 41,
+    "n_recent_sells": 0,
+    "total_position_size": 0,
+    "unique_markets": 0,
+    "avg_position_size": 0.0,
+    "efficiency": 0.5386739571196857
+  },
+  {
+    "wallet": "0xdb27bf2ac5d428a9c63dbc914611036855a6c56e",
+    "name": "DrPufferfish",
+    "pnl": 6330866.000526634,
+    "volume": 150558500.2039868,
+    "periods": [
+      "ALL",
+      "MONTH",
+      "WEEK"
+    ],
+    "categories": [
+      "SPORTS"
+    ],
+    "n_positions": 100,
+    "n_recent_buys": 50,
+    "n_recent_sells": 0,
+    "total_position_size": 47739821.8008,
+    "unique_markets": 100,
+    "avg_position_size": 477398.21800800005,
+    "efficiency": 0.042049210054225766
+  },
+  {
+    "wallet": "0x8119010a6e589062aa03583bb3f39ca632d9f887",
+    "name": "PrincessCaro",
+    "pnl": 6083643.099591745,
+    "volume": 23538735.402510993,
+    "periods": [
+      "ALL"
+    ],
+    "categories": [
+      "POLITICS"
+    ],
+    "n_positions": 1,
+    "n_recent_buys": 32,
+    "n_recent_sells": 0,
+    "total_position_size": 0.0223,
+    "unique_markets": 1,
+    "avg_position_size": 0.0223,
+    "efficiency": 0.25845241877109393
+  },
+  {
+    "wallet": "0xe9ad918c7678cd38b12603a762e638a5d1ee7091",
+    "name": "walletmobile",
+    "pnl": 5942685.45339684,
+    "volume": 32201693.091163002,
+    "periods": [
+      "ALL"
+    ],
+    "categories": [
+      "POLITICS"
+    ],
+    "n_positions": 0,
+    "n_recent_buys": 0,
+    "n_recent_sells": 50,
+    "total_position_size": 0,
+    "unique_markets": 0,
+    "avg_position_size": 0.0,
+    "efficiency": 0.1845457453610621
+  },
+  {
+    "wallet": "0x885783760858e1bd5dd09a3c3f916cfa251ac270",
+    "name": "BetTom42",
+    "pnl": 5642135.735356,
+    "volume": 11215651.697315004,
+    "periods": [
+      "ALL"
+    ],
+    "categories": [
+      "POLITICS"
+    ],
+    "n_positions": 0,
+    "n_recent_buys": 41,
+    "n_recent_sells": 0,
+    "total_position_size": 0,
+    "unique_markets": 0,
+    "avg_position_size": 0.0,
+    "efficiency": 0.5030591077205716
+  },
+  {
+    "wallet": "0x006cc834cc092684f1b56626e23bedb3835c16ea",
+    "name": "0x006cc834Cc092684F1B56626E23BEdB3835c16ea-1729683673397",
+    "pnl": 5159353.451220138,
+    "volume": 58663808.596668,
+    "periods": [
+      "ALL"
+    ],
+    "categories": [
+      "SPORTS"
+    ],
+    "n_positions": 6,
+    "n_recent_buys": 2,
+    "n_recent_sells": 3,
+    "total_position_size": 327678.3224,
+    "unique_markets": 5,
+    "avg_position_size": 54613.053733333334,
+    "efficiency": 0.08794780929912518
+  },
+  {
+    "wallet": "0x23786fdad0073692157c6d7dc81f281843a35fcb",
+    "name": "mikatrade77",
+    "pnl": 5147998.544602999,
+    "volume": 10884993.208775003,
+    "periods": [
+      "ALL"
+    ],
+    "categories": [
+      "POLITICS"
+    ],
+    "n_positions": 0,
+    "n_recent_buys": 41,
+    "n_recent_sells": 0,
+    "total_position_size": 0,
+    "unique_markets": 0,
+    "avg_position_size": 0.0,
+    "efficiency": 0.47294458029178277
+  },
+  {
+    "wallet": "0x2005d16a84ceefa912d4e380cd32e7ff827875ea",
+    "name": "RN1",
+    "pnl": 5097047.492486438,
+    "volume": 225977750.15818903,
+    "periods": [
+      "ALL",
+      "MONTH",
+      "WEEK"
+    ],
+    "categories": [
+      "SPORTS"
+    ],
+    "n_positions": 100,
+    "n_recent_buys": 50,
+    "n_recent_sells": 0,
+    "total_position_size": 5758769.2591,
+    "unique_markets": 98,
+    "avg_position_size": 57587.692591000006,
+    "efficiency": 0.022555528094772164
+  },
+  {
+    "wallet": "0xd0c042c08f755ff940249f62745e82d356345565",
+    "name": "alexmulti",
+    "pnl": 4804855.613376001,
+    "volume": 9955068.653842,
+    "periods": [
+      "ALL"
+    ],
+    "categories": [
+      "POLITICS"
+    ],
+    "n_positions": 0,
+    "n_recent_buys": 43,
+    "n_recent_sells": 0,
+    "total_position_size": 0,
+    "unique_markets": 0,
+    "avg_position_size": 0.0,
+    "efficiency": 0.4826541915933089
+  },
+  {
+    "wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
+    "name": "swisstony",
+    "pnl": 4776811.018101783,
+    "volume": 411896815.8817764,
+    "periods": [
+      "ALL",
+      "MONTH"
+    ],
+    "categories": [
+      "SPORTS"
+    ],
+    "n_positions": 100,
+    "n_recent_buys": 50,
+    "n_recent_sells": 0,
+    "total_position_size": 4086766.5468,
+    "unique_markets": 69,
+    "avg_position_size": 40867.665468,
+    "efficiency": 0.011597105959354719
+  },
+  {
+    "wallet": "0x94a428cfa4f84b264e01f70d93d02bc96cb36356",
+    "name": "GCottrell93",
+    "pnl": 4161199.326182707,
+    "volume": 15355173.994817995,
+    "periods": [
+      "ALL"
+    ],
+    "categories": [
+      "POLITICS"
+    ],
+    "n_positions": 21,
+    "n_recent_buys": 48,
+    "n_recent_sells": 0,
+    "total_position_size": 1969146.4537,
+    "unique_markets": 21,
+    "avg_position_size": 93768.87874761905,
+    "efficiency": 0.27099655969948716
+  },
+  {
+    "wallet": "0x16f91db2592924cfed6e03b7e5cb5bb1e32299e3",
+    "name": "Jenzigo",
+    "pnl": 4049827.0941029997,
+    "volume": 9459809.487353003,
+    "periods": [
+      "ALL"
+    ],
+    "categories": [
+      "POLITICS"
+    ],
+    "n_positions": 0,
+    "n_recent_buys": 38,
+    "n_recent_sells": 0,
+    "total_position_size": 0,
+    "unique_markets": 0,
+    "avg_position_size": 0.0,
+    "efficiency": 0.4281087372337984
+  },
+  {
+    "wallet": "0x16b29c50f2439faf627209b2ac0c7bbddaa8a881",
+    "name": "SeriouslySirius",
+    "pnl": 3647643.438599919,
+    "volume": 192646024.9352283,
+    "periods": [
+      "ALL"
+    ],
+    "categories": [
+      "SPORTS"
+    ],
+    "n_positions": 100,
+    "n_recent_buys": 2,
+    "n_recent_sells": 0,
+    "total_position_size": 25657719.5403,
+    "unique_markets": 100,
+    "avg_position_size": 256577.195403,
+    "efficiency": 0.01893443396938159
+  },
+  {
+    "wallet": "0x14964aefa2cd7caff7878b3820a690a03c5aa429",
+    "name": "gmpm",
+    "pnl": 3579756.7214917,
+    "volume": 82271390.435655,
+    "periods": [
+      "ALL",
+      "MONTH"
+    ],
+    "categories": [
+      "SPORTS"
+    ],
+    "n_positions": 23,
+    "n_recent_buys": 46,
+    "n_recent_sells": 0,
+    "total_position_size": 227500.6789,
+    "unique_markets": 23,
+    "avg_position_size": 9891.333865217392,
+    "efficiency": 0.04351156219112951
+  },
+  {
+    "wallet": "0x507e52ef684ca2dd91f90a9d26d149dd3288beae",
+    "name": "GamblingIsAllYouNeed",
+    "pnl": 3399536.8561004056,
+    "volume": 217748183.0384617,
+    "periods": [
+      "ALL",
+      "MONTH",
+      "WEEK"
+    ],
+    "categories": [
+      "SPORTS"
+    ],
+    "n_positions": 100,
+    "n_recent_buys": 37,
+    "n_recent_sells": 13,
+    "total_position_size": 6356175.344,
+    "unique_markets": 91,
+    "avg_position_size": 63561.75343999999,
+    "efficiency": 0.015612239829803459
+  },
+  {
+    "wallet": "0x17db3fcd93ba12d38382a0cade24b200185c5f6d",
+    "name": "fengdubiying",
+    "pnl": 3133968.2010023133,
+    "volume": 17303665.903119996,
+    "periods": [
+      "ALL"
+    ],
+    "categories": [
+      "SPORTS"
+    ],
+    "n_positions": 26,
+    "n_recent_buys": 11,
+    "n_recent_sells": 33,
+    "total_position_size": 1023108.0233,
+    "unique_markets": 26,
+    "avg_position_size": 39350.308588461536,
+    "efficiency": 0.181115852475933
+  },
+  {
+    "wallet": "0x033a07b3de5947eab4306676ad74eb546da30d50",
+    "name": "RandomGenius",
+    "pnl": 3115550.407118868,
+    "volume": 8800612.866228998,
+    "periods": [
+      "ALL"
+    ],
+    "categories": [
+      "POLITICS"
+    ],
+    "n_positions": 1,
+    "n_recent_buys": 48,
+    "n_recent_sells": 0,
+    "total_position_size": 0.0317,
+    "unique_markets": 1,
+    "avg_position_size": 0.0317,
+    "efficiency": 0.35401516399776145
+  },
+  {
+    "wallet": "0xdbade4c82fb72780a0db9a38f821d8671aba9c95",
+    "name": "SwissMiss",
+    "pnl": 3110015.7245633793,
+    "volume": 69839996.04354599,
+    "periods": [
+      "ALL"
+    ],
+    "categories": [
+      "POLITICS",
+      "SPORTS"
+    ],
+    "n_positions": 69,
+    "n_recent_buys": 49,
+    "n_recent_sells": 0,
+    "total_position_size": 3801541.5546,
+    "unique_markets": 68,
+    "avg_position_size": 55094.80513913043,
+    "efficiency": 0.04453058277128554
+  },
+  {
+    "wallet": "0xed2239a9150c3920000d0094d28fa51c7db03dd0",
+    "name": "Michie",
+    "pnl": 3095007.670859059,
+    "volume": 8451753.190502001,
+    "periods": [
+      "ALL"
+    ],
+    "categories": [
+      "POLITICS"
+    ],
+    "n_positions": 1,
+    "n_recent_buys": 38,
+    "n_recent_sells": 0,
+    "total_position_size": 3064.3846,
+    "unique_markets": 1,
+    "avg_position_size": 3064.3846,
+    "efficiency": 0.3661971192364205
+  },
+  {
+    "wallet": "0xe90bec87d9ef430f27f9dcfe72c34b76967d5da2",
+    "name": "gmanas",
+    "pnl": 3092264.4307467365,
+    "volume": 485311541.7427651,
+    "periods": [
+      "ALL"
+    ],
+    "categories": [
+      "SPORTS"
+    ],
+    "n_positions": 100,
+    "n_recent_buys": 41,
+    "n_recent_sells": 0,
+    "total_position_size": 10048167.5726,
+    "unique_markets": 100,
+    "avg_position_size": 100481.675726,
+    "efficiency": 0.006371710055858845
+  },
+  {
+    "wallet": "0x9d84ce0306f8551e02efef1680475fc0f1dc1344",
+    "name": "ImJustKen",
+    "pnl": 2901968.830782991,
+    "volume": 458484068.68264323,
+    "periods": [
+      "ALL"
+    ],
+    "categories": [
+      "POLITICS",
+      "ECONOMICS"
+    ],
+    "n_positions": 100,
+    "n_recent_buys": 32,
+    "n_recent_sells": 7,
+    "total_position_size": 9913114.1451,
+    "unique_markets": 100,
+    "avg_position_size": 99131.14145099999,
+    "efficiency": 0.006329486734667102
+  },
+  {
+    "wallet": "0xd38b71f3e8ed1af71983e5c309eac3dfa9b35029",
+    "name": "primm",
+    "pnl": 2621797.599575944,
+    "volume": 31792207.344876006,
+    "periods": [
+      "ALL"
+    ],
+    "categories": [
+      "SPORTS"
+    ],
+    "n_positions": 100,
+    "n_recent_buys": 40,
+    "n_recent_sells": 0,
+    "total_position_size": 11536711.0367,
+    "unique_markets": 100,
+    "avg_position_size": 115367.11036699999,
+    "efficiency": 0.08246667402282473
+  },
+  {
+    "wallet": "0x343d4466dc323b850e5249394894c7381d91456e",
+    "name": "tazcot",
+    "pnl": 2604547.667341,
+    "volume": 8132604.965826999,
+    "periods": [
+      "ALL"
+    ],
+    "categories": [
+      "SPORTS"
+    ],
+    "n_positions": 0,
+    "n_recent_buys": 35,
+    "n_recent_sells": 0,
+    "total_position_size": 0,
+    "unique_markets": 0,
+    "avg_position_size": 0.0,
+    "efficiency": 0.320259950936415
+  },
+  {
+    "wallet": "0xb786b8b6335e77dfad19928313e97753039cb18d",
+    "name": "0xb786b8b6335e77dfad19928313e97753039cb18d",
+    "pnl": 2335441.398989085,
+    "volume": 98207557.70503886,
+    "periods": [
+      "ALL"
+    ],
+    "categories": [
+      "SPORTS"
+    ],
+    "n_positions": 100,
+    "n_recent_buys": 36,
+    "n_recent_sells": 0,
+    "total_position_size": 42078.273,
+    "unique_markets": 90,
+    "avg_position_size": 420.78273,
+    "efficiency": 0.02378066875467424
+  },
+  {
+    "wallet": "0xac44cb78be973ec7d91b69678c4bdfa7009afbd7",
+    "name": "blackwall",
+    "pnl": 2310857.9291402893,
+    "volume": 14869434.037083002,
+    "periods": [
+      "ALL",
+      "MONTH",
+      "WEEK"
+    ],
+    "categories": [
+      "SPORTS"
+    ],
+    "n_positions": 3,
+    "n_recent_buys": 49,
+    "n_recent_sells": 0,
+    "total_position_size": 4499472.2743,
+    "unique_markets": 3,
+    "avg_position_size": 1499824.0914333332,
+    "efficiency": 0.15540994521897888
+  }
+]

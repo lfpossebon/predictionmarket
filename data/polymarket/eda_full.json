@@ -1,0 +1,4037 @@
+[
+  {
+    "wallet": "0x56687bf447db6ffa42ffe2204a05edaa20f55839",
+    "name": "Theo4",
+    "pnl_all": 22053952.526606,
+    "vol_all": 43251303.174663,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 1,
+        "pnl": 22053933.752321757,
+        "vol": 43251303.174663
+      },
+      "POLITICS_ALL": {
+        "rank": 1,
+        "pnl": 22053952.526606,
+        "vol": 43250755.404098004
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "POLITICS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 0,
+    "n_recent_buys": 85,
+    "n_recent_sells": 0,
+    "total_position_size": 0,
+    "unique_markets": 0,
+    "avg_position_size": 0.0,
+    "efficiency": 0.5099026135130514,
+    "n_categories": 2,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "",
+      "Will Donald Trump win the popular vote in the 2024 Presidential Election?",
+      "Henry Cavill announced as next James Bond?",
+      "Will a Democrat win Pennsylvania Presidential Election?",
+      "Will a Democrat win Michigan Presidential Election?",
+      "Which party wins 2024 US Presidential Election?",
+      "Will Kamala Harris win the 2024 US Presidential Election?",
+      "Will a Democrat win Wisconsin Presidential Election?",
+      "Will a Republican win Michigan Presidential Election?",
+      "Will Donald Trump win the 2024 US Presidential Election?"
+    ],
+    "buy_sell_ratio": 85.0
+  },
+  {
+    "wallet": "0x1f2dd6d473f3e824cd2f8a89d9c69fb96f6ad0cf",
+    "name": "Fredi9999",
+    "pnl_all": 16619506.63173015,
+    "vol_all": 76643457.173084,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 2,
+        "pnl": 16619506.63173015,
+        "vol": 76643457.173084
+      },
+      "POLITICS_ALL": {
+        "rank": 2,
+        "pnl": 16619170.48466815,
+        "vol": 76642672.13308401
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "POLITICS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 1,
+    "n_recent_buys": 70,
+    "n_recent_sells": 0,
+    "total_position_size": 0.0588,
+    "unique_markets": 1,
+    "avg_position_size": 0.0588,
+    "efficiency": 0.21684181852859663,
+    "n_categories": 2,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "",
+      "2024 presidential election: GOP wins by 1-4",
+      "Will a Democrat win Michigan Presidential Election?",
+      "Will a Democrat win the popular vote and a Republican win the Presidency?",
+      "Will a Republican win Arizona Presidential Election?",
+      "Will Nikki Haley win the 2024 US Presidential Election?",
+      "Will a Republican win Nevada Presidential Election?",
+      "Will Donald Trump win the popular vote in the 2024 Presidential Election?",
+      "Kamala Harris wins the popular vote?",
+      "Will Ron DeSantis win the popular vote in the 2024 Presidential Election?"
+    ],
+    "buy_sell_ratio": 70.0
+  },
+  {
+    "wallet": "0xd235973291b2b75ff4070e9c0b01728c520b0f29",
+    "name": "zxgngl",
+    "pnl_all": 11447932.086431,
+    "vol_all": 40654925.811618,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 5,
+        "pnl": 7807265.589240883,
+        "vol": 40654925.811618
+      },
+      "POLITICS_ALL": {
+        "rank": 3,
+        "pnl": 11447932.086431,
+        "vol": 29556564.738811996
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "POLITICS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 1,
+    "n_recent_buys": 99,
+    "n_recent_sells": 0,
+    "total_position_size": 11077378.1828,
+    "unique_markets": 1,
+    "avg_position_size": 11077378.1828,
+    "efficiency": 0.2815878238095201,
+    "n_categories": 2,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "",
+      "Will Mike Tyson win his boxing match against Jake Paul?"
+    ],
+    "buy_sell_ratio": 99.0
+  },
+  {
+    "wallet": "0x6a72f61820b26b1fe4d956e17b6dc2a1ea3033ee",
+    "name": "kch123",
+    "pnl_all": 11010086.80787533,
+    "vol_all": 231052602.19063336,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 3,
+        "pnl": 10911691.564469479,
+        "vol": 231052602.19063336
+      },
+      "OVERALL_MONTH": {
+        "rank": 5,
+        "pnl": 2071417.6369203574,
+        "vol": 5648089.954654001
+      },
+      "SPORTS_ALL": {
+        "rank": 1,
+        "pnl": 11010086.80787533,
+        "vol": 230054191.49642235
+      },
+      "SPORTS_MONTH": {
+        "rank": 3,
+        "pnl": 2107569.391552327,
+        "vol": 5513549.381942998
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "SPORTS"
+    ],
+    "periods": [
+      "ALL",
+      "MONTH"
+    ],
+    "n_positions": 100,
+    "n_recent_buys": 99,
+    "n_recent_sells": 0,
+    "total_position_size": 44865768.9175,
+    "unique_markets": 100,
+    "avg_position_size": 448657.68917499995,
+    "efficiency": 0.04765186240487045,
+    "n_categories": 2,
+    "n_periods": 2,
+    "is_active": true,
+    "market_titles_sample": [
+      "Ravens vs. Packers",
+      "Will Club Atl\u00e9tico de Madrid win on 2026-01-18?",
+      "Bills vs. Jaguars",
+      "Bills vs. Patriots",
+      "Nicholls Colonels vs. Southeastern Louisiana Lions: O/U 141.5",
+      "Will Club Brugge KV win on 2026-01-20?",
+      "Spread: Grizzlies (-7.5)",
+      "Spread: Lakers (-2.5)",
+      "Spread: Celtics (-10.5)",
+      "Ravens vs. Dolphins"
+    ],
+    "buy_sell_ratio": 99.0
+  },
+  {
+    "wallet": "0x78b9ac44a6d7d7a076c14e0ad518b301b63c6b76",
+    "name": "Len9311238",
+    "pnl_all": 8709972.988069998,
+    "vol_all": 16415857.236186,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 4,
+        "pnl": 8709972.988069998,
+        "vol": 16415857.236186
+      },
+      "POLITICS_ALL": {
+        "rank": 4,
+        "pnl": 8709972.988069998,
+        "vol": 16415857.236186
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "POLITICS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 0,
+    "n_recent_buys": 88,
+    "n_recent_sells": 0,
+    "total_position_size": 0,
+    "unique_markets": 0,
+    "avg_position_size": 0.0,
+    "efficiency": 0.5305828908447331,
+    "n_categories": 2,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "",
+      "Will Donald Trump win the popular vote in the 2024 Presidential Election?",
+      "Will a Democrat win Michigan Presidential Election?",
+      "Will a Republican win Michigan Presidential Election?",
+      "Will Donald Trump win the 2024 US Presidential Election?",
+      "Will a Republican win the popular vote and the Presidency? ",
+      "Kamala Harris wins the popular vote?",
+      "Will Kamala Harris win the 2024 US Presidential Election?"
+    ],
+    "buy_sell_ratio": 88.0
+  },
+  {
+    "wallet": "0x863134d00841b2e200492805a01e1e2f5defaa53",
+    "name": "RepTrump",
+    "pnl_all": 7532409.671579,
+    "vol_all": 13983244.543425005,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 6,
+        "pnl": 7532409.671579,
+        "vol": 13983244.543425005
+      },
+      "POLITICS_ALL": {
+        "rank": 5,
+        "pnl": 7532409.671579,
+        "vol": 13983244.543424997
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "POLITICS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 0,
+    "n_recent_buys": 91,
+    "n_recent_sells": 0,
+    "total_position_size": 0,
+    "unique_markets": 0,
+    "avg_position_size": 0.0,
+    "efficiency": 0.5386739571196857,
+    "n_categories": 2,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "",
+      "Will Donald Trump win the popular vote in the 2024 Presidential Election?",
+      "Will a Democrat win Pennsylvania Presidential Election?",
+      "Which party wins 2024 US Presidential Election?",
+      "Will Kamala Harris win the 2024 US Presidential Election?",
+      "Will Donald Trump win the 2024 US Presidential Election?",
+      "Will a Republican win the popular vote and the Presidency? ",
+      "Kamala Harris wins the popular vote?",
+      "Will a Republican win Pennsylvania Presidential Election?"
+    ],
+    "buy_sell_ratio": 91.0
+  },
+  {
+    "wallet": "0xdb27bf2ac5d428a9c63dbc914611036855a6c56e",
+    "name": "DrPufferfish",
+    "pnl_all": 6330866.000526634,
+    "vol_all": 150558500.2039868,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 7,
+        "pnl": 6330866.000526634,
+        "vol": 150558500.2039868
+      },
+      "OVERALL_MONTH": {
+        "rank": 3,
+        "pnl": 2177699.875978642,
+        "vol": 42633783.17377203
+      },
+      "OVERALL_WEEK": {
+        "rank": 3,
+        "pnl": 808169.1840409352,
+        "vol": 17745667.560167003
+      },
+      "SPORTS_ALL": {
+        "rank": 2,
+        "pnl": 6186898.499868608,
+        "vol": 149805148.3030348
+      },
+      "SPORTS_MONTH": {
+        "rank": 5,
+        "pnl": 2033367.1805546167,
+        "vol": 41882167.92572402
+      },
+      "SPORTS_WEEK": {
+        "rank": 3,
+        "pnl": 808169.4348501228,
+        "vol": 17744785.890167024
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "SPORTS"
+    ],
+    "periods": [
+      "WEEK",
+      "ALL",
+      "MONTH"
+    ],
+    "n_positions": 100,
+    "n_recent_buys": 98,
+    "n_recent_sells": 2,
+    "total_position_size": 47740254.6982,
+    "unique_markets": 100,
+    "avg_position_size": 477402.546982,
+    "efficiency": 0.042049210054225766,
+    "n_categories": 2,
+    "n_periods": 3,
+    "is_active": true,
+    "market_titles_sample": [
+      "Will Jake Paul win by decision or technical decision?",
+      "Will the Houston Rockets win the 2026 NBA Finals?",
+      "Grizzlies vs. Thunder",
+      "Suns vs. Thunder",
+      "Magic vs. Cavaliers",
+      "Grizzlies vs. Nuggets",
+      "Clippers vs. Suns",
+      "Spurs vs. Celtics",
+      "Will Arsenal FC win on 2025-12-30?",
+      "Will Club Atl\u00e9tico de Madrid win on 2026-02-12?"
+    ],
+    "buy_sell_ratio": 49.0
+  },
+  {
+    "wallet": "0x8119010a6e589062aa03583bb3f39ca632d9f887",
+    "name": "PrincessCaro",
+    "pnl_all": 6083643.099591745,
+    "vol_all": 23538735.402510993,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 8,
+        "pnl": 6083643.099591745,
+        "vol": 23538735.402510993
+      },
+      "POLITICS_ALL": {
+        "rank": 6,
+        "pnl": 6083643.099591745,
+        "vol": 23538735.402510993
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "POLITICS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 1,
+    "n_recent_buys": 82,
+    "n_recent_sells": 0,
+    "total_position_size": 0.0223,
+    "unique_markets": 1,
+    "avg_position_size": 0.0223,
+    "efficiency": 0.25845241877109393,
+    "n_categories": 2,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "",
+      "Will a Democrat win Pennsylvania Presidential Election?",
+      "Will a Democrat win Michigan Presidential Election?",
+      "Which party wins 2024 US Presidential Election?",
+      "Favorite to win on Polymarket day before election?",
+      "Will a Democrat win the popular vote and a Republican win the Presidency?",
+      "Will Kamala Harris win the 2024 US Presidential Election?",
+      "Will a Democrat win Wisconsin Presidential Election?",
+      "Kamala Harris wins the popular vote?",
+      "Will a Republican win Michigan Presidential Election?"
+    ],
+    "buy_sell_ratio": 82.0
+  },
+  {
+    "wallet": "0xe9ad918c7678cd38b12603a762e638a5d1ee7091",
+    "name": "walletmobile",
+    "pnl_all": 5942685.45339684,
+    "vol_all": 32201693.091163002,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 9,
+        "pnl": 5942685.45339684,
+        "vol": 32201693.091163002
+      },
+      "POLITICS_ALL": {
+        "rank": 7,
+        "pnl": 5942685.45339684,
+        "vol": 32201693.09116299
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "POLITICS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 0,
+    "n_recent_buys": 0,
+    "n_recent_sells": 100,
+    "total_position_size": 0,
+    "unique_markets": 0,
+    "avg_position_size": 0.0,
+    "efficiency": 0.1845457453610621,
+    "n_categories": 2,
+    "n_periods": 1,
+    "is_active": false,
+    "market_titles_sample": [
+      "Will Donald Trump win the 2024 US Presidential Election?"
+    ],
+    "buy_sell_ratio": 0.0
+  },
+  {
+    "wallet": "0x885783760858e1bd5dd09a3c3f916cfa251ac270",
+    "name": "BetTom42",
+    "pnl_all": 5642135.735356,
+    "vol_all": 11215651.697315004,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 10,
+        "pnl": 5642135.735356,
+        "vol": 11215651.697315004
+      },
+      "POLITICS_ALL": {
+        "rank": 8,
+        "pnl": 5642135.735356,
+        "vol": 11215651.697315
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "POLITICS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 0,
+    "n_recent_buys": 91,
+    "n_recent_sells": 0,
+    "total_position_size": 0,
+    "unique_markets": 0,
+    "avg_position_size": 0.0,
+    "efficiency": 0.5030591077205716,
+    "n_categories": 2,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "",
+      "Will a Democrat win Wisconsin Presidential Election?",
+      "Kamala Harris wins the popular vote?",
+      "Will a Republican win Michigan Presidential Election?",
+      "Will Donald Trump win the 2024 US Presidential Election?",
+      "Will a Republican win the popular vote and the Presidency? ",
+      "Will Donald Trump win the popular vote in the 2024 Presidential Election?",
+      "Will a Republican win Wisconsin Presidential Election?"
+    ],
+    "buy_sell_ratio": 91.0
+  },
+  {
+    "wallet": "0x006cc834cc092684f1b56626e23bedb3835c16ea",
+    "name": "0x006cc834Cc092684F1B56626E23BEdB3835c16ea-1729683673397",
+    "pnl_all": 5174302.044757155,
+    "vol_all": 58663808.596668,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 11,
+        "pnl": 5159353.451220138,
+        "vol": 58663808.596668
+      },
+      "SPORTS_ALL": {
+        "rank": 3,
+        "pnl": 5174302.044757155,
+        "vol": 58505958.367521
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "SPORTS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 6,
+    "n_recent_buys": 36,
+    "n_recent_sells": 14,
+    "total_position_size": 327678.3224,
+    "unique_markets": 5,
+    "avg_position_size": 54613.053733333334,
+    "efficiency": 0.08820262728477275,
+    "n_categories": 2,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "",
+      "Spread: Howard Bison (-14.5)",
+      "California vs. Virginia Tech",
+      "Tulane Green Wave vs. Florida Atlantic Owls: O/U 155.5",
+      "East Carolina Pirates vs. Wichita State Shockers: O/U 144.5",
+      "Holy Cross Crusaders vs. Navy Midshipmen: O/U 132.5",
+      "Spread: Magic (-7.5)",
+      "Spread: Montana Grizzlies (-4.5)",
+      "Will Ant\u00f3nio Jos\u00e9 Seguro win the 2026 Portugal presidential election?",
+      "Tulane Green Wave vs. Florida Atlantic Owls: O/U 156.5"
+    ],
+    "buy_sell_ratio": 2.5714285714285716
+  },
+  {
+    "wallet": "0x23786fdad0073692157c6d7dc81f281843a35fcb",
+    "name": "mikatrade77",
+    "pnl_all": 5147998.544602999,
+    "vol_all": 10884993.208775003,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 12,
+        "pnl": 5147998.544602999,
+        "vol": 10884993.208775003
+      },
+      "POLITICS_ALL": {
+        "rank": 9,
+        "pnl": 5147998.544602999,
+        "vol": 10884993.208775
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "POLITICS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 0,
+    "n_recent_buys": 91,
+    "n_recent_sells": 0,
+    "total_position_size": 0,
+    "unique_markets": 0,
+    "avg_position_size": 0.0,
+    "efficiency": 0.47294458029178277,
+    "n_categories": 2,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "",
+      "Will a Democrat win the popular vote and a Republican win the Presidency?",
+      "Will a Democrat win Wisconsin Presidential Election?",
+      "Kamala Harris wins the popular vote?",
+      "Will Donald Trump win the 2024 US Presidential Election?",
+      "Will a Republican win the popular vote and the Presidency? ",
+      "Will Donald Trump win the popular vote in the 2024 Presidential Election?",
+      "Will a Republican win Wisconsin Presidential Election?"
+    ],
+    "buy_sell_ratio": 91.0
+  },
+  {
+    "wallet": "0x2005d16a84ceefa912d4e380cd32e7ff827875ea",
+    "name": "RN1",
+    "pnl_all": 5100627.635716424,
+    "vol_all": 225977750.15818903,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 13,
+        "pnl": 5097047.492486438,
+        "vol": 225977750.15818903
+      },
+      "OVERALL_MONTH": {
+        "rank": 16,
+        "pnl": 811384.6422452843,
+        "vol": 49442351.1678929
+      },
+      "OVERALL_WEEK": {
+        "rank": 5,
+        "pnl": 479473.6329340488,
+        "vol": 17984669.957255993
+      },
+      "SPORTS_ALL": {
+        "rank": 4,
+        "pnl": 5100627.635716424,
+        "vol": 225773640.04554304
+      },
+      "SPORTS_MONTH": {
+        "rank": 15,
+        "pnl": 811384.642245275,
+        "vol": 49442351.167892896
+      },
+      "SPORTS_WEEK": {
+        "rank": 5,
+        "pnl": 479473.6329340292,
+        "vol": 17984669.95725599
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "SPORTS"
+    ],
+    "periods": [
+      "WEEK",
+      "ALL",
+      "MONTH"
+    ],
+    "n_positions": 100,
+    "n_recent_buys": 100,
+    "n_recent_sells": 0,
+    "total_position_size": 5761843.7377,
+    "unique_markets": 98,
+    "avg_position_size": 57618.437377,
+    "efficiency": 0.02257137099624136,
+    "n_categories": 2,
+    "n_periods": 3,
+    "is_active": true,
+    "market_titles_sample": [
+      "VfL Wolfsburg vs. 1. FC Heidenheim 1846: O/U 3.5",
+      "Counter-Strike: Astralis vs FURIA - Map 2 Winner",
+      "Atalanta BC vs. SSC Napoli: O/U 2.5",
+      "Will SC Braga vs. Vit\u00f3ria SC end in a draw?",
+      "PSV vs. FC Bayern M\u00fcnchen: O/U 4.5",
+      "Will Egypt win on 2026-01-05?",
+      "Venezia FC vs. Delfino Pescara 1936: O/U 3.5",
+      "Will FC Bayern M\u00fcnchen win on 2025-12-14?",
+      "Will Wolverhampton Wanderers FC win on 2026-02-18?",
+      "Bengals vs. Bills"
+    ],
+    "buy_sell_ratio": 100.0
+  },
+  {
+    "wallet": "0xd0c042c08f755ff940249f62745e82d356345565",
+    "name": "alexmulti",
+    "pnl_all": 4804855.613376001,
+    "vol_all": 9955068.653842,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 14,
+        "pnl": 4804855.613376001,
+        "vol": 9955068.653842
+      },
+      "POLITICS_ALL": {
+        "rank": 10,
+        "pnl": 4804855.613376001,
+        "vol": 9955068.653841998
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "POLITICS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 0,
+    "n_recent_buys": 93,
+    "n_recent_sells": 0,
+    "total_position_size": 0,
+    "unique_markets": 0,
+    "avg_position_size": 0.0,
+    "efficiency": 0.4826541915933089,
+    "n_categories": 2,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "",
+      "Which party wins 2024 US Presidential Election?",
+      "Kamala Harris wins the popular vote?",
+      "Will a Democrat win the popular vote and the Presidency? ",
+      "Will Donald Trump win the 2024 US Presidential Election?",
+      "Will a Republican win the popular vote and the Presidency? ",
+      "Will Donald Trump win the popular vote in the 2024 Presidential Election?"
+    ],
+    "buy_sell_ratio": 93.0
+  },
+  {
+    "wallet": "0x204f72f35326db932158cba6adff0b9a1da95e14",
+    "name": "swisstony",
+    "pnl_all": 4776811.018101783,
+    "vol_all": 411896815.881777,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 15,
+        "pnl": 4776811.018101783,
+        "vol": 411896815.8817764
+      },
+      "OVERALL_MONTH": {
+        "rank": 11,
+        "pnl": 948344.9827359826,
+        "vol": 91373153.13758802
+      },
+      "SPORTS_ALL": {
+        "rank": 5,
+        "pnl": 4776811.018101782,
+        "vol": 411896815.881777
+      },
+      "SPORTS_MONTH": {
+        "rank": 11,
+        "pnl": 948344.982735978,
+        "vol": 91373153.137588
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "SPORTS"
+    ],
+    "periods": [
+      "ALL",
+      "MONTH"
+    ],
+    "n_positions": 100,
+    "n_recent_buys": 100,
+    "n_recent_sells": 0,
+    "total_position_size": 3958001.8317,
+    "unique_markets": 71,
+    "avg_position_size": 39580.018317,
+    "efficiency": 0.011597105959354703,
+    "n_categories": 2,
+    "n_periods": 2,
+    "is_active": true,
+    "market_titles_sample": [
+      "Will SC Braga vs. Vit\u00f3ria SC end in a draw?",
+      "Spread: Suns (-1.5)",
+      "Will Paris Saint-Germain FC win on 2026-02-21?",
+      "Will CA Osasuna vs. Real Madrid CF end in a draw?",
+      "Miami Hurricanes vs. Virginia Cavaliers",
+      "Will Club Atl\u00e9tico de Madrid vs. Club Brugge KV end in a draw?",
+      "Delray Beach Open: Flavio Cobolli vs Sebastian Korda",
+      "Toulouse FC vs. Paris FC: O/U 1.5",
+      "Will Sporting CP win on 2026-02-21?",
+      "Manchester City FC vs. Newcastle United FC: O/U 4.5"
+    ],
+    "buy_sell_ratio": 100.0
+  },
+  {
+    "wallet": "0x94a428cfa4f84b264e01f70d93d02bc96cb36356",
+    "name": "GCottrell93",
+    "pnl_all": 4208333.830429147,
+    "vol_all": 15355173.994817995,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 16,
+        "pnl": 4161199.326182707,
+        "vol": 15355173.994817995
+      },
+      "POLITICS_ALL": {
+        "rank": 11,
+        "pnl": 4208333.830429147,
+        "vol": 15264530.717421
+      },
+      "POLITICS_WEEK": {
+        "rank": 13,
+        "pnl": 39623.78306847438,
+        "vol": 1031336.518772
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "POLITICS"
+    ],
+    "periods": [
+      "WEEK",
+      "ALL"
+    ],
+    "n_positions": 21,
+    "n_recent_buys": 95,
+    "n_recent_sells": 0,
+    "total_position_size": 1969147.1136999999,
+    "unique_markets": 21,
+    "avg_position_size": 93768.91017619047,
+    "efficiency": 0.27406617677203526,
+    "n_categories": 2,
+    "n_periods": 2,
+    "is_active": true,
+    "market_titles_sample": [
+      "",
+      "Will the US not strike Iran by February 28, 2026?",
+      "US strikes Iran by March 31, 2026?",
+      "US strikes Iran by February 28, 2026?",
+      "Will CDU win the most seats in the 2026 Baden-W\u00fcrttemberg parliamentary elections?",
+      "US strikes Iran by March 15, 2026?",
+      "Will Fidesz \u2013 Hungarian Civic Alliance (Fidesz) win the most seats in the next Hungarian parliamentary election?",
+      "Will Jason Miyares win the 2025 Virginia Attorney General election?",
+      "US strikes Iran by February 26, 2026?",
+      "US strikes Iran by February 27, 2026?"
+    ],
+    "buy_sell_ratio": 95.0
+  },
+  {
+    "wallet": "0x16f91db2592924cfed6e03b7e5cb5bb1e32299e3",
+    "name": "Jenzigo",
+    "pnl_all": 4049827.0941029997,
+    "vol_all": 9459809.487353005,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 17,
+        "pnl": 4049827.0941029997,
+        "vol": 9459809.487353003
+      },
+      "POLITICS_ALL": {
+        "rank": 12,
+        "pnl": 4049827.0941029997,
+        "vol": 9459809.487353005
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "POLITICS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 0,
+    "n_recent_buys": 88,
+    "n_recent_sells": 0,
+    "total_position_size": 0,
+    "unique_markets": 0,
+    "avg_position_size": 0.0,
+    "efficiency": 0.42810873723379833,
+    "n_categories": 2,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "",
+      "Will a Democrat win Pennsylvania Presidential Election?",
+      "Will a Democrat win Michigan Presidential Election?",
+      "Which party wins 2024 US Presidential Election?",
+      "Will Kamala Harris win the 2024 US Presidential Election?",
+      "Kamala Harris wins the popular vote?",
+      "Will a Democrat win the popular vote and the Presidency? ",
+      "Will a Republican win Michigan Presidential Election?",
+      "Will Donald Trump win the 2024 US Presidential Election?",
+      "Will a Republican win the popular vote and the Presidency? "
+    ],
+    "buy_sell_ratio": 88.0
+  },
+  {
+    "wallet": "0xac44cb78be973ec7d91b69678c4bdfa7009afbd7",
+    "name": "blackwall",
+    "pnl_all": 3967717.22468709,
+    "vol_all": 14869434.037083002,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 30,
+        "pnl": 2310857.9291402893,
+        "vol": 14869434.037083002
+      },
+      "OVERALL_MONTH": {
+        "rank": 1,
+        "pnl": 2310857.9291402893,
+        "vol": 14869434.037083002
+      },
+      "OVERALL_WEEK": {
+        "rank": 1,
+        "pnl": 3967717.22468709,
+        "vol": 13673877.922244
+      },
+      "SPORTS_ALL": {
+        "rank": 14,
+        "pnl": 2310857.9291402893,
+        "vol": 14869434.037083002
+      },
+      "SPORTS_MONTH": {
+        "rank": 1,
+        "pnl": 2310857.9291402893,
+        "vol": 14869434.037083002
+      },
+      "SPORTS_WEEK": {
+        "rank": 1,
+        "pnl": 3967717.22468709,
+        "vol": 13673877.922244003
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "SPORTS"
+    ],
+    "periods": [
+      "WEEK",
+      "ALL",
+      "MONTH"
+    ],
+    "n_positions": 3,
+    "n_recent_buys": 98,
+    "n_recent_sells": 0,
+    "total_position_size": 4499472.2743,
+    "unique_markets": 3,
+    "avg_position_size": 1499824.0914333332,
+    "efficiency": 0.26683713817163235,
+    "n_categories": 2,
+    "n_periods": 3,
+    "is_active": true,
+    "market_titles_sample": [
+      "Will Newcastle United FC win on 2026-02-18?",
+      "Will Athletic Club win on 2026-02-15?",
+      "Will Arsenal FC win on 2026-02-18?",
+      "Will Sheffield United FC win on 2026-02-09?",
+      "Will BV Borussia 09 Dortmund win on 2026-02-17?"
+    ],
+    "buy_sell_ratio": 98.0
+  },
+  {
+    "wallet": "0x16b29c50f2439faf627209b2ac0c7bbddaa8a881",
+    "name": "SeriouslySirius",
+    "pnl_all": 3647643.438599919,
+    "vol_all": 192646024.9352283,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 18,
+        "pnl": 3647643.438599919,
+        "vol": 192646024.9352283
+      },
+      "SPORTS_ALL": {
+        "rank": 6,
+        "pnl": 3647643.438599919,
+        "vol": 192646024.9352283
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "SPORTS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 100,
+    "n_recent_buys": 19,
+    "n_recent_sells": 0,
+    "total_position_size": 25657719.5403,
+    "unique_markets": 100,
+    "avg_position_size": 256577.195403,
+    "efficiency": 0.01893443396938159,
+    "n_categories": 2,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "Spread: Texans (-1.5)",
+      "Miami vs. Ole Miss: 1H Moneyline",
+      "Spread: Bills (-1.5)",
+      "Warriors vs. Bulls",
+      "Wizards vs. 76ers: O/U 233.5",
+      "Flames vs. Predators",
+      "Browns vs. Bengals: O/U 46.5",
+      "Suns vs. Rockets: O/U 222.5",
+      "Boise State vs. Washington: O/U 52.5",
+      "Packers vs. Bears: O/U 44.5"
+    ],
+    "buy_sell_ratio": 19.0
+  },
+  {
+    "wallet": "0x14964aefa2cd7caff7878b3820a690a03c5aa429",
+    "name": "gmpm",
+    "pnl_all": 3598676.5186220002,
+    "vol_all": 82271390.435655,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 19,
+        "pnl": 3579756.7214917,
+        "vol": 82271390.435655
+      },
+      "OVERALL_MONTH": {
+        "rank": 10,
+        "pnl": 1215477.08305528,
+        "vol": 8661728.019386997
+      },
+      "SPORTS_ALL": {
+        "rank": 7,
+        "pnl": 3598676.5186220002,
+        "vol": 82227390.90744501
+      },
+      "SPORTS_MONTH": {
+        "rank": 9,
+        "pnl": 1234396.8801855799,
+        "vol": 8617728.491177
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "SPORTS"
+    ],
+    "periods": [
+      "ALL",
+      "MONTH"
+    ],
+    "n_positions": 23,
+    "n_recent_buys": 66,
+    "n_recent_sells": 24,
+    "total_position_size": 227500.6789,
+    "unique_markets": 23,
+    "avg_position_size": 9891.333865217392,
+    "efficiency": 0.04374153031285583,
+    "n_categories": 2,
+    "n_periods": 2,
+    "is_active": true,
+    "market_titles_sample": [
+      "Will Jake Paul win his boxing match against Anthony Joshua?",
+      "Clippers vs. Rockets: O/U 210.5",
+      "Kings vs. Jazz: O/U 229.5",
+      "Seahawks vs. Patriots: O/U 46.5",
+      "Spread: Patriots (-7.5)",
+      "New Mexico vs. Minnesota",
+      "Spread: Heat (-5.5)",
+      "Spread: Houston (-1.5)",
+      "Penn State vs. Ohio State",
+      "Spread: Vikings (-9.5)"
+    ],
+    "buy_sell_ratio": 2.75
+  },
+  {
+    "wallet": "0x507e52ef684ca2dd91f90a9d26d149dd3288beae",
+    "name": "GamblingIsAllYouNeed",
+    "pnl_all": 3399536.8561004056,
+    "vol_all": 217748183.0384617,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 20,
+        "pnl": 3399536.8561004056,
+        "vol": 217748183.0384617
+      },
+      "OVERALL_MONTH": {
+        "rank": 21,
+        "pnl": 664619.0911837879,
+        "vol": 41719750.02358296
+      },
+      "OVERALL_WEEK": {
+        "rank": 16,
+        "pnl": 205509.776020752,
+        "vol": 12123457.665249003
+      },
+      "SPORTS_ALL": {
+        "rank": 8,
+        "pnl": 3399535.3061004058,
+        "vol": 217748172.03846195
+      },
+      "SPORTS_MONTH": {
+        "rank": 19,
+        "pnl": 664619.0911837909,
+        "vol": 41719750.02358292
+      },
+      "SPORTS_WEEK": {
+        "rank": 14,
+        "pnl": 205509.77602075227,
+        "vol": 12123457.665249003
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "SPORTS"
+    ],
+    "periods": [
+      "WEEK",
+      "ALL",
+      "MONTH"
+    ],
+    "n_positions": 100,
+    "n_recent_buys": 82,
+    "n_recent_sells": 18,
+    "total_position_size": 6364340.2551,
+    "unique_markets": 92,
+    "avg_position_size": 63643.402551,
+    "efficiency": 0.015612239829803459,
+    "n_categories": 2,
+    "n_periods": 3,
+    "is_active": true,
+    "market_titles_sample": [
+      "Dota 2: Aurora vs PARIVISION - Game 1 Winner",
+      "Dota 2: Aurora vs PARIVISION - Game 2 Winner",
+      "Will Aston Villa FC win on 2026-02-21?",
+      "Venezia FC vs. Delfino Pescara 1936: O/U 3.5",
+      "Miami Hurricanes vs. Virginia Cavaliers",
+      "Delray Beach Open: Flavio Cobolli vs Sebastian Korda",
+      "Le Moyne Dolphins vs. Stonehill Skyhawks",
+      "Eastern Kentucky Colonels vs. Bellarmine Knights",
+      "Missouri Tigers vs. Arkansas Razorbacks",
+      "1. FC Union Berlin vs. Bayer 04 Leverkusen: O/U 2.5"
+    ],
+    "buy_sell_ratio": 4.555555555555555
+  },
+  {
+    "wallet": "0x17db3fcd93ba12d38382a0cade24b200185c5f6d",
+    "name": "fengdubiying",
+    "pnl_all": 3167056.768515911,
+    "vol_all": 17303665.903119996,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 21,
+        "pnl": 3133968.2010023133,
+        "vol": 17303665.903119996
+      },
+      "SPORTS_ALL": {
+        "rank": 9,
+        "pnl": 3167056.768515911,
+        "vol": 15750830.394724999
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "SPORTS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 26,
+    "n_recent_buys": 11,
+    "n_recent_sells": 83,
+    "total_position_size": 1023108.0233,
+    "unique_markets": 26,
+    "avg_position_size": 39350.308588461536,
+    "efficiency": 0.18302808123132244,
+    "n_categories": 2,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "Magic vs. Knicks",
+      "",
+      "Timberwolves vs. Cavaliers",
+      "LoL: KT Rolster vs Team Secret Whales (BO1)",
+      "Trail Blazers vs. Pelicans",
+      "Bucks vs. Hornets",
+      "Rangers vs. Bruins",
+      "Stars vs. Sharks",
+      "Will Bitcoin reach $126,000 September 29-October 5?",
+      "Warriors vs. Spurs"
+    ],
+    "buy_sell_ratio": 0.13253012048192772
+  },
+  {
+    "wallet": "0x033a07b3de5947eab4306676ad74eb546da30d50",
+    "name": "RandomGenius",
+    "pnl_all": 3115550.407118868,
+    "vol_all": 8800612.866229001,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 22,
+        "pnl": 3115550.407118868,
+        "vol": 8800612.866228998
+      },
+      "POLITICS_ALL": {
+        "rank": 13,
+        "pnl": 3115550.407118868,
+        "vol": 8800612.866229001
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "POLITICS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 1,
+    "n_recent_buys": 98,
+    "n_recent_sells": 0,
+    "total_position_size": 0.0317,
+    "unique_markets": 1,
+    "avg_position_size": 0.0317,
+    "efficiency": 0.3540151639977613,
+    "n_categories": 2,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "",
+      "Will Kamala Harris win the 2024 US Presidential Election?",
+      "Will Donald Trump win the 2024 US Presidential Election?"
+    ],
+    "buy_sell_ratio": 98.0
+  },
+  {
+    "wallet": "0xdbade4c82fb72780a0db9a38f821d8671aba9c95",
+    "name": "SwissMiss",
+    "pnl_all": 3110015.7245633793,
+    "vol_all": 69839996.04354599,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 23,
+        "pnl": 3110015.7245633793,
+        "vol": 69839996.04354599
+      },
+      "POLITICS_ALL": {
+        "rank": 25,
+        "pnl": 1326112.9057262125,
+        "vol": 18870287.810567997
+      },
+      "POLITICS_MONTH": {
+        "rank": 4,
+        "pnl": 246274.38230118738,
+        "vol": 4595040.911967
+      },
+      "POLITICS_WEEK": {
+        "rank": 17,
+        "pnl": 35453.9453797224,
+        "vol": 2121144.664141
+      },
+      "SPORTS_ALL": {
+        "rank": 22,
+        "pnl": 1711297.1633528315,
+        "vol": 48528814.15923398
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "POLITICS",
+      "SPORTS"
+    ],
+    "periods": [
+      "WEEK",
+      "ALL",
+      "MONTH"
+    ],
+    "n_positions": 69,
+    "n_recent_buys": 93,
+    "n_recent_sells": 1,
+    "total_position_size": 3603813.5757,
+    "unique_markets": 68,
+    "avg_position_size": 52229.18225652174,
+    "efficiency": 0.04453058277128554,
+    "n_categories": 3,
+    "n_periods": 3,
+    "is_active": true,
+    "market_titles_sample": [
+      "",
+      "UFC Fight Night: Michel Pereira vs. Zachary Reese (Middleweight, Main Card)",
+      "US confirms Havana Syndrome\u2013causing device by March 31?",
+      "UFC Fight Night: Juliana Miller vs. Carli Judice (Women's Flyweight, Prelims)",
+      "US strikes Iran by March 6, 2026?",
+      "Will Graham Platner be the Democratic nominee for Senate in Maine?",
+      "Will the US acquire part of Greenland in 2026?",
+      "Will Russia capture all of Rodynske by March 31?",
+      "Will Russia capture all of Pokrovsk by February 28?",
+      "Starmer out by June 30, 2026?"
+    ],
+    "buy_sell_ratio": 93.0
+  },
+  {
+    "wallet": "0xed2239a9150c3920000d0094d28fa51c7db03dd0",
+    "name": "Michie",
+    "pnl_all": 3095007.670859059,
+    "vol_all": 8451753.190502003,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 24,
+        "pnl": 3095007.670859059,
+        "vol": 8451753.190502001
+      },
+      "POLITICS_ALL": {
+        "rank": 14,
+        "pnl": 3095007.670859059,
+        "vol": 8451753.190502003
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "POLITICS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 1,
+    "n_recent_buys": 88,
+    "n_recent_sells": 0,
+    "total_position_size": 3064.3846,
+    "unique_markets": 1,
+    "avg_position_size": 3064.3846,
+    "efficiency": 0.36619711923642045,
+    "n_categories": 2,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "",
+      "GOP wins popular vote by 0-1%?",
+      "Will Donald Trump win the popular vote in the 2024 Presidential Election?",
+      "Will a Democrat win Pennsylvania Presidential Election?",
+      "Will a Democrat win Michigan Presidential Election?",
+      "Which party wins 2024 US Presidential Election?",
+      "Favorite to win on Polymarket day before election?",
+      "Will a Republican win Michigan Presidential Election?",
+      "Will Donald Trump win the 2024 US Presidential Election?",
+      "Will a Republican win the popular vote and the Presidency? "
+    ],
+    "buy_sell_ratio": 88.0
+  },
+  {
+    "wallet": "0xe90bec87d9ef430f27f9dcfe72c34b76967d5da2",
+    "name": "gmanas",
+    "pnl_all": 3092264.4307467365,
+    "vol_all": 485311541.7427651,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 25,
+        "pnl": 3092264.4307467365,
+        "vol": 485311541.7427651
+      },
+      "SPORTS_ALL": {
+        "rank": 10,
+        "pnl": 3043783.616144371,
+        "vol": 481608208.8044872
+      },
+      "FINANCE_MONTH": {
+        "rank": 44,
+        "pnl": 11465.603840383132,
+        "vol": 91552.507007
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "SPORTS",
+      "FINANCE"
+    ],
+    "periods": [
+      "ALL",
+      "MONTH"
+    ],
+    "n_positions": 100,
+    "n_recent_buys": 90,
+    "n_recent_sells": 0,
+    "total_position_size": 10048167.5726,
+    "unique_markets": 100,
+    "avg_position_size": 100481.675726,
+    "efficiency": 0.006371710055858845,
+    "n_categories": 3,
+    "n_periods": 2,
+    "is_active": true,
+    "market_titles_sample": [
+      "Aston Villa FC vs. Newcastle United FC: O/U 3.5",
+      "Counter-Strike: Aurora Gaming vs FUT Esports (BO3) - PGL Cluj-Napoca Group Stage",
+      "Spread: Chelsea FC (-1.5)",
+      "Spread: Texas Tech Red Raiders (-8.5)",
+      "T20 World Cup: Nepal vs Scotland (Game 1)",
+      "Will Pisa SC win on 2026-02-13?",
+      "Spread: Nuggets (-1.5)",
+      "Counter-Strike: Vitality vs TheMongolz (BO3) - PGL Cluj-Napoca Group Stage",
+      "Delray Beach Open: Terence Atmane vs Flavio Cobolli",
+      "Spread: Yale Bulldogs (-9.5)"
+    ],
+    "buy_sell_ratio": 90.0
+  },
+  {
+    "wallet": "0x9d84ce0306f8551e02efef1680475fc0f1dc1344",
+    "name": "ImJustKen",
+    "pnl_all": 2901968.830782991,
+    "vol_all": 458484068.68264323,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 26,
+        "pnl": 2901968.830782991,
+        "vol": 458484068.68264323
+      },
+      "POLITICS_ALL": {
+        "rank": 21,
+        "pnl": 1714746.196289028,
+        "vol": 356313592.80779856
+      },
+      "ECONOMICS_ALL": {
+        "rank": 5,
+        "pnl": 425568.0573826397,
+        "vol": 41746916.842860006
+      },
+      "CULTURE_ALL": {
+        "rank": 2,
+        "pnl": 250695.43667342397,
+        "vol": 13946266.462896002
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "POLITICS",
+      "ECONOMICS",
+      "CULTURE"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 100,
+    "n_recent_buys": 61,
+    "n_recent_sells": 28,
+    "total_position_size": 9913114.1451,
+    "unique_markets": 100,
+    "avg_position_size": 99131.14145099999,
+    "efficiency": 0.006329486734667102,
+    "n_categories": 4,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "Will Rahm Emanuel win the 2028 Democratic presidential nomination?",
+      "Will Trump nominate Larry Kudlow as the next Fed chair?",
+      "Will AV (Green Alliance) win the most seats in the 2026 Colombian Senate election?",
+      "Will the government shutdown last 4 days or more?",
+      "Will the Iranian regime fall by January 31?",
+      "US x Iran nuclear talks resume by March 31? ",
+      "Will Andy Beshear win the 2028 Democratic presidential nomination?",
+      "Will Raphael Warnock win the 2028 Democratic presidential nomination?",
+      "Will the Democrats win the Maine governor race in 2026?",
+      "Will Kristi Noem be the first to leave the Trump Cabinet before 2027?"
+    ],
+    "buy_sell_ratio": 2.1785714285714284
+  },
+  {
+    "wallet": "0xd38b71f3e8ed1af71983e5c309eac3dfa9b35029",
+    "name": "primm",
+    "pnl_all": 2621797.599575944,
+    "vol_all": 31792207.344876006,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 27,
+        "pnl": 2621797.599575944,
+        "vol": 31792207.344876006
+      },
+      "SPORTS_ALL": {
+        "rank": 11,
+        "pnl": 2621797.599575944,
+        "vol": 31792207.344875995
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "SPORTS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 100,
+    "n_recent_buys": 79,
+    "n_recent_sells": 0,
+    "total_position_size": 11536711.0367,
+    "unique_markets": 100,
+    "avg_position_size": 115367.11036699999,
+    "efficiency": 0.08246667402282473,
+    "n_categories": 2,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "Bowling vs. UMass",
+      "Spread: Mississippi State (-3.5)",
+      "Cardinals vs. Cowboys: O/U 53.5",
+      "Raiders vs. Broncos",
+      "Bills vs. Jaguars",
+      "Packers vs. Bears: O/U 44.5",
+      "Buccaneers vs. Panthers",
+      "Spread: Virginia (-10.5)",
+      "West Virginia vs. BYU",
+      "Florida Gators vs. Ole Miss"
+    ],
+    "buy_sell_ratio": 79.0
+  },
+  {
+    "wallet": "0x343d4466dc323b850e5249394894c7381d91456e",
+    "name": "tazcot",
+    "pnl_all": 2604547.667341,
+    "vol_all": 8132604.965827001,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 28,
+        "pnl": 2604547.667341,
+        "vol": 8132604.965826999
+      },
+      "SPORTS_ALL": {
+        "rank": 12,
+        "pnl": 2604547.667341,
+        "vol": 8132604.965827001
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "SPORTS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 0,
+    "n_recent_buys": 85,
+    "n_recent_sells": 0,
+    "total_position_size": 0,
+    "unique_markets": 0,
+    "avg_position_size": 0.0,
+    "efficiency": 0.32025995093641496,
+    "n_categories": 2,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "Orioles vs. Braves",
+      "Yankees vs. Mets",
+      "Rangers vs. Padres",
+      "Brewers vs. Marlins",
+      "Cardinals vs. Cubs",
+      "Reds vs. Phillies",
+      "Royals vs. Diamondbacks",
+      "Red Sox vs. Nationals",
+      "Angels vs. Blue Jays",
+      "Pirates vs. Mariners"
+    ],
+    "buy_sell_ratio": 85.0
+  },
+  {
+    "wallet": "0xb786b8b6335e77dfad19928313e97753039cb18d",
+    "name": "0xb786b8b6335e77dfad19928313e97753039cb18d",
+    "pnl_all": 2335446.629801085,
+    "vol_all": 98207557.70503886,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 29,
+        "pnl": 2335441.398989085,
+        "vol": 98207557.70503886
+      },
+      "SPORTS_ALL": {
+        "rank": 13,
+        "pnl": 2335446.629801085,
+        "vol": 98207347.2988349
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "SPORTS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 100,
+    "n_recent_buys": 81,
+    "n_recent_sells": 1,
+    "total_position_size": 42078.273,
+    "unique_markets": 90,
+    "avg_position_size": 420.78273,
+    "efficiency": 0.02378072201749965,
+    "n_categories": 2,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "Will Olympique Lyonnais win on 2026-02-07?",
+      "Wimbledon: Fritz vs. Fokina ",
+      "Will Seattle beat New England in Super Bowl LX?",
+      "Pelicans vs. Lakers",
+      "Will Real Madrid beat Atletico Madrid?",
+      "Will Arsenal win on 2025-05-07?",
+      "Will Liverpool win on 2025-10-19?",
+      "Will Chelsea beat Esperance Sportive?",
+      "Blues vs. Utah",
+      "Bucks vs. Lakers"
+    ],
+    "buy_sell_ratio": 81.0
+  },
+  {
+    "wallet": "0x492442eab586f242b53bda933fd5de859c8a3782",
+    "name": "0x492442EaB586F242B53bDa933fD5dE859c8A3782-1766317541188",
+    "pnl_all": 2309678.316866277,
+    "vol_all": 47167096.88457601,
+    "rankings": {
+      "OVERALL_MONTH": {
+        "rank": 2,
+        "pnl": 2309678.316866277,
+        "vol": 47167096.88457601
+      },
+      "SPORTS_MONTH": {
+        "rank": 2,
+        "pnl": 2309678.316866277,
+        "vol": 47167096.88457599
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "SPORTS"
+    ],
+    "periods": [
+      "MONTH"
+    ],
+    "n_positions": 34,
+    "n_recent_buys": 98,
+    "n_recent_sells": 0,
+    "total_position_size": 6794242.865,
+    "unique_markets": 34,
+    "avg_position_size": 199830.67250000002,
+    "efficiency": 0.04896799823229228,
+    "n_categories": 2,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "Kings vs. Spurs: O/U 230.5",
+      "Nets vs. Thunder: O/U 213.5",
+      "Manchester City FC vs. Newcastle United FC: O/U 3.5",
+      "Fortuna Sittard vs. SBV Excelsior: O/U 2.5",
+      "Mavericks vs. Timberwolves: O/U 239.5",
+      "Nuggets vs. Trail Blazers: O/U 240.5",
+      "Nuggets vs. Clippers: O/U 225.5",
+      "Spread: Cavaliers (-6.5)",
+      "Venezia FC vs. Delfino Pescara 1936: O/U 3.5",
+      "Mantova 1911 vs. UC Sampdoria: O/U 2.5"
+    ],
+    "buy_sell_ratio": 98.0
+  },
+  {
+    "wallet": "0x5bffcf561bcae83af680ad600cb99f1184d6ffbe",
+    "name": "YatSen",
+    "pnl_all": 2300443.5259651723,
+    "vol_all": 322730773.617315,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 31,
+        "pnl": 2300443.5259651723,
+        "vol": 322730773.617315
+      },
+      "POLITICS_ALL": {
+        "rank": 23,
+        "pnl": 1625671.9498739867,
+        "vol": 281586986.48612905
+      },
+      "ECONOMICS_ALL": {
+        "rank": 12,
+        "pnl": 264392.47628801473,
+        "vol": 21018372.089729995
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "POLITICS",
+      "ECONOMICS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 40,
+    "n_recent_buys": 98,
+    "n_recent_sells": 1,
+    "total_position_size": 2635207.1942,
+    "unique_markets": 40,
+    "avg_position_size": 65880.179855,
+    "efficiency": 0.007128057545243495,
+    "n_categories": 3,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "",
+      "Fed decreases interest rates by 50+ bps after September 2025 meeting?",
+      "LoL: Gen.G vs Top Esports (BO3)",
+      "Ethereum Up or Down - October 21, 10:30PM-10:45PM ET",
+      "LoL: 100 Thieves vs T1 (BO3)",
+      "AFC U23 Final: China vs. Japan",
+      "Will a candidate from another party win New Hampshire Presidential Election?",
+      "Will Mar\u00eda Corina Machado win the Nobel Peace Prize in 2025?",
+      "Argentina wins Copa America 2024?",
+      "US military action against Iran by Sunday?"
+    ],
+    "buy_sell_ratio": 98.0
+  },
+  {
+    "wallet": "0x7fb7ad0d194d7123e711e7db6c9d418fac14e33d",
+    "name": "0x7fB7Ad0d194D7123e711e7db6C9D418fAc14E33d-1750343282446",
+    "pnl_all": 2266615.0488177617,
+    "vol_all": 120653851.55647203,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 32,
+        "pnl": 2266615.0488177617,
+        "vol": 120653851.55647202
+      },
+      "SPORTS_ALL": {
+        "rank": 15,
+        "pnl": 2266615.0488177617,
+        "vol": 120653851.55647203
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "SPORTS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 100,
+    "n_recent_buys": 83,
+    "n_recent_sells": 0,
+    "total_position_size": 31368916.5556,
+    "unique_markets": 100,
+    "avg_position_size": 313689.16555599996,
+    "efficiency": 0.01878609774638543,
+    "n_categories": 2,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "Raiders vs. Commanders",
+      "Mets vs. Padres",
+      "Kings vs. Wild",
+      "Spread: Oregon (-17.5)",
+      "Jets vs. Dolphins",
+      "Cubs vs. Braves",
+      "Missouri State vs. Middle Tennessee",
+      "Spread: Steelers (-5.5)",
+      "Cardinals vs. Dodgers",
+      "Padres vs. Mets"
+    ],
+    "buy_sell_ratio": 83.0
+  },
+  {
+    "wallet": "0xa9878e59934ab507f9039bcb917c1bae0451141d",
+    "name": "ilovecircle",
+    "pnl_all": 2240457.1024424834,
+    "vol_all": 53213991.24867702,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 33,
+        "pnl": 2240457.1024424834,
+        "vol": 53213991.24867702
+      },
+      "SPORTS_ALL": {
+        "rank": 16,
+        "pnl": 2167059.263351288,
+        "vol": 43079209.50439301
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "SPORTS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 12,
+    "n_recent_buys": 0,
+    "n_recent_sells": 89,
+    "total_position_size": 0.3849,
+    "unique_markets": 12,
+    "avg_position_size": 0.032075,
+    "efficiency": 0.042102782555296196,
+    "n_categories": 2,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "Will the Baltimore Ravens win Super Bowl 2026?",
+      "Will Barcelona win on 2025-09-21?",
+      "Will Phil Laak win the 2025 National Heads-Up Poker Championship?",
+      "Will the team that wins the 2025-26 Super Bowl be from California?",
+      "Will Joe Burrow lead the NFL in passing yards this season?",
+      "Will Lando Norris be the 2025 Drivers Champion?",
+      "Will the San Francisco 49ers make the playoffs?",
+      "Will Sevilla finish in the top 4 of the La Liga 2025\u201326 standings?",
+      "Will Bryce Hall win the 2025 National Heads-Up Poker Championship?",
+      "Will Micah Parsons lead the NFL in sacks this season?"
+    ],
+    "buy_sell_ratio": 0.0
+  },
+  {
+    "wallet": "0xdc876e6873772d38716fda7f2452a78d426d7ab6",
+    "name": "432614799197",
+    "pnl_all": 2099103.9354647477,
+    "vol_all": 130095419.96920396,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 34,
+        "pnl": 2099103.9354647477,
+        "vol": 130095419.96920396
+      },
+      "SPORTS_ALL": {
+        "rank": 17,
+        "pnl": 2099103.9354647477,
+        "vol": 130095419.96920384
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "SPORTS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 100,
+    "n_recent_buys": 100,
+    "n_recent_sells": 0,
+    "total_position_size": 27935611.844,
+    "unique_markets": 100,
+    "avg_position_size": 279356.11844,
+    "efficiency": 0.01613511018267703,
+    "n_categories": 2,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "Will Athletic Club win on 2026-02-20?",
+      "Will Olympique Lyonnais win on 2026-02-07?",
+      "UFC Fight Night: Jordan Leavitt vs. Yadier del Valle (Featherweight, Prelims)",
+      "Maple Leafs vs. Flyers",
+      "Spread: Hornets (-1.5)",
+      "Red Wings vs. Avalanche",
+      "Bruins vs. Blackhawks",
+      "Nets vs. Nuggets",
+      "Rangers vs. Bruins",
+      "Spread: Grizzlies (-7.5)"
+    ],
+    "buy_sell_ratio": 100.0
+  },
+  {
+    "wallet": "0xc2e7800b5af46e6093872b177b7a5e7f0563be51",
+    "name": "beachboy4",
+    "pnl_all": 2097677.718836358,
+    "vol_all": 7330920.585535,
+    "rankings": {
+      "OVERALL_MONTH": {
+        "rank": 4,
+        "pnl": 2095139.4846580978,
+        "vol": 7330920.585535
+      },
+      "SPORTS_MONTH": {
+        "rank": 4,
+        "pnl": 2097677.718836358,
+        "vol": 7320345.455535002
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "SPORTS"
+    ],
+    "periods": [
+      "MONTH"
+    ],
+    "n_positions": 2,
+    "n_recent_buys": 70,
+    "n_recent_sells": 0,
+    "total_position_size": 233007.7413,
+    "unique_markets": 2,
+    "avg_position_size": 116503.87065,
+    "efficiency": 0.2861411052488263,
+    "n_categories": 2,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "",
+      "Will Donald Trump win the 2028 Republican presidential nomination?",
+      "Spread: Cavaliers (-3.5)",
+      "Cavaliers vs. Trail Blazers",
+      "Spread: Thunder (-7.5)",
+      "Will Fenerbah\u00e7e SK win on 2026-01-29?",
+      "Hawks vs. Pacers",
+      "Will Liverpool FC win on 2026-01-31?",
+      "Spread: Thunder (-6.5)",
+      "76ers vs. Clippers"
+    ],
+    "buy_sell_ratio": 70.0
+  },
+  {
+    "wallet": "0xd25c72ac0928385610611c8148803dc717334d20",
+    "name": "FeatherLeather",
+    "pnl_all": 2097480.3063997473,
+    "vol_all": 5237151.235280001,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 35,
+        "pnl": 2097480.3063997473,
+        "vol": 5237151.235279999
+      },
+      "OVERALL_MONTH": {
+        "rank": 6,
+        "pnl": 1756584.2112791326,
+        "vol": 3542324.187
+      },
+      "SPORTS_ALL": {
+        "rank": 18,
+        "pnl": 2097480.3063997473,
+        "vol": 5237151.235280001
+      },
+      "SPORTS_MONTH": {
+        "rank": 6,
+        "pnl": 1756584.2112791326,
+        "vol": 3542324.1870000004
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "SPORTS"
+    ],
+    "periods": [
+      "ALL",
+      "MONTH"
+    ],
+    "n_positions": 3,
+    "n_recent_buys": 97,
+    "n_recent_sells": 0,
+    "total_position_size": 671735.7889,
+    "unique_markets": 3,
+    "avg_position_size": 223911.92963333335,
+    "efficiency": 0.40050023613412167,
+    "n_categories": 2,
+    "n_periods": 2,
+    "is_active": true,
+    "market_titles_sample": [
+      "Seahawks vs. Patriots",
+      "Will AC Milan win on 2026-02-03?",
+      "Will FC Lorient win on 2026-01-31?",
+      "Rockets vs. Thunder",
+      "Will BV Borussia 09 Dortmund win on 2026-02-07?",
+      "Will Norway win the most gold medals in the 2026 Winter Olympics?"
+    ],
+    "buy_sell_ratio": 97.0
+  },
+  {
+    "wallet": "0x2bf64b86b64c315d879571b07a3b76629e467cd0",
+    "name": "BabaTrump",
+    "pnl_all": 2093362.982851,
+    "vol_all": 3655048.190025001,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 36,
+        "pnl": 2093362.982851,
+        "vol": 3655048.190025001
+      },
+      "POLITICS_ALL": {
+        "rank": 15,
+        "pnl": 2093362.982851,
+        "vol": 3655048.190024999
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "POLITICS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 0,
+    "n_recent_buys": 92,
+    "n_recent_sells": 0,
+    "total_position_size": 0,
+    "unique_markets": 0,
+    "avg_position_size": 0.0,
+    "efficiency": 0.572731978900853,
+    "n_categories": 2,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "",
+      "Will a Democrat win Michigan Presidential Election?",
+      "Kamala Harris wins the popular vote?",
+      "Will a Republican win Michigan Presidential Election?",
+      "Will Donald Trump win the 2024 US Presidential Election?",
+      "Will a Republican win the popular vote and the Presidency? ",
+      "Will Donald Trump win the popular vote in the 2024 Presidential Election?"
+    ],
+    "buy_sell_ratio": 92.0
+  },
+  {
+    "wallet": "0x0b9cae2b0dfe7a71c413e0604eaac1c352f87e44",
+    "name": "MCgenius",
+    "pnl_all": 2043677.3523772187,
+    "vol_all": 60585336.437793024,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 37,
+        "pnl": 2043677.3523772187,
+        "vol": 60585336.437793024
+      },
+      "OVERALL_MONTH": {
+        "rank": 45,
+        "pnl": 320453.01462740544,
+        "vol": 5454051.887297001
+      },
+      "OVERALL_WEEK": {
+        "rank": 32,
+        "pnl": 128078.60525360776,
+        "vol": 2336718.336925
+      },
+      "SPORTS_ALL": {
+        "rank": 20,
+        "pnl": 1983708.1728922185,
+        "vol": 58681417.99689799
+      },
+      "SPORTS_MONTH": {
+        "rank": 35,
+        "pnl": 320149.06462662877,
+        "vol": 4920125.177297
+      },
+      "SPORTS_WEEK": {
+        "rank": 26,
+        "pnl": 127815.92064860812,
+        "vol": 1811349.1269249998
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "SPORTS"
+    ],
+    "periods": [
+      "WEEK",
+      "ALL",
+      "MONTH"
+    ],
+    "n_positions": 16,
+    "n_recent_buys": 44,
+    "n_recent_sells": 7,
+    "total_position_size": 7696472.4733,
+    "unique_markets": 15,
+    "avg_position_size": 481029.52958125,
+    "efficiency": 0.03373221100250219,
+    "n_categories": 2,
+    "n_periods": 3,
+    "is_active": true,
+    "market_titles_sample": [
+      "",
+      "Nolan vs. Borshchev",
+      "Will Xavier Worthy score a TD in Super Bowl LIX?",
+      "Will Bitcoin reach $115,000 in February?",
+      "Will the Seattle Seahawks be eliminated in the Super Bowl?",
+      "Will Bitcoin reach $150,000 in February?",
+      "Will Bitcoin reach $120,000 in February?",
+      "Clippers vs. Lakers",
+      "Will Bitcoin reach $105,000 in February?",
+      "Spread: Lakers (-6.5)"
+    ],
+    "buy_sell_ratio": 6.285714285714286
+  },
+  {
+    "wallet": "0xee00ba338c59557141789b127927a55f5cc5cea1",
+    "name": "S-Works",
+    "pnl_all": 2002764.926521452,
+    "vol_all": 155067034.00972602,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 38,
+        "pnl": 2002764.926521452,
+        "vol": 155067034.00972602
+      },
+      "SPORTS_ALL": {
+        "rank": 21,
+        "pnl": 1878493.3354836376,
+        "vol": 151373222.81820393
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "SPORTS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 56,
+    "n_recent_buys": 74,
+    "n_recent_sells": 12,
+    "total_position_size": 3636189.2394,
+    "unique_markets": 56,
+    "avg_position_size": 64931.95070357143,
+    "efficiency": 0.012915478388500264,
+    "n_categories": 2,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "",
+      "Will Donald Trump Jr. win the 2028 US Presidential Election?",
+      "Will Galatasaray win the 2025\u201326 Champions League?",
+      "Will Tottenham win the 2025\u201326 Champions League?",
+      "Will Levante UD win on 2025-12-14?",
+      "Will the USA Stars team win the 2026 NBA All-Star Game?",
+      "Will the match between Hoffenheim and Dynamo Kyiv end in a Draw?",
+      "Levante UD vs. Villarreal CF: O/U 3.5",
+      "Fed decreases interest rates by 50+ bps after September 2025 meeting?",
+      "Will Barcelona win the 2025\u201326 La Liga?"
+    ],
+    "buy_sell_ratio": 6.166666666666667
+  },
+  {
+    "wallet": "0x1bc0d88ca86b9049cf05d642e634836d5ddf4429",
+    "name": "212121212121212121212",
+    "pnl_all": 1995650.8167836189,
+    "vol_all": 23238739.48786299,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 39,
+        "pnl": 1995028.0535576832,
+        "vol": 23238739.48786299
+      },
+      "SPORTS_ALL": {
+        "rank": 19,
+        "pnl": 1995650.8167836189,
+        "vol": 22703820.06556299
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "SPORTS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 100,
+    "n_recent_buys": 95,
+    "n_recent_sells": 0,
+    "total_position_size": 9026553.5279,
+    "unique_markets": 100,
+    "avg_position_size": 90265.53527899999,
+    "efficiency": 0.08587603548057747,
+    "n_categories": 2,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "Spread: Grizzlies (-2.5)",
+      "Spread: Lakers (-8.5)",
+      "Thunder vs. Lakers",
+      "Spread: Celtics (-10.5)",
+      "Clippers vs. Lakers",
+      "Timberwolves vs. Grizzlies",
+      "76ers vs. Trail Blazers",
+      "Will Ethereum dip to $1,000 in February?",
+      "Heat vs. Kings",
+      "Nets vs. Cavaliers"
+    ],
+    "buy_sell_ratio": 95.0
+  },
+  {
+    "wallet": "0x0562c423912e325f83fa79df55085979e1f5594f",
+    "name": "trezorisbest",
+    "pnl_all": 1901516.9804263103,
+    "vol_all": 5209698.323681999,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 40,
+        "pnl": 1900869.1049063103,
+        "vol": 5209698.323681999
+      },
+      "POLITICS_ALL": {
+        "rank": 16,
+        "pnl": 1901516.9804263103,
+        "vol": 5203835.647018
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "POLITICS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 1,
+    "n_recent_buys": 68,
+    "n_recent_sells": 24,
+    "total_position_size": 3480.0674,
+    "unique_markets": 1,
+    "avg_position_size": 3480.0674,
+    "efficiency": 0.3649956028706086,
+    "n_categories": 2,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "",
+      "GOP wins popular vote by 4-5%?",
+      "GOP wins popular vote by 1-2%?",
+      " Will Trump meet with Putin by August 15?",
+      "Will Pete Hegseth leave the Trump administration in 2025?",
+      "Will Pierre Poilievre be the next Canadian Prime Minister?",
+      "Pete Hegseth out as Secretary of Defense before July?",
+      "Will Robert F. Kennedy Jr. leave the Trump administration in 2025?",
+      "Aspinall vs. Gane",
+      "Bitcoin Up or Down on July 3?"
+    ],
+    "buy_sell_ratio": 2.8333333333333335
+  },
+  {
+    "wallet": "0xf705fa045201391d9632b7f3cde06a5e24453ca7",
+    "name": "0xf705fa045201391d9632b7f3cde06a5e24453ca7",
+    "pnl_all": 1896952.6039915674,
+    "vol_all": 53432791.32903598,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 41,
+        "pnl": 1896267.5532816565,
+        "vol": 53432791.32903598
+      },
+      "CRYPTO_ALL": {
+        "rank": 1,
+        "pnl": 1896952.6039915674,
+        "vol": 53425047.03903598
+      },
+      "CRYPTO_MONTH": {
+        "rank": 10,
+        "pnl": 230568.51691827527,
+        "vol": 10161309.699873999
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "CRYPTO"
+    ],
+    "periods": [
+      "ALL",
+      "MONTH"
+    ],
+    "n_positions": 84,
+    "n_recent_buys": 33,
+    "n_recent_sells": 26,
+    "total_position_size": 2151382.7698,
+    "unique_markets": 84,
+    "avg_position_size": 25611.69964047619,
+    "efficiency": 0.03550165650733545,
+    "n_categories": 2,
+    "n_periods": 2,
+    "is_active": true,
+    "market_titles_sample": [
+      "Will the price of Solana be above $90 on February 20?",
+      "Will Dogecoin dip to $0.06 by December 31, 2026?",
+      "Will the price of Solana be above $130 on February 27?",
+      "Will Dogecoin reach $0.20 in February?",
+      "Will Bitcoin reach $75,000 in February?",
+      "Will Dogecoin reach $0.16 by December 31, 2026?",
+      "Will Bitcoin dip to $60,000 in February?",
+      "Will the price of XRP be above $1.50 on February 20?",
+      "Solana all time high by March 31, 2026?",
+      "Will Bitcoin reach $105,000 in February?"
+    ],
+    "buy_sell_ratio": 1.2692307692307692
+  },
+  {
+    "wallet": "0xd7f85d0eb0fe0732ca38d9107ad0d4d01b1289e4",
+    "name": "tdrhrhhd",
+    "pnl_all": 1856407.9181631117,
+    "vol_all": 12625299.541292,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 42,
+        "pnl": 1856407.9181631117,
+        "vol": 12625299.541292
+      },
+      "POLITICS_ALL": {
+        "rank": 19,
+        "pnl": 1784033.9988824218,
+        "vol": 11300419.743009996
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "POLITICS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 16,
+    "n_recent_buys": 98,
+    "n_recent_sells": 0,
+    "total_position_size": 2418330.4504,
+    "unique_markets": 16,
+    "avg_position_size": 151145.65315,
+    "efficiency": 0.14703872269260532,
+    "n_categories": 2,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "",
+      "Will United Russia (ER) gain the most seats in the next Russian parliamentary election?",
+      "Russia x Ukraine Peace Parlay",
+      "Russia x Ukraine ceasefire by January 31, 2026?",
+      "Will Bitcoin reach $190,000 by December 31, 2026?",
+      "Will the Liberal Democratic Party of Russia (LDPR) gain the most seats in the next Russian parliamentary election?",
+      "Russia x Ukraine ceasefire by March 31, 2026?",
+      "Lighter market cap (FDV) >$4B one day after launch?",
+      "Will Glenn Youngkin win the 2028 Republican presidential nomination?",
+      "Will Trump nominate Scott Bessent as the next Fed chair?"
+    ],
+    "buy_sell_ratio": 98.0
+  },
+  {
+    "wallet": "0x7058c8a7cec79010b1927d05837dcf25f1a53505",
+    "name": "deetown",
+    "pnl_all": 1849974.955234,
+    "vol_all": 7039312.407319001,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 43,
+        "pnl": 1849974.955234,
+        "vol": 7039312.407319001
+      },
+      "POLITICS_ALL": {
+        "rank": 17,
+        "pnl": 1849974.955234,
+        "vol": 7039312.407319001
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "POLITICS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 0,
+    "n_recent_buys": 83,
+    "n_recent_sells": 7,
+    "total_position_size": 0,
+    "unique_markets": 0,
+    "avg_position_size": 0.0,
+    "efficiency": 0.26280620154186096,
+    "n_categories": 2,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "",
+      "Trump wins every swing state?",
+      "Will a Democrat win Pennsylvania Presidential Election?",
+      "Will a Republican win Florida in the 2024 US Presidential Election?",
+      "2024 Balance of Power: R Prez R Senate R House",
+      "Will a Republican win Minnesota in the 2024 US Presidential Election?",
+      "Will Donald Trump win the 2024 US Presidential Election?",
+      "Will a Republican win Nevada Presidential Election?",
+      "Will Donald Trump win the popular vote in the 2024 Presidential Election?",
+      "Will a Democrat win Georgia Presidential Election?"
+    ],
+    "buy_sell_ratio": 11.857142857142858
+  },
+  {
+    "wallet": "0x3d1ecf16942939b3603c2539a406514a40b504d0",
+    "name": "edenmoon",
+    "pnl_all": 1845233.3600204748,
+    "vol_all": 6642336.914744,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 46,
+        "pnl": 1726852.1476792772,
+        "vol": 6642336.914744
+      },
+      "POLITICS_ALL": {
+        "rank": 18,
+        "pnl": 1845233.3600204748,
+        "vol": 4945865.453152999
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "POLITICS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 2,
+    "n_recent_buys": 85,
+    "n_recent_sells": 1,
+    "total_position_size": 250146.62589999998,
+    "unique_markets": 2,
+    "avg_position_size": 125073.31294999999,
+    "efficiency": 0.27779882046100507,
+    "n_categories": 2,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "Will Trump nominate Kevin Warsh as the next Fed chair?",
+      "",
+      "Will FC Barcelona win on 2026-01-25?",
+      "Will Base launch a token in 2025?",
+      "Fed decreases interest rates by 25 bps after October 2025 meeting?",
+      "Will Kamala Harris win the 2024 US Presidential Election?",
+      "Will Donald Trump win the 2024 US Presidential Election?",
+      "Ethereum Up or Down - January 6, 8:00AM-8:15AM ET",
+      "Bitcoin Up or Down - January 3, 7:15AM-7:30AM ET",
+      "Will Trump say \"crypto\" or \"Bitcoin\" during his inauguration speech?"
+    ],
+    "buy_sell_ratio": 85.0
+  },
+  {
+    "wallet": "0x44c1dfe43260c94ed4f1d00de2e1f80fb113ebc1",
+    "name": "aenews2",
+    "pnl_all": 1834266.5002789265,
+    "vol_all": 188003059.94756603,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 44,
+        "pnl": 1834266.5002789265,
+        "vol": 188003059.94756603
+      },
+      "POLITICS_ALL": {
+        "rank": 30,
+        "pnl": 1034747.7238358763,
+        "vol": 118092778.23473105
+      },
+      "TECH_ALL": {
+        "rank": 13,
+        "pnl": 54709.82270034326,
+        "vol": 10224948.022546997
+      },
+      "CULTURE_ALL": {
+        "rank": 1,
+        "pnl": 317063.1457866675,
+        "vol": 19050206.01783499
+      },
+      "CULTURE_MONTH": {
+        "rank": 34,
+        "pnl": 4407.565043175535,
+        "vol": 1911150.9528129997
+      },
+      "CULTURE_WEEK": {
+        "rank": 29,
+        "pnl": 1209.1621229590382,
+        "vol": 1818185.223369
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "POLITICS",
+      "CULTURE",
+      "TECH"
+    ],
+    "periods": [
+      "WEEK",
+      "ALL",
+      "MONTH"
+    ],
+    "n_positions": 80,
+    "n_recent_buys": 90,
+    "n_recent_sells": 2,
+    "total_position_size": 2180735.6199,
+    "unique_markets": 72,
+    "avg_position_size": 27259.19524875,
+    "efficiency": 0.00975657790245809,
+    "n_categories": 4,
+    "n_periods": 3,
+    "is_active": true,
+    "market_titles_sample": [
+      "Will SOLV Energy, Inc.'s market cap be greater than $5.4B at market close on IPO day?",
+      "",
+      "Will Pete Hegseth be Trump's Defense Secretary?",
+      "Will anyone be charged over Daycare fraud in Minnesota by December 31?",
+      "Will the Democratic Party control the House after the 2026 Midterm elections?",
+      "Will Nasry Juan Asfura Zablah win the 2025 Honduran presidential election by at least 3%?",
+      "U.S. anti-cartel ground operation in Mexico by March 31?",
+      "Will Lady Gaga win 3 Grammys?",
+      "Will \"How to Make a Killing\" Opening Weekend Box Office be between 2m and 2.5m?",
+      "Will turnout in the 2025 Honduran general election be between 60% and 65%?"
+    ],
+    "buy_sell_ratio": 45.0
+  },
+  {
+    "wallet": "0xd31a2ea0b5f9a10c2eb78dcc36df016497d5386e",
+    "name": "DarthVooncer",
+    "pnl_all": 1766594.0755744,
+    "vol_all": 4549552.753402,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 45,
+        "pnl": 1766594.0755744,
+        "vol": 4549552.753402
+      },
+      "POLITICS_ALL": {
+        "rank": 20,
+        "pnl": 1766594.0755744,
+        "vol": 4549552.753402
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "POLITICS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 0,
+    "n_recent_buys": 82,
+    "n_recent_sells": 11,
+    "total_position_size": 0,
+    "unique_markets": 0,
+    "avg_position_size": 0.0,
+    "efficiency": 0.38830060257096727,
+    "n_categories": 2,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "Will a Democrat win Virginia Presidential Election?",
+      "Will a Republican win Virginia Presidential Election?",
+      "Kamala Harris wins the popular vote?",
+      "Will Donald Trump win the 2024 US Presidential Election?",
+      "Trump convicted of felony before Election?",
+      "Will a Republican win the popular vote and the Presidency? ",
+      "Will Donald Trump win the popular vote in the 2024 Presidential Election?"
+    ],
+    "buy_sell_ratio": 7.454545454545454
+  },
+  {
+    "wallet": "0x212954857f5efc138748c33d032a93bf95974222",
+    "name": "3bpatgs",
+    "pnl_all": 1685688.2159109972,
+    "vol_all": 75697642.84550887,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 47,
+        "pnl": 1685688.2159109972,
+        "vol": 75697642.84550887
+      },
+      "SPORTS_ALL": {
+        "rank": 23,
+        "pnl": 1685620.2607199973,
+        "vol": 75697294.74550885
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "SPORTS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 8,
+    "n_recent_buys": 1,
+    "n_recent_sells": 1,
+    "total_position_size": 34.3,
+    "unique_markets": 7,
+    "avg_position_size": 4.2875,
+    "efficiency": 0.022268701541358613,
+    "n_categories": 2,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "",
+      "Spread: Clippers (-6.5)",
+      "Will CS Independiente Rivadavia win on 2025-11-10?",
+      "Panthers vs. Golden Knights: O/U 6.5",
+      "1H Spread: Packers (-0.5)",
+      "Will AA Argentinos Juniors win on 2025-11-10?",
+      "Will CA Independiente win on 2025-11-10?",
+      "Spread: Pacers (-7.5)",
+      "1H Spread: Packers (-1.5)",
+      "Will CS Independiente Rivadavia vs. CA Central C\u00f3rdoba end in a draw?"
+    ],
+    "buy_sell_ratio": 1.0
+  },
+  {
+    "wallet": "0x63ce342161250d705dc0b16df89036c8e5f9ba9a",
+    "name": "0x8dxd",
+    "pnl_all": 1663203.0873201527,
+    "vol_all": 139993672.0331896,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 48,
+        "pnl": 1663073.545639624,
+        "vol": 139993672.0331896
+      },
+      "OVERALL_MONTH": {
+        "rank": 20,
+        "pnl": 736203.2389567186,
+        "vol": 58443553.59921266
+      },
+      "OVERALL_WEEK": {
+        "rank": 20,
+        "pnl": 160092.79203728447,
+        "vol": 16966118.28797704
+      },
+      "CRYPTO_ALL": {
+        "rank": 2,
+        "pnl": 1663203.0873201527,
+        "vol": 139970940.26241863
+      },
+      "CRYPTO_MONTH": {
+        "rank": 1,
+        "pnl": 736203.2389567196,
+        "vol": 58443553.59921277
+      },
+      "CRYPTO_WEEK": {
+        "rank": 3,
+        "pnl": 160092.79203728377,
+        "vol": 16966118.28797705
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "CRYPTO"
+    ],
+    "periods": [
+      "WEEK",
+      "ALL",
+      "MONTH"
+    ],
+    "n_positions": 13,
+    "n_recent_buys": 85,
+    "n_recent_sells": 15,
+    "total_position_size": 11514.5977,
+    "unique_markets": 8,
+    "avg_position_size": 885.7382846153846,
+    "efficiency": 0.01188055905073939,
+    "n_categories": 2,
+    "n_periods": 3,
+    "is_active": true,
+    "market_titles_sample": [
+      "Ethereum Up or Down - February 19, 9:45PM-10:00PM ET",
+      "Bitcoin Up or Down - February 21, 5:05PM-5:10PM ET",
+      "XRP Up or Down - February 13, 5AM ET",
+      "Solana Up or Down - December 23, 12PM ET",
+      "Bitcoin Up or Down - February 21, 5:00PM-5:15PM ET",
+      "Solana Up or Down - February 16, 1PM ET",
+      "Ethereum Up or Down - January 1, 6PM ET",
+      "Bitcoin Up or Down - February 21, 5:00PM-5:05PM ET"
+    ],
+    "buy_sell_ratio": 5.666666666666667
+  },
+  {
+    "wallet": "0xee613b3fc183ee44f9da9c05f53e2da107e3debf",
+    "name": "sovereign2013",
+    "pnl_all": 1655847.4804576703,
+    "vol_all": 254076877.60330713,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 49,
+        "pnl": 1655847.4804576703,
+        "vol": 254076877.60330713
+      },
+      "OVERALL_MONTH": {
+        "rank": 46,
+        "pnl": 316023.4009463391,
+        "vol": 66147697.69051498
+      },
+      "OVERALL_WEEK": {
+        "rank": 47,
+        "pnl": 89842.39361856133,
+        "vol": 15909959.906968003
+      },
+      "SPORTS_ALL": {
+        "rank": 24,
+        "pnl": 1655844.180457648,
+        "vol": 254076827.60330826
+      },
+      "SPORTS_MONTH": {
+        "rank": 36,
+        "pnl": 316023.40094631724,
+        "vol": 66147697.69051512
+      },
+      "SPORTS_WEEK": {
+        "rank": 35,
+        "pnl": 89842.39361854363,
+        "vol": 15909959.906968009
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "SPORTS"
+    ],
+    "periods": [
+      "WEEK",
+      "ALL",
+      "MONTH"
+    ],
+    "n_positions": 100,
+    "n_recent_buys": 67,
+    "n_recent_sells": 0,
+    "total_position_size": 933963.4804,
+    "unique_markets": 99,
+    "avg_position_size": 9339.634804,
+    "efficiency": 0.006517112049223788,
+    "n_categories": 2,
+    "n_periods": 3,
+    "is_active": true,
+    "market_titles_sample": [
+      "Spread: Grizzlies (-4.5)",
+      "Chile Open, Qualification: Facundo Mena vs Daniel Galan",
+      "Spread: Suns (-1.5)",
+      "West Virginia Mountaineers vs. TCU Horned Frogs: O/U 131.5",
+      "Nuggets vs. Grizzlies: O/U 222.5",
+      "Spread: Western Carolina Catamounts (-9.5)",
+      "Vermont Catamounts vs. NJIT Highlanders",
+      "76ers vs. Pelicans",
+      "Spread: Michigan Wolverines (-2.5)",
+      "Creighton Bluejays vs. St. John's Red Storm: O/U 154.5"
+    ],
+    "buy_sell_ratio": 67.0
+  },
+  {
+    "wallet": "0xba664f999a18dce0aac6af698af434924a24f59d",
+    "name": "bizyugo",
+    "pnl_all": 1650555.767798976,
+    "vol_all": 5875016.280622999,
+    "rankings": {
+      "POLITICS_ALL": {
+        "rank": 22,
+        "pnl": 1650555.767798976,
+        "vol": 5875016.280622999
+      }
+    },
+    "categories": [
+      "POLITICS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 4,
+    "n_recent_buys": 100,
+    "n_recent_sells": 0,
+    "total_position_size": 414891.5911,
+    "unique_markets": 4,
+    "avg_position_size": 103722.897775,
+    "efficiency": 0.2809448840580826,
+    "n_categories": 1,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "Will Hyperliquid launch a token in December?",
+      "Will Bitcoin hit $100k in 2024?",
+      "Will the Fed decrease interest rates by 50+ bps after the March 2026 meeting?",
+      "Will FC Barcelona win on 2025-11-05?"
+    ],
+    "buy_sell_ratio": 100.0
+  },
+  {
+    "wallet": "0x94f199fb7789f1aef7fff6b758d6b375100f4c7a",
+    "name": "KeyTransporter",
+    "pnl_all": 1581663.2428920013,
+    "vol_all": 13826554.344809,
+    "rankings": {
+      "OVERALL_ALL": {
+        "rank": 50,
+        "pnl": 1581663.2428920013,
+        "vol": 13826554.344809
+      },
+      "OVERALL_MONTH": {
+        "rank": 9,
+        "pnl": 1230952.397868091,
+        "vol": 13130442.629021
+      },
+      "OVERALL_WEEK": {
+        "rank": 2,
+        "pnl": 1460217.0714818188,
+        "vol": 10504524.930616997
+      },
+      "SPORTS_ALL": {
+        "rank": 25,
+        "pnl": 1581663.2428920013,
+        "vol": 13826554.344808998
+      },
+      "SPORTS_MONTH": {
+        "rank": 10,
+        "pnl": 1230952.397868091,
+        "vol": 13130442.629020998
+      },
+      "SPORTS_WEEK": {
+        "rank": 2,
+        "pnl": 1460217.0714818188,
+        "vol": 10504524.930616997
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "SPORTS"
+    ],
+    "periods": [
+      "WEEK",
+      "ALL",
+      "MONTH"
+    ],
+    "n_positions": 5,
+    "n_recent_buys": 100,
+    "n_recent_sells": 0,
+    "total_position_size": 7609935.8492,
+    "unique_markets": 5,
+    "avg_position_size": 1521987.16984,
+    "efficiency": 0.11439315996221548,
+    "n_categories": 2,
+    "n_periods": 3,
+    "is_active": true,
+    "market_titles_sample": [
+      "Will Club Atl\u00e9tico de Madrid win on 2026-02-08?",
+      "Will Club Atl\u00e9tico de Madrid win on 2026-02-21?",
+      "Will West Ham United FC win on 2026-02-07?",
+      "Will Lille OSC win on 2026-02-19?",
+      "Will Go Ahead Eagles win on 2026-02-01?"
+    ],
+    "buy_sell_ratio": 100.0
+  },
+  {
+    "wallet": "0x876426b52898c295848f56760dd24b55eda2604a",
+    "name": "0x876426B52898C295848f56760dd24B55Eda2604a-1770663426746",
+    "pnl_all": 1554380.7971780004,
+    "vol_all": 12196466.263986003,
+    "rankings": {
+      "OVERALL_MONTH": {
+        "rank": 7,
+        "pnl": 1554380.7971780004,
+        "vol": 12196466.263985999
+      },
+      "SPORTS_ALL": {
+        "rank": 26,
+        "pnl": 1554380.7971780004,
+        "vol": 12196466.263986003
+      },
+      "SPORTS_MONTH": {
+        "rank": 7,
+        "pnl": 1554380.7971780004,
+        "vol": 12196466.263986003
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "SPORTS"
+    ],
+    "periods": [
+      "ALL",
+      "MONTH"
+    ],
+    "n_positions": 0,
+    "n_recent_buys": 87,
+    "n_recent_sells": 0,
+    "total_position_size": 0,
+    "unique_markets": 0,
+    "avg_position_size": 0.0,
+    "efficiency": 0.12744517662200328,
+    "n_categories": 2,
+    "n_periods": 2,
+    "is_active": true,
+    "market_titles_sample": [
+      "Mavericks vs. Lakers: O/U 236.5",
+      "Trail Blazers vs. Jazz: O/U 236.5",
+      "Mavericks vs. Lakers: O/U 234.5",
+      "Mavericks vs. Lakers: O/U 233.5",
+      "Trail Blazers vs. Jazz: O/U 239.5",
+      "Trail Blazers vs. Jazz: O/U 238.5",
+      "Mavericks vs. Lakers: O/U 232.5",
+      "Mavericks vs. Lakers",
+      "Bucks vs. Thunder",
+      "Trail Blazers vs. Jazz: O/U 237.5"
+    ],
+    "buy_sell_ratio": 87.0
+  },
+  {
+    "wallet": "0xa6a856a8c8a7f14fd9be6ae11c367c7cbb755009",
+    "name": "lhtsports",
+    "pnl_all": 1536803.108414526,
+    "vol_all": 87163142.3292,
+    "rankings": {
+      "SPORTS_ALL": {
+        "rank": 27,
+        "pnl": 1536803.108414526,
+        "vol": 87163142.3292
+      }
+    },
+    "categories": [
+      "SPORTS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 100,
+    "n_recent_buys": 100,
+    "n_recent_sells": 0,
+    "total_position_size": 887586.6816,
+    "unique_markets": 95,
+    "avg_position_size": 8875.866816,
+    "efficiency": 0.017631341268196696,
+    "n_categories": 1,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "Spread: Lakers (-8.5)",
+      "Pacers vs. Suns",
+      "Spread: Magic (-4.5)",
+      "Rangers vs. Bruins",
+      "Oilers vs. Flyers",
+      "Clippers vs. Lakers",
+      "Jazz vs. Trail Blazers",
+      "Grizzlies vs. Spurs: O/U 232.5",
+      "Flyers vs. Sabres",
+      "Bucks vs. Mavericks"
+    ],
+    "buy_sell_ratio": 100.0
+  },
+  {
+    "wallet": "0x461f3e886dca22e561eee224d283e08b8fb47a07",
+    "name": "HyperLiquid0xb",
+    "pnl_all": 1496846.9446368003,
+    "vol_all": 48318876.83293998,
+    "rankings": {
+      "SPORTS_ALL": {
+        "rank": 28,
+        "pnl": 1496846.9446368003,
+        "vol": 48318876.83293998
+      }
+    },
+    "categories": [
+      "SPORTS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 1,
+    "n_recent_buys": 64,
+    "n_recent_sells": 1,
+    "total_position_size": 0.0147,
+    "unique_markets": 1,
+    "avg_position_size": 0.0147,
+    "efficiency": 0.0309785128038483,
+    "n_categories": 1,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "Phillies vs. Reds",
+      "Angels vs. Tigers",
+      "Rays vs. Athletics",
+      "Mets vs. Brewers",
+      "Dodgers vs. Angels",
+      "Athletics vs. Orioles",
+      "Rockies vs. Diamondbacks",
+      "Rockies vs. Cardinals",
+      "Nationals vs. Royals",
+      "Padres vs. Giants"
+    ],
+    "buy_sell_ratio": 64.0
+  },
+  {
+    "wallet": "0x65e4246d770fd503ea97caa47e84db7fb5aba3bd",
+    "name": "0x75dd80d38fa3c36c4b55836eb8cdfbde35f8b19",
+    "pnl_all": 1475784.2464370003,
+    "vol_all": 28493251.792303998,
+    "rankings": {
+      "SPORTS_ALL": {
+        "rank": 29,
+        "pnl": 1475784.2464370003,
+        "vol": 28493251.792303998
+      }
+    },
+    "categories": [
+      "SPORTS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 0,
+    "n_recent_buys": 87,
+    "n_recent_sells": 0,
+    "total_position_size": 0,
+    "unique_markets": 0,
+    "avg_position_size": 0.0,
+    "efficiency": 0.05179416716612206,
+    "n_categories": 1,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "Yankees vs. Braves",
+      "Athletics vs. Guardians",
+      "Royals vs. Marlins",
+      "Brewers vs. Dodgers",
+      "Giants vs. Blue Jays",
+      "White Sox vs. Pirates",
+      "Padres vs. Nationals",
+      "Red Sox vs. Cubs",
+      "Twins vs. Rockies",
+      "Cardinals vs. Diamondbacks"
+    ],
+    "buy_sell_ratio": 87.0
+  },
+  {
+    "wallet": "0xd0b4c4c020abdc88ad9a884f999f3d8cff8ffed6",
+    "name": "MrSparklySimpsons",
+    "pnl_all": 1468887.0477128783,
+    "vol_all": 73097941.93368194,
+    "rankings": {
+      "OVERALL_MONTH": {
+        "rank": 14,
+        "pnl": 840380.1842129859,
+        "vol": 5393095.449981001
+      },
+      "SPORTS_ALL": {
+        "rank": 30,
+        "pnl": 1468887.0477128783,
+        "vol": 73097941.93368194
+      },
+      "SPORTS_MONTH": {
+        "rank": 14,
+        "pnl": 840380.1842129859,
+        "vol": 5393095.449981001
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "SPORTS"
+    ],
+    "periods": [
+      "ALL",
+      "MONTH"
+    ],
+    "n_positions": 13,
+    "n_recent_buys": 93,
+    "n_recent_sells": 0,
+    "total_position_size": 364807.6561,
+    "unique_markets": 13,
+    "avg_position_size": 28062.127392307695,
+    "efficiency": 0.020094779809882,
+    "n_categories": 2,
+    "n_periods": 2,
+    "is_active": true,
+    "market_titles_sample": [
+      "Ostrava Open: Diane Parry vs Tamara Korpatsch",
+      "Will SC Freiburg win on 2026-02-07?",
+      "FC Internazionale Milano vs. Torino FC: O/U 2.5",
+      "Will Cesena FC win on 2026-02-06?",
+      "Will FC Bayern M\u00fcnchen win on 2026-02-08?",
+      "Will Toulouse FC win on 2026-02-08?",
+      "Transylvania Open: Sorana Cirstea vs Daria Snigur",
+      "Cesena FC vs. Delfino Pescara 1936: O/U 2.5",
+      "Wild vs. Predators",
+      "Open Sud de France: Luca Nardi vs Flavio Cobolli"
+    ],
+    "buy_sell_ratio": 93.0
+  },
+  {
+    "wallet": "0x31519628fb5e5aa559d4ba27aa1248810b9f0977",
+    "name": "qwertyasdfghjkl",
+    "pnl_all": 1417705.2656864515,
+    "vol_all": 157551921.08262506,
+    "rankings": {
+      "SPORTS_ALL": {
+        "rank": 31,
+        "pnl": 1417705.2656864515,
+        "vol": 157551921.08262506
+      }
+    },
+    "categories": [
+      "SPORTS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 75,
+    "n_recent_buys": 96,
+    "n_recent_sells": 0,
+    "total_position_size": 3241792.8177,
+    "unique_markets": 75,
+    "avg_position_size": 43223.904236,
+    "efficiency": 0.008998336903445077,
+    "n_categories": 1,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "Canucks vs. Lightning",
+      "Will Portugal win on 2025-11-16?",
+      "Spread: Steelers (-5.5)",
+      "76ers vs. Pistons: O/U 230.5",
+      "Florida Gators vs. Ole Miss",
+      "Colorado State vs. New Mexico",
+      "Sinner vs. Minaur: Total Sets O/U 2.5",
+      "Eastern Michigan vs. Ball State",
+      "Will Spain win on 2025-11-15?",
+      "Bitcoin Up or Down - November 16, 5:15PM-5:30PM ET"
+    ],
+    "buy_sell_ratio": 96.0
+  },
+  {
+    "wallet": "0x03e8a544e97eeff5753bc1e90d46e5ef22af1697",
+    "name": "weflyhigh",
+    "pnl_all": 1402523.8265846912,
+    "vol_all": 13283458.801338,
+    "rankings": {
+      "OVERALL_MONTH": {
+        "rank": 8,
+        "pnl": 1397858.9334016177,
+        "vol": 13283458.801338
+      },
+      "OVERALL_WEEK": {
+        "rank": 35,
+        "pnl": 117416.3601587299,
+        "vol": 3570133.4421910006
+      },
+      "SPORTS_MONTH": {
+        "rank": 8,
+        "pnl": 1402523.8265846912,
+        "vol": 13189335.524285
+      },
+      "SPORTS_WEEK": {
+        "rank": 29,
+        "pnl": 119963.48800947564,
+        "vol": 3550924.4609899996
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "SPORTS"
+    ],
+    "periods": [
+      "WEEK",
+      "MONTH"
+    ],
+    "n_positions": 100,
+    "n_recent_buys": 100,
+    "n_recent_sells": 0,
+    "total_position_size": 12208521.2198,
+    "unique_markets": 100,
+    "avg_position_size": 122085.212198,
+    "efficiency": 0.10558423431429015,
+    "n_categories": 2,
+    "n_periods": 2,
+    "is_active": true,
+    "market_titles_sample": [
+      "Sabres vs. Hurricanes: O/U 6.5",
+      "Will Fenerbah\u00e7e SK win on 2026-01-22?",
+      "Flames vs. Bruins: O/U 5.5",
+      "East Carolina Pirates vs. Wichita State Shockers: O/U 144.5",
+      "Lightning vs. Kings: O/U 5.5",
+      "VfL Wolfsburg vs. FC St. Pauli 1910: O/U 2.5",
+      "Islanders vs. Capitals: O/U 6.5",
+      "Oilers vs. Canucks",
+      "Spread: Thunder (-4.5)",
+      "Red Wings vs. Senators: O/U 6.5"
+    ],
+    "buy_sell_ratio": 100.0
+  },
+  {
+    "wallet": "0x96489abcb9f583d6835c8ef95ffc923d05a86825",
+    "name": "anoin123",
+    "pnl_all": 1348998.4044566986,
+    "vol_all": 28619181.92838404,
+    "rankings": {
+      "OVERALL_MONTH": {
+        "rank": 15,
+        "pnl": 838409.119813397,
+        "vol": 20295105.582625017
+      },
+      "POLITICS_ALL": {
+        "rank": 24,
+        "pnl": 1348998.4044566986,
+        "vol": 28619181.92838404
+      },
+      "POLITICS_MONTH": {
+        "rank": 1,
+        "pnl": 684677.5669300723,
+        "vol": 16634694.608518014
+      },
+      "ECONOMICS_ALL": {
+        "rank": 22,
+        "pnl": 165433.82710557786,
+        "vol": 3215453.2678399994
+      },
+      "ECONOMICS_MONTH": {
+        "rank": 1,
+        "pnl": 164522.92761503687,
+        "vol": 1300057.590999
+      },
+      "TECH_MONTH": {
+        "rank": 2,
+        "pnl": 23906.082364406033,
+        "vol": 373561.1380060001
+      },
+      "TECH_WEEK": {
+        "rank": 3,
+        "pnl": 7680.093530978247,
+        "vol": 144937.805753
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "POLITICS",
+      "ECONOMICS",
+      "TECH"
+    ],
+    "periods": [
+      "WEEK",
+      "ALL",
+      "MONTH"
+    ],
+    "n_positions": 100,
+    "n_recent_buys": 92,
+    "n_recent_sells": 7,
+    "total_position_size": 13121858.899,
+    "unique_markets": 96,
+    "avg_position_size": 131218.58899,
+    "efficiency": 0.04713616230653972,
+    "n_categories": 4,
+    "n_periods": 3,
+    "is_active": true,
+    "market_titles_sample": [
+      "US strikes Iran by December 31, 2026?",
+      "Will Marty Supreme win Best Picture at the 98th Academy Awards?",
+      "Will the US acquire part of Greenland in 2026?",
+      "Will NVIDIA be the largest company in the world by market cap on February 28?",
+      "Will Apple be the largest company in the world by market cap on February 28?",
+      "Starmer out by December 31, 2026?",
+      "Will \"MONACO\" be played first at the Super Bowl halftime show?",
+      "Starmer out by March 31, 2026?",
+      "Will Claude 5 be released by March 15, 2026?",
+      "Will the U.S. invade Venezuela by January 31, 2026?"
+    ],
+    "buy_sell_ratio": 13.142857142857142
+  },
+  {
+    "wallet": "0xcc500cbcc8b7cf5bd21975ebbea34f21b5644c82",
+    "name": "justdance",
+    "pnl_all": 1324448.44544119,
+    "vol_all": 86105808.4169999,
+    "rankings": {
+      "CRYPTO_ALL": {
+        "rank": 3,
+        "pnl": 1324448.44544119,
+        "vol": 86105808.4169999
+      }
+    },
+    "categories": [
+      "CRYPTO"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 100,
+    "n_recent_buys": 100,
+    "n_recent_sells": 0,
+    "total_position_size": 1476368.5842,
+    "unique_markets": 98,
+    "avg_position_size": 14763.685841999999,
+    "efficiency": 0.015381638820775574,
+    "n_categories": 1,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "Will Bitcoin dip to $82,000 January 19-25?",
+      "Solana Up or Down - February 21, 12:00PM-4:00PM ET",
+      "XRP Up or Down - January 17, 12:45PM-1:00PM ET",
+      "Bitcoin Up or Down - February 21, 7:15AM-7:30AM ET",
+      "Will Bitcoin dip to $60,000 in February?",
+      "Bitcoin Up or Down - January 19, 1:00AM-1:15AM ET",
+      "Bitcoin Up or Down - January 19, 2:00PM-2:15PM ET",
+      "Will Bitcoin dip to $25,000 by December 31, 2026?",
+      "Will Bitcoin reach $100,000 January 12-18?",
+      "Will Bitcoin reach $105,000 in February?"
+    ],
+    "buy_sell_ratio": 100.0
+  },
+  {
+    "wallet": "0x56813812fc837eedb614d8c231787f83a865e113",
+    "name": "setsukoworldchampion2027",
+    "pnl_all": 1291734.7981659574,
+    "vol_all": 10820687.417124,
+    "rankings": {
+      "SPORTS_ALL": {
+        "rank": 32,
+        "pnl": 1291734.7981659574,
+        "vol": 10820687.417124
+      }
+    },
+    "categories": [
+      "SPORTS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 13,
+    "n_recent_buys": 97,
+    "n_recent_sells": 0,
+    "total_position_size": 4716540.6413,
+    "unique_markets": 13,
+    "avg_position_size": 362810.8185615385,
+    "efficiency": 0.11937640820506061,
+    "n_categories": 1,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "Spread: Rams (-7.5)",
+      "",
+      "LoL: T1 vs Invictus Gaming (BO5)",
+      "Will the Baltimore Ravens win Super Bowl 2026?",
+      "Will the New York Giants win Super Bowl 2026?",
+      "Phillies vs. Dodgers",
+      "49ers vs. Colts",
+      "LoL: Ninjas in Pyjamas vs Nongshim Red Force (BO3)",
+      "Patriots vs. Saints",
+      "Rams vs. Ravens"
+    ],
+    "buy_sell_ratio": 97.0
+  },
+  {
+    "wallet": "0x2728d99b2405a52db60160837e130b3ba3c1a83c",
+    "name": "WindWalk3",
+    "pnl_all": 1289619.6306490183,
+    "vol_all": 5815309.297589,
+    "rankings": {
+      "POLITICS_ALL": {
+        "rank": 26,
+        "pnl": 1289619.6306490183,
+        "vol": 5815309.297589
+      }
+    },
+    "categories": [
+      "POLITICS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 16,
+    "n_recent_buys": 88,
+    "n_recent_sells": 10,
+    "total_position_size": 46621.5247,
+    "unique_markets": 16,
+    "avg_position_size": 2913.84529375,
+    "efficiency": 0.2217628615529854,
+    "n_categories": 1,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "Lord Miles completes 40-day water fast in the desert?",
+      "",
+      "Will Kamala go on Joe Rogan before election?",
+      "Will Trump say \"crypto\" or \"Bitcoin\" during Pennsylvania town hall on October 20?",
+      "Will Kamala lead in RCP by 1-1.4  on Oct 18?",
+      "Will another candidate get the most votes of any 3rd party candidate?",
+      "2024 August hottest on record?",
+      "Democrats win popular vote by 3-4%?",
+      "Trump ends Ukraine war in first 90 days?",
+      "Record turnout in 2024 Presidential election?"
+    ],
+    "buy_sell_ratio": 8.8
+  },
+  {
+    "wallet": "0x51393c00184b39182f09a8a62b8549642e69a8db",
+    "name": "4-seas",
+    "pnl_all": 1264172.900750644,
+    "vol_all": 46641896.509039,
+    "rankings": {
+      "SPORTS_ALL": {
+        "rank": 33,
+        "pnl": 1264172.900750644,
+        "vol": 46641896.509039
+      }
+    },
+    "categories": [
+      "SPORTS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 100,
+    "n_recent_buys": 80,
+    "n_recent_sells": 0,
+    "total_position_size": 5451808.2731,
+    "unique_markets": 100,
+    "avg_position_size": 54518.082731,
+    "efficiency": 0.027103805706220646,
+    "n_categories": 1,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "Liberty vs. UTEP",
+      "Spread: Predators (-1.5)",
+      "Red Wings vs. Oilers",
+      "Raptors vs. Pacers",
+      "Suns vs. Timberwolves",
+      "Pistons vs. Grizzlies",
+      "Spread: Lakers (-5.5)",
+      "Spread: Miami (-28.5)",
+      "Suns vs. Thunder",
+      "Oilers vs. Red Wings"
+    ],
+    "buy_sell_ratio": 80.0
+  },
+  {
+    "wallet": "0x1f1d38f54a615d1c43c77e3b109bd01f56e163d9",
+    "name": "Sandra.rachkova",
+    "pnl_all": 1258491.9855681343,
+    "vol_all": 6994551.935205999,
+    "rankings": {
+      "POLITICS_ALL": {
+        "rank": 27,
+        "pnl": 1258491.9855681343,
+        "vol": 6994551.935205999
+      }
+    },
+    "categories": [
+      "POLITICS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 14,
+    "n_recent_buys": 100,
+    "n_recent_sells": 0,
+    "total_position_size": 484307.3521,
+    "unique_markets": 14,
+    "avg_position_size": 34593.382292857146,
+    "efficiency": 0.17992460378108124,
+    "n_categories": 1,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "Will MicroStrategy purchase Bitcoin August 19-25?",
+      "Will the price of Bitcoin be between $117K and $118K on July 31 at 5PM ET?",
+      "Ethereum above $4500 on September 5?",
+      "Will the price of Ethereum be greater than $2700 on June 10?",
+      "US x Venezuela military engagement by November 30?",
+      "Will Elon tweet 180\u2013194 times July 11\u201318?",
+      "Will MicroStrategy purchase Bitcoin July 8-14?",
+      "MicroStrategy sells any Bitcoin in 2025?",
+      "Will Iran strike a U.S. facility by Monday June\u202f 23?",
+      "Bitcoin above $112K on September 5?"
+    ],
+    "buy_sell_ratio": 100.0
+  },
+  {
+    "wallet": "0xee50a31c3f5a7c77824b12a941a54388a2827ed6",
+    "name": "0xafEe",
+    "pnl_all": 1190808.0522383512,
+    "vol_all": 4264342.594718,
+    "rankings": {
+      "TECH_ALL": {
+        "rank": 1,
+        "pnl": 1190808.0522383512,
+        "vol": 4264342.594718
+      }
+    },
+    "categories": [
+      "TECH"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 5,
+    "n_recent_buys": 75,
+    "n_recent_sells": 0,
+    "total_position_size": 139891.94329999998,
+    "unique_markets": 5,
+    "avg_position_size": 27978.388659999997,
+    "efficiency": 0.27924774470825536,
+    "n_categories": 1,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "",
+      "Will Zohran Mamdani rank in Google\u2019s Top 5 Most Searched People of 2025?",
+      "US x Venezuela military engagement by October 31?",
+      "Will Zohran Mamdani be the #2 searched person on Google this year?",
+      "Gemini 3.0 Flash released by December 15?",
+      "Will Squid Game be the #1 searched TV show on Google this year?",
+      "Will Bianca Censori be the #1 searched person on Google this year?",
+      "Will d4vd be the #1 searched person on Google this year?",
+      "Will Donald Trump be the #1 searched person on Google this year?",
+      "Will Sydney Sweeney rank in Google\u2019s Top 5 Most Searched Actors of 2025?"
+    ],
+    "buy_sell_ratio": 75.0
+  },
+  {
+    "wallet": "0x7ee1b64be7016b0b0234ab6cabcaa689fd18dae8",
+    "name": "0x9982F8D01f0b1A746d4e9b50Bd-c8c5C5Ff268a5",
+    "pnl_all": 1189928.5860140007,
+    "vol_all": 23095757.228260994,
+    "rankings": {
+      "SPORTS_ALL": {
+        "rank": 34,
+        "pnl": 1189928.5860140007,
+        "vol": 23095757.228260994
+      }
+    },
+    "categories": [
+      "SPORTS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 0,
+    "n_recent_buys": 83,
+    "n_recent_sells": 0,
+    "total_position_size": 0,
+    "unique_markets": 0,
+    "avg_position_size": 0.0,
+    "efficiency": 0.051521522946991805,
+    "n_categories": 1,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "Rangers vs. Angels",
+      "Phillies vs. White Sox",
+      "Mets vs. Padres",
+      "Rockies vs. Guardians",
+      "Mariners vs. Athletics",
+      "Blue Jays vs. Orioles",
+      "Marlins vs. Cardinals",
+      "Nationals vs. Astros",
+      "Braves vs. Royals",
+      "Rays vs. Yankees"
+    ],
+    "buy_sell_ratio": 83.0
+  },
+  {
+    "wallet": "0x1ff26f9f8a048d4f6fb2e4283f32f6ca64d2dbbd",
+    "name": "cozyfnf",
+    "pnl_all": 1171153.0628997574,
+    "vol_all": 30428337.596415997,
+    "rankings": {
+      "SPORTS_ALL": {
+        "rank": 35,
+        "pnl": 1171153.0628997574,
+        "vol": 30428337.596415997
+      }
+    },
+    "categories": [
+      "SPORTS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 58,
+    "n_recent_buys": 98,
+    "n_recent_sells": 2,
+    "total_position_size": 8409296.6339,
+    "unique_markets": 58,
+    "avg_position_size": 144987.87299827585,
+    "efficiency": 0.03848889408397065,
+    "n_categories": 1,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "Cavaliers vs. Trail Blazers",
+      "Rams vs. Jaguars",
+      "Spread: Lions (-7.5)",
+      "Spurs vs. Mavericks",
+      "Warriors vs. Lakers",
+      "Pistons vs. Warriors",
+      "Mavericks vs. Kings",
+      "Cavaliers vs. Clippers",
+      "Mavericks vs. Trail Blazers",
+      "Spread: Kings (-1.5)"
+    ],
+    "buy_sell_ratio": 49.0
+  },
+  {
+    "wallet": "0x051b16ffac0f10a8df96b93cc03facce011ea5e5",
+    "name": "SVN88",
+    "pnl_all": 1170596.191668,
+    "vol_all": 3170053.624256,
+    "rankings": {
+      "POLITICS_ALL": {
+        "rank": 28,
+        "pnl": 1170596.191668,
+        "vol": 3170053.624256
+      }
+    },
+    "categories": [
+      "POLITICS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 0,
+    "n_recent_buys": 20,
+    "n_recent_sells": 0,
+    "total_position_size": 0,
+    "unique_markets": 0,
+    "avg_position_size": 0.0,
+    "efficiency": 0.36926699999995577,
+    "n_categories": 1,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "Will Donald Trump win the 2024 US Presidential Election?"
+    ],
+    "buy_sell_ratio": 20.0
+  },
+  {
+    "wallet": "0x1d8a377c5020f612ce63a0a151970df64baae842",
+    "name": "0x1D8A377C5020f612cE63a0a151970DF64BAAE842-1761442049319",
+    "pnl_all": 1140716.795477145,
+    "vol_all": 6638922.617436001,
+    "rankings": {
+      "OVERALL_MONTH": {
+        "rank": 13,
+        "pnl": 878838.2748071008,
+        "vol": 4027153.63332
+      },
+      "SPORTS_ALL": {
+        "rank": 36,
+        "pnl": 1140716.795477145,
+        "vol": 6638922.617436001
+      },
+      "SPORTS_MONTH": {
+        "rank": 13,
+        "pnl": 878838.2748071008,
+        "vol": 4027153.63332
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "SPORTS"
+    ],
+    "periods": [
+      "ALL",
+      "MONTH"
+    ],
+    "n_positions": 1,
+    "n_recent_buys": 63,
+    "n_recent_sells": 1,
+    "total_position_size": 139005.1284,
+    "unique_markets": 1,
+    "avg_position_size": 139005.1284,
+    "efficiency": 0.17182257742863974,
+    "n_categories": 2,
+    "n_periods": 2,
+    "is_active": true,
+    "market_titles_sample": [
+      "Kings vs. Blues: O/U 5.5",
+      "Falcons vs. Buccaneers: O/U 43.5",
+      "Cowboys vs. Lions",
+      "Spread: Indiana (-4.5)",
+      "Spurs vs. Hornets: O/U 226.5",
+      "Oilers vs. Canucks",
+      "Spread: Miami (-3.5)",
+      "Rangers vs. Sharks: O/U 6.5",
+      "Spread: Seahawks (-1.5)",
+      "Bulls vs. Heat: O/U 232.5"
+    ],
+    "buy_sell_ratio": 63.0
+  },
+  {
+    "wallet": "0x9cb990f1862568a63d8601efeebe0304225c32f2",
+    "name": "jtwyslljy",
+    "pnl_all": 1107351.649921654,
+    "vol_all": 31024922.06142301,
+    "rankings": {
+      "OVERALL_MONTH": {
+        "rank": 48,
+        "pnl": 307575.70091079385,
+        "vol": 5437359.764833999
+      },
+      "OVERALL_WEEK": {
+        "rank": 12,
+        "pnl": 245104.4598283032,
+        "vol": 1604917.350268
+      },
+      "SPORTS_ALL": {
+        "rank": 37,
+        "pnl": 1107351.649921654,
+        "vol": 31024922.06142301
+      },
+      "SPORTS_MONTH": {
+        "rank": 38,
+        "pnl": 307575.70091079385,
+        "vol": 5437359.764834001
+      },
+      "SPORTS_WEEK": {
+        "rank": 11,
+        "pnl": 245104.4598283032,
+        "vol": 1604917.350268
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "SPORTS"
+    ],
+    "periods": [
+      "WEEK",
+      "ALL",
+      "MONTH"
+    ],
+    "n_positions": 34,
+    "n_recent_buys": 98,
+    "n_recent_sells": 2,
+    "total_position_size": 2249967.0634,
+    "unique_markets": 34,
+    "avg_position_size": 66175.50186470588,
+    "efficiency": 0.03569232656666547,
+    "n_categories": 2,
+    "n_periods": 3,
+    "is_active": true,
+    "market_titles_sample": [
+      "Will FC Bayern M\u00fcnchen win on 2026-02-21?",
+      "Will Melbourne City FC win on 2026-01-03?",
+      "Will Liverpool FC win on 2026-01-04?",
+      "Men's Semifinals - USA vs. Slovakia",
+      "Qatar Total Open: Alycia Parks vs Qinwen Zheng",
+      "T20 World Cup: South Africa vs UAE (Game 1)",
+      "LoL: Bilibili Gaming vs Anyone's Legend (BO3)",
+      "Will FC Internazionale Milano win on 2026-02-21?",
+      "Will FC Bayern M\u00fcnchen win on 2026-02-14?",
+      "Counter-Strike: 3DMAX vs fnatic (BO1)"
+    ],
+    "buy_sell_ratio": 49.0
+  },
+  {
+    "wallet": "0xd2c5d404493dc772fde0990a61e64ef1120079a0",
+    "name": "row888",
+    "pnl_all": 1081892.3037644238,
+    "vol_all": 6660654.1277830005,
+    "rankings": {
+      "SPORTS_ALL": {
+        "rank": 38,
+        "pnl": 1081892.3037644238,
+        "vol": 6660654.1277830005
+      }
+    },
+    "categories": [
+      "SPORTS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 5,
+    "n_recent_buys": 93,
+    "n_recent_sells": 0,
+    "total_position_size": 1814260.9543,
+    "unique_markets": 5,
+    "avg_position_size": 362852.19086000003,
+    "efficiency": 0.1624303383734672,
+    "n_categories": 1,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "49ers vs. Seahawks",
+      "Steelers vs. Jets",
+      "Lions vs. Packers",
+      "Buccaneers vs. Falcons",
+      "Cowboys vs. Eagles",
+      "Bengals vs. Browns",
+      "Texans vs. Rams",
+      "Cardinals vs. Saints",
+      "Ravens vs. Bills",
+      "Titans vs. Broncos"
+    ],
+    "buy_sell_ratio": 93.0
+  },
+  {
+    "wallet": "0x9b3dcd99eec7fe11602e6534e6302c0f318d7422",
+    "name": "ErnstBlofeld",
+    "pnl_all": 1069068.6387145915,
+    "vol_all": 14226304.402885001,
+    "rankings": {
+      "SPORTS_ALL": {
+        "rank": 39,
+        "pnl": 1069068.6387145915,
+        "vol": 14226304.402885001
+      }
+    },
+    "categories": [
+      "SPORTS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 68,
+    "n_recent_buys": 90,
+    "n_recent_sells": 0,
+    "total_position_size": 5270357.5121,
+    "unique_markets": 68,
+    "avg_position_size": 77505.25753088236,
+    "efficiency": 0.07514731925023278,
+    "n_categories": 1,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "Islanders vs. Hurricanes",
+      "Devils vs. Capitals",
+      "UFC Fight Night: Lucindo vs. Hill",
+      "Maple Leafs vs. Flyers",
+      "Spread: Timberwolves (-9.5)",
+      "Flames vs. Blackhawks",
+      "Stars vs. Oilers",
+      "Sabres vs. Penguins",
+      "Marshall Thundering Herd vs. Toledo Rockets",
+      "Rangers vs. Flames"
+    ],
+    "buy_sell_ratio": 90.0
+  },
+  {
+    "wallet": "0x000d257d2dc7616feaef4ae0f14600fdf50a758e",
+    "name": "scottilicious",
+    "pnl_all": 1068947.885694459,
+    "vol_all": 45471551.040907,
+    "rankings": {
+      "POLITICS_ALL": {
+        "rank": 29,
+        "pnl": 1068947.885694459,
+        "vol": 45471551.040907
+      },
+      "TECH_ALL": {
+        "rank": 12,
+        "pnl": 56528.56117172132,
+        "vol": 2540993.867122
+      },
+      "CULTURE_ALL": {
+        "rank": 18,
+        "pnl": 73515.33945861597,
+        "vol": 3088471.626150001
+      }
+    },
+    "categories": [
+      "CULTURE",
+      "POLITICS",
+      "TECH"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 84,
+    "n_recent_buys": 47,
+    "n_recent_sells": 42,
+    "total_position_size": 1245957.5916,
+    "unique_markets": 84,
+    "avg_position_size": 14832.828471428571,
+    "efficiency": 0.023508058582229027,
+    "n_categories": 3,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "",
+      "Will the Democratic Party control the House after the 2026 Midterm elections?",
+      "Will Andy Beshear win the 2028 Democratic presidential nomination?",
+      "Biden nominated by July 21?",
+      "Netanyahu out by 2025?",
+      "Will  Doctors Without Borders (M\u00e9decins Sans Fronti\u00e8res) win the Nobel Peace Prize in 2025?",
+      "Will Volodymyr Zelensky attend presidential inauguration?",
+      "Will Tulsi Gabbard be the first to leave the Trump Cabinet in 2025?",
+      "Trudeau resigns before February?",
+      "Will Trump nominate Judy Shelton as the next Fed chair?"
+    ],
+    "buy_sell_ratio": 1.119047619047619
+  },
+  {
+    "wallet": "0x145c5dad6033a1de0930dc1ec9ae107fc61f43bc",
+    "name": "0x145c5DaD6033A1de0930DC1EC9aE107Fc61f43bC-1760209520925",
+    "pnl_all": 1029652.7191971939,
+    "vol_all": 6498119.8042399995,
+    "rankings": {
+      "SPORTS_ALL": {
+        "rank": 40,
+        "pnl": 1029652.7191971939,
+        "vol": 6498119.8042399995
+      }
+    },
+    "categories": [
+      "SPORTS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 0,
+    "n_recent_buys": 47,
+    "n_recent_sells": 0,
+    "total_position_size": 0,
+    "unique_markets": 0,
+    "avg_position_size": 0.0,
+    "efficiency": 0.15845394517431785,
+    "n_categories": 1,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "Avalanche vs. Utah",
+      "Spread: Louisville (-10.5)",
+      "Cowboys vs. Lions",
+      "Will Sunderland AFC win on 2025-11-29?",
+      "Will Everton win on 2025-12-02?",
+      "Spread: Bulls (-1.5)",
+      "Hurricanes vs. Bruins: O/U 6.5",
+      "Jazz vs. Nets",
+      "Will Atletico Madrid vs. Real Oviedo end in a draw?",
+      "Hurricanes vs. Kings"
+    ],
+    "buy_sell_ratio": 47.0
+  },
+  {
+    "wallet": "0x8861f0bb5e0c19474ba73beeadc13ed8915beed6",
+    "name": "yjcr",
+    "pnl_all": 1015821.9335625048,
+    "vol_all": 8262328.695258,
+    "rankings": {
+      "POLITICS_ALL": {
+        "rank": 31,
+        "pnl": 1015821.9335625048,
+        "vol": 8262328.695258
+      }
+    },
+    "categories": [
+      "POLITICS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 8,
+    "n_recent_buys": 84,
+    "n_recent_sells": 0,
+    "total_position_size": 82911.8551,
+    "unique_markets": 8,
+    "avg_position_size": 10363.9818875,
+    "efficiency": 0.12294620209742027,
+    "n_categories": 1,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "Will Trump pardon Changpeng Zhao in 2025?",
+      "Will Kim Moon-soo win 3rd place in the South Korean presidential election?",
+      "",
+      "Will Lee Jun-seok win more than 14% of the vote in the South Korea election?",
+      "Yoon in jail before August?",
+      "Will Lee Jae-myung win 50-55% of the vote in the South Korea election?",
+      "Will Donald Trump win Nobel Peace Prize in 2025?",
+      "South Korea First Lady Keon-hee arrested in 2025?",
+      "Yoon out of custody by July 31?",
+      "Lee Jae-myung impeached in 2025?"
+    ],
+    "buy_sell_ratio": 84.0
+  },
+  {
+    "wallet": "0x2c335066fe58fe9237c3d3dc7b275c2a034a0563",
+    "name": "0x2c335066FE58fe9237c3d3Dc7b275C2a034a0563-1759935795465",
+    "pnl_all": 1007371.6908381728,
+    "vol_all": 53661486.916482985,
+    "rankings": {
+      "OVERALL_MONTH": {
+        "rank": 23,
+        "pnl": 651125.3323504676,
+        "vol": 6716191.6445849985
+      },
+      "SPORTS_ALL": {
+        "rank": 41,
+        "pnl": 1007371.6908381728,
+        "vol": 53661486.916482985
+      },
+      "SPORTS_MONTH": {
+        "rank": 21,
+        "pnl": 651125.3323504676,
+        "vol": 6716191.644585
+      }
+    },
+    "categories": [
+      "OVERALL",
+      "SPORTS"
+    ],
+    "periods": [
+      "ALL",
+      "MONTH"
+    ],
+    "n_positions": 59,
+    "n_recent_buys": 98,
+    "n_recent_sells": 0,
+    "total_position_size": 3447108.778,
+    "unique_markets": 58,
+    "avg_position_size": 58425.57250847457,
+    "efficiency": 0.018772712959035476,
+    "n_categories": 2,
+    "n_periods": 2,
+    "is_active": true,
+    "market_titles_sample": [
+      "Canisius Golden Griffins vs. Sacred Heart Pioneers: O/U 143.5",
+      "Spread: Stanford Cardinal (-4.5)",
+      "Spread: South Florida Bulls (-6.5)",
+      "Spread: Seahawks (-3.5)",
+      "Heat vs. Wizards: O/U 235.5",
+      "East Carolina Pirates vs. Wichita State Shockers: O/U 144.5",
+      "Memphis Tigers vs. Wichita State Shockers: O/U 144.5",
+      "Will Burnley FC win on 2026-01-24?",
+      "Spread: Hornets (-6.5)",
+      "Canisius Golden Griffins vs. Fairfield Stags: O/U 141.5"
+    ],
+    "buy_sell_ratio": 98.0
+  },
+  {
+    "wallet": "0xd42f6a1634a3707e27cbae14ca966068e5d1047d",
+    "name": "Apsalar",
+    "pnl_all": 1007244.1815147623,
+    "vol_all": 136603339.7261992,
+    "rankings": {
+      "POLITICS_ALL": {
+        "rank": 32,
+        "pnl": 1007244.1815147623,
+        "vol": 136603339.7261992
+      }
+    },
+    "categories": [
+      "POLITICS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 79,
+    "n_recent_buys": 41,
+    "n_recent_sells": 4,
+    "total_position_size": 20402.1577,
+    "unique_markets": 79,
+    "avg_position_size": 258.25516075949366,
+    "efficiency": 0.00737349601798632,
+    "n_categories": 1,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "",
+      "Will Karoline Leavitt leave the Trump administration in 2025?",
+      "Will J.D. Vance say \"drill baby drill\" during Pennsylvania rally?",
+      "Will 'A Minecraft Movie' have the best domestic opening weekend in 2025?",
+      "Israel strikes Iranian oil in 2024?",
+      "Will Trump nominate Balaji Srinivasan for FDA Commissioner?",
+      "Harry & Meghan divorce in 2025?",
+      "AOC pregnant in 2024?",
+      "Will Trump tweet 45-49 times this week?",
+      "No change in Fed interest rates after 2024 September meeting?"
+    ],
+    "buy_sell_ratio": 10.25
+  },
+  {
+    "wallet": "0xc8b438e4a1c10643ea0ea3e59bcaadc73174f05d",
+    "name": "gamblingdebt",
+    "pnl_all": 1005160.0613667781,
+    "vol_all": 45523556.500042014,
+    "rankings": {
+      "SPORTS_ALL": {
+        "rank": 42,
+        "pnl": 1005160.0613667781,
+        "vol": 45523556.500042014
+      }
+    },
+    "categories": [
+      "SPORTS"
+    ],
+    "periods": [
+      "ALL"
+    ],
+    "n_positions": 15,
+    "n_recent_buys": 18,
+    "n_recent_sells": 0,
+    "total_position_size": 39551.4231,
+    "unique_markets": 15,
+    "avg_position_size": 2636.76154,
+    "efficiency": 0.022079998546814996,
+    "n_categories": 1,
+    "n_periods": 1,
+    "is_active": true,
+    "market_titles_sample": [
+      "Will Jake Paul win by decision or technical decision?",
+      "FC Bayern M\u00fcnchen vs. RU Saint-Gilloise: Both Teams to Score",
+      "Pistons vs. Pelicans: O/U 233.5",
+      "Spread: Chelsea FC (-1.5)",
+      "Pistons vs. Pelicans: O/U 234.5",
+      "Thunder vs. Bucks: O/U 227.5",
+      "Tigers vs. Rangers",
+      "Villarreal CF vs. AFC Ajax: O/U 3.5",
+      "Will PSV win on 2026-01-21?",
+      "Spread: Knicks (-10.5)"
+    ],
+    "buy_sell_ratio": 18.0
+  }
+]

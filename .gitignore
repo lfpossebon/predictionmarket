@@ -1,0 +1,26 @@
+# Dados grandes (histórico de traders)
+data/polymarket/historical/traders/
+
+# Ambiente
+.env
+__pycache__/
+*.pyc
+.DS_Store
+node_modules/
+
+# OpenClaw / pessoal
+SOUL.md
+USER.md
+IDENTITY.md
+MEMORY.md
+HEARTBEAT.md
+AGENTS.md
+TOOLS.md
+BOOTSTRAP.md
+memory/
+docs/
+knowledge/
+scripts/
+
+# Notebooks checkpoints
+.ipynb_checkpoints/
