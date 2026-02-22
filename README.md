@@ -36,6 +36,47 @@ Sistema de trading multi-estratégia para mercados de previsão, combinando aná
 
 **Players locais**: Smarkets, Betfair (betting exchanges tradicionais)
 
+### 🌎 América Latina — Mercado em Explosão
+
+**Visão Geral**:
+- **Online gambling market**: $6.75 bilhões projetado até 2027 (4x crescimento)
+- **CAGR**: 11.9% (2025-2030) — mais rápido que média global
+- **Sports betting GGR**: $3.4 bilhões em 2025
+- **Status**: Fragmentado, movimento de formalização acelerado
+
+| País | Status Prediction Markets | Online Gambling | Observações |
+|------|---------------------------|-----------------|-------------|
+| 🇧🇷 **Brasil** | **Regulamentado** (CVM) | $10B turnover, 100M+ usuários | Maior mercado LATAM |
+| 🇲🇽 **México** | Indefinido | Regulamentado | SEGOB oversight |
+| 🇦🇷 **Argentina** | Indefinido | Regulamentado | Lotterías provinciais |
+| 🇨🇴 **Colômbia** | Indefinido | Regulamentado | Coljuegos oversight |
+| 🇨🇱 **Chile** | Indefinido | Limitado | SCJ oversight |
+| 🇵🇪 **Peru** | Indefinido | Limitado | MINCETUR oversight |
+
+#### 🇧🇷 Brasil — Case Study Regulatório
+
+**Prediction Markets**: 
+- **CVM aprovou** contratos binários via B3 (fev/2026)
+- **Restrição**: Investidores profissionais (>R$10 milhões)
+- **Players locais**: Prévias, Palpitada (operando em grey area)
+- **Debate**: CVM vs Banco Central vs Min. Fazenda (jurisdição)
+
+**Market size**:
+- **#5 mundial** em gaming (todos segmentos)
+- **R$50 bilhões** turnover anual (US$10 bilhões)  
+- **$2.9 bilhões** sports betting revenue 2025
+- **100+ milhões** real-money participants
+
+**Oportunidade**: Maior mercado LATAM com regulamentação favorável emergindo
+
+#### 🚧 Barriers & Challenges Regionais
+
+- **Regulamentação fragmentada** — cada país tem framework próprio
+- **Currency volatility** — Argentina, Venezuela instabilidade 
+- **Payment rails** — sistemas de pagamento limitados
+- **Tax complexity** — múltiplas jurisdições fiscais
+- **Language/culture** — localização necessária (PT-BR, ES)
+
 ### 🌏 Ásia-Pacífico — Mercado Emergente
 
 | País | Status | Volume Estimado | Características |
@@ -104,6 +145,24 @@ A **eleição presidencial de novembro/2024** foi o divisor de águas:
 - 🇳🇱 **Holanda**: KSA — consulta pública em andamento
 - 🇨🇭 **Suíça**: FINMA — abordagem crypto-friendly, caso-a-caso
 
+### 🌎 América Latina — Formalização Acelerada
+
+| País | Regulador | Abordagem | Status Prediction Markets |
+|------|-----------|-----------|---------------------------|
+| 🇧🇷 **Brasil** | **CVM** | Securities-based | **Aprovado** (invest. profissionais) |
+| 🇲🇽 **México** | SEGOB | Gaming-based | Em análise |
+| 🇦🇷 **Argentina** | Lotterías | Provincial | Fragmentado |  
+| 🇨🇴 **Colômbia** | Coljuegos | Comprehensive | Framework existente |
+| 🇨🇱 **Chile** | SCJ | Conservative | Limitado |
+| 🇵🇪 **Peru** | MINCETUR | Emerging | Desenvolvimento |
+
+**🇧🇷 Brasil — Primeiro Aprovado**:
+- **CVM Resolução** (fev/2026): Contratos binários via B3
+- **Modelo**: Securities/derivatives (não gambling)
+- **Acesso**: Investidores profissionais (>R$10M)
+- **Jurisdição**: Debate CVM vs BCB vs MF ongoing
+- **Precedente**: Primeiro prediction market oficialmente regulamentado na região
+
 ### 🌏 Ásia-Pacífico — Patchwork de Abordagens
 
 | País | Abordagem | Status | Observações |
@@ -150,17 +209,24 @@ A **eleição presidencial de novembro/2024** foi o divisor de águas:
 ### 🔮 Outlook Regulatório 2026-2027
 
 #### **Tendências Esperadas**
-1. **Harmonização gradual** — EUA e Europa convergindo
-2. **Institutional adoption** — Bancos entrando via compliance
-3. **Stablecoin integration** — Regulamentação de payment rails
-4. **AI/ML monitoring** — Automated market surveillance
+1. **LATAM leadership** — Brasil via CVM, outros países seguindo
+2. **Harmonização gradual** — EUA e Europa convergindo  
+3. **Institutional adoption** — Bancos entrando via compliance
+4. **Stablecoin integration** — Regulamentação de payment rails
+5. **AI/ML monitoring** — Automated market surveillance
 
-#### **Cenários Possíveis**
-- **🟢 Bull case**: Global framework harmonizado, institutional capital
-- **🟡 Base case**: Fragmentação regional, compliance creep
-- **🔴 Bear case**: Crackdown coordenado, market fragmentation
+#### **Cenários por Região**
+- **🇺🇸 EUA**: CFTC consolidation, federal vs state resolution
+- **🇪🇺 Europa**: MiCA enforcement, gambling vs securities classification  
+- **🌎 LATAM**: **Brasil first-mover advantage**, regional expansion
+- **🌏 Ásia**: Sandbox experiments, gradual opening
 
-**Strategic implication**: **Multi-jurisdictional compliance** será vantagem competitiva decisiva.
+#### **Cenários Globais**
+- **🟢 Bull case**: Harmonização multi-regional, institutional capital, LATAM boom
+- **🟡 Base case**: Fragmentação regional com pockets de crescimento (Brasil, EUA)
+- **🔴 Bear case**: Crackdown coordenado, retração para jurisdições permissivas
+
+**Strategic implication**: **Brazil-first strategy** pode capturar first-mover advantage no maior mercado LATAM regulamentado.
 
 ---
 
@@ -232,12 +298,13 @@ Aloca capital dinamicamente entre S1-S5 baseado em:
 
 **Target allocation inicial**: S1 (30%), S2 (25%), S3 (20%), S4 (15%), S5 (10%)
 
-### Expansão Multi-Platform
+### Expansão Multi-Platform & Geográfica
 
 **Fase 1**: Polymarket (maior transparência, APIs abertas)  
 **Fase 2**: Kalshi (CFTC compliance, institutional volume)  
 **Fase 3**: Cross-platform arbitrage (Poly vs Kalshi spreads)  
-**Fase 4**: International expansion (Gnosis, regional players)
+**Fase 4**: Brazil (CVM regulado via B3, primeiro mercado LATAM oficial)
+**Fase 5**: International expansion (Gnosis, European players, LATAM scale)
 
 ### Compliance-First Approach
 
