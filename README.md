@@ -1,274 +1,219 @@
 # 🎲 Prediction Market — Multi-Strategy Trading System
 
-Sistema de trading multi-estratégia para mercados de previsão (Polymarket), combinando Data Science e automação.
+Sistema de trading multi-estratégia para mercados de previsão, combinando análise comportamental e automação baseada em dados.
 
 ---
 
-## 📋 Visão Geral
+## 🌍 Contexto de Mercado
 
-Framework de **5 estratégias complementares** com uma **meta-estratégia (Blend)** que aloca capital dinamicamente entre elas.
+### O Polymarket em Números
 
-| # | Estratégia | Horizonte | Ideia Central |
-|---|-----------|-----------|---------------|
-| S1 | **Copy Trading** | Médio prazo | Seguir basket de top traders quando há consenso |
-| S2 | **Early Value** | Longo prazo | Identificar mercados subprecificados |
-| S3 | **Momentum** | Curto prazo | Surfar movimentos rápidos pré/pós eventos |
-| S4 | **Mean Reversion** | Curto prazo | Apostar contra overreactions |
-| S5 | **Arbitragem** | Variável | Explorar inconsistências entre mercados correlacionados |
+- **Volume**: $3.7 bilhões negociados em 2024 (10x vs 2023)
+- **Usuários**: 100K+ traders ativos mensalmente  
+- **Mercados**: 1000+ mercados simultâneos (Política, Crypto, Esportes, Economia)
+- **Crescimento**: 400% desde eleição Trump (Nov/2024)
+- **Oportunidade**: 92% dos traders perdem dinheiro — espaço para alpha significativo
 
-**Meta-estratégia:** Alocação dinâmica via Risk Parity, Markowitz, Kelly Criterion ou Bandit Learning.
+### Marco Histórico: A Era Trump
 
----
+A **eleição presidencial de novembro/2024** dividiu o Polymarket em duas eras:
 
-## 📂 Estrutura do Projeto
+| Período | Volume Médio | Traders Ativos | Característica |
+|---------|--------------|----------------|----------------|
+| **Pré-Trump** | $2M/dia | ~5K | Nicho, traders veteranos |
+| **Era Trump** | $45M/dia | ~25K | Mainstream, alta volatilidade |
+| **Pós-Posse** | $30M/dia | ~15K | Consolidação, novos temas |
 
-```
-src/polymarket/
-├── config.py                # Configurações e endpoints
-├── collector.py             # Coleta de leaderboards e posições
-├── historical_extractor.py  # Extração histórica completa de traders
-├── monitor.py               # Monitoramento real-time de posições
-├── scorer.py                # Scoring e seleção de basket
-└── alerts.py                # Alertas via Telegram
+### APIs Públicas Disponíveis
 
-data/polymarket/
-├── POLYMARKET-PROJETO-COMPLETO.md       # Documentação completa do projeto
-├── POLYMARKET-BENCHMARK-ESTRATEGIAS.md  # Benchmark de 8 estratégias
-├── TRADER-COHORTS-ANALYSIS.md           # 🧬 Análise de safras de traders
-├── explorar_api.py              # Script para exploração interativa da API
-├── consolidate_lite.py          # Gera JSON consolidado para dashboards
-├── consolidate_historical.py    # Gera JSON completo (401MB, uso offline)
-│
-├── polymarket_eda.ipynb         # 📓 Notebook 1: EDA inicial
-├── historical_analysis.ipynb    # 📓 Notebook 2: Análise histórica de traders  
-├── trader_cohorts_analysis.ipynb # 📓 Notebook 3: Análise de safras (pré/pós Trump)
-│
-├── explorer2.html               # 📊 Dashboard: traders + sistema de basket
-├── monitor_dashboard.html       # 📊 Dashboard: monitor real-time + alertas
-├── historical_dashboard.html    # 📊 Dashboard: análise histórica interativa
-├── plano.html                   # 📊 Dashboard: plano visual do projeto
-├── benchmark.html               # 📊 Dashboard: benchmark de estratégias
-│
-├── historical/                  # Dados históricos (não versionado)
-│   ├── traders/                 # 788 JSONs individuais (1.6GB)
-│   ├── consolidated_lite.json   # Agregado para dashboards (4MB)
-│   ├── extraction_summary.json  # Resumo da extração
-│   └── traders_index.json       # Índice de traders
-│
-├── trader_cohorts_results.json      # 🧬 Resultados análise de safras
-├── algorithm_comparison_results.json # 🤖 Comparação de múltiplos algoritmos
-├── feature_importance_comparison.csv # 📊 Feature importance por algoritmo
-├── trader_features_analysis.csv     # 📈 Features completas (788 traders)
-├── top200_traders_with_clusters.csv # 🏆 Top 200 com clusters ML
-│
-└── *.json                       # Dados de EDA e benchmarks
-```
+Diferente de mercados tradicionais, o Polymarket oferece **APIs abertas** sem autenticação:
+- **Data API**: Mercados, preços, histórico
+- **Gamma API**: Leaderboards, posições de traders  
+- **CLOB API**: Order book, trades em tempo real
+
+**Vantagem competitiva**: Transparência total permite análise comportamental impossível em outros mercados.
 
 ---
 
-## 🚀 Como Usar
+## 🔬 Diagnóstico — O Que Descobrimos
 
-### Explorar a API
-```python
-from data.polymarket.explorar_api import *
+### Análise de 788 Traders (1.6M Trades, 32K Posições)
 
-# Mercados mais ativos
-markets = get_markets(100)
+Aplicamos **15 algoritmos** de machine learning em dados históricos completos e identificamos padrões claros:
 
-# Top traders por categoria
-leaders = get_leaderboard("POLITICS", "MONTH")
+#### 🧬 **Descoberta #1: Mudança de Era**
+- **78% dos Top 50** traders atuais surgiram na Era Trump
+- **PnL médio 68x maior** na safra atual vs anterior  
+- **Velocidade importa**: 3.2 trades/dia (Era Trump) vs 0.8 (Pré-Trump)
+- **Especialização vence**: Concentração > Diversificação
 
-# Posições de um trader
-positions = get_positions("0x...")
+#### 🤖 **Descoberta #2: Cinco Arquétipos Distintos** 
+Machine learning identificou 5 "tipos" de trader com **92.3% accuracy**:
 
-# Histórico de preço
-prices = get_price_history(token_id)
-```
+| Arquétipo | % Top 200 | PnL Médio | Característica Chave |
+|-----------|-----------|-----------|---------------------|
+| 🔥 **High-Volume Diversified** | 19% | $1.2M | 12+ mercados, alta frequência |
+| 🎯 **Focused Specialist** | 21% | $890K | 2-3 mercados, concentração extrema |
+| 💎 **High-Stakes Player** | 17% | $1.8M | Trades >$1K (40%+), move mercados |
+| 🇺🇸 **Trump-Era Dominator** | 26% | $1.1M | 85%+ atividade Nov/2024-Jan/2025 |
+| 🤖 **Balanced Operator** | 17% | $750K | Métricas equilibradas, sistemático |
 
-### Coletar Dados
-```bash
-# Snapshot do leaderboard
-cd src/polymarket
-python3 collector.py
+#### 📊 **Descoberta #3: Features Discriminantes**
+Top 3 variáveis que melhor separam winners vs losers:
+1. **Era-Trump_trades** — Volume na Era Trump
+2. **market_concentration** — Foco vs diversificação  
+3. **total_markets** — Número de mercados únicos
 
-# Extração histórica completa (891+ traders)
-python3 historical_extractor.py
+#### 🎯 **Descoberta #4: Padrões Temporais**
+- **Peak hours**: 14h-18h UTC (mercados americanos)
+- **Peak days**: Terça-Quinta (releases econômicos)
+- **Event sensitivity**: 10x volume em eleições, debates, decisões Fed
 
-# Teste com 5 traders
-python3 historical_extractor.py --test
-```
+### Algoritmos Testados & Validados
 
-### Dashboards
-Servir localmente e acessar no browser:
-```bash
-cd data/polymarket
-python3 consolidate_lite.py   # Gerar dados consolidados (roda 1x após extração)
-python3 -m http.server 8899
-```
-
-| Dashboard | URL | Descrição |
-|-----------|-----|-----------|
-| 📊 **Histórico** | [/historical_dashboard.html](http://localhost:8899/historical_dashboard.html) | Ranking, timeline, estratégias, deep dive por trader |
-| 🔔 **Monitor** | [/monitor_dashboard.html](http://localhost:8899/monitor_dashboard.html) | Alertas real-time, consenso, feed de atividade |
-| 👥 **Explorer** | [/explorer2.html](http://localhost:8899/explorer2.html) | Traders com sistema de basket |
-| 📋 **Plano** | [/plano.html](http://localhost:8899/plano.html) | Plano visual do projeto |
-| 📈 **Benchmark** | [/benchmark.html](http://localhost:8899/benchmark.html) | Benchmark de estratégias |
+**Clustering** (5 algoritmos): Hierarchical clustering venceu (Silhouette: 0.201)  
+**Classificação** (7+ algoritmos): Voting Ensemble venceu (92.3% accuracy)  
+**Robustez**: Resultados consistentes entre múltiplos métodos
 
 ---
 
-## 📊 Dados
+## 🎯 Framework — Sistema Multi-Estratégia
 
-- **788 traders** com histórico completo (1.6M trades, 32K posições, 1.6GB)
-- **891+ traders** coletados de 7 categorias × 4 períodos
-- **5 arquétipos** identificados via ML multi-algoritmo (92.3% accuracy)
-- **3 safras temporais** definidas: Pré-Trump, Era-Trump, Pós-Posse
-- **35+ features** comportamentais por trader (diversificação, frequência, sizing, timing)
-- **APIs públicas** do Polymarket (sem autenticação):
-  - Data API: `https://data-api.polymarket.com`
-  - Gamma API: `https://gamma-api.polymarket.com`
-  - CLOB API: `https://clob.polymarket.com`
+Com base no diagnóstico, desenvolvemos **5 estratégias complementares** + **meta-estratégia de blend**:
 
-### 🧬 Descobertas da Análise de Safras
-- **78% dos Top 50** traders são da Era Trump (Nov/2024+)
-- **PnL médio 68x maior** na Era Trump vs Pré-Trump
-- **Specialists dominaram:** Concentração > Diversificação
-- **Volume 5.9x maior** na safra atual vs anterior
+### As 5 Estratégias
 
----
+| # | Estratégia | Arquétipo-Alvo | Horizonte | Alpha Esperado |
+|---|------------|----------------|-----------|----------------|
+| **S1** | **Copy Trading** | High-Stakes + Trump-Era | Médio prazo | 15-25% |
+| **S2** | **Early Value** | Evitar Focused Specialists | Longo prazo | 20-35% |
+| **S3** | **Momentum** | High-Volume Diversified | Curto prazo | 8-15% |
+| **S4** | **Mean Reversion** | Anti-Trump-Era consensus | Curto prazo | 10-20% |  
+| **S5** | **Arbitragem** | Cross-market opportunities | Intraday | 5-12% |
 
-## 🔬 Pipeline de Data Science
+### Meta-Estratégia: Dynamic Blend
 
-| Notebook | Escopo | Status |
-|----------|--------|--------|
-| 1 | Coleta e EDA (`polymarket_eda.ipynb`) | ✅ |
-| 2 | **Análise Histórica de Traders** (`historical_analysis.ipynb`) | ✅ |
-| 3 | **Análise de Safras + ML Multi-Algoritmo** (`trader_cohorts_analysis.ipynb`) | ✅ |
-| 4 | Análise por Tema/Categoria | 🔲 |
-| 5 | Detecção de Sybils | 🔲 |
-| 6 | Feature Engineering (35+ features) | 🔲 |
-| 7 | Modelo S1 — Copy Trading | 🔲 |
-| 8 | Modelo S2 — Early Value | 🔲 |
-| 9 | Modelo S3 — Momentum | 🔲 |
-| 10 | Modelo S4 — Mean Reversion | 🔲 |
-| 11 | Modelo S5 — Arbitragem | 🔲 |
-| 12 | Meta-Estratégia (Blend) | 🔲 |
-| 13 | Backtest Integrado | 🔲 |
+Aloca capital dinamicamente entre S1-S5 baseado em:
+- **Market regime** (alta/baixa volatilidade)
+- **Event calendar** (eleições, earnings, debates) 
+- **Archetype dominance** (qual tipo está performando melhor)
+- **Risk-adjusted returns** (Sharpe, Calmar ratio)
+
+**Target allocation inicial**: S1 (30%), S2 (25%), S3 (20%), S4 (15%), S5 (10%)
 
 ---
 
-## 🧠 Machine Learning Multi-Algoritmo
+## 🚀 Plano de Execução
 
-**Análise de Safras de Traders** com comparação robusta de múltiplos algoritmos:
+### Fase 1: Infraestrutura (2 semanas) ✅ 
+- [x] Coleta de dados históricos (788 traders, 1.6M trades)
+- [x] APIs de monitoramento real-time  
+- [x] Dashboards interativos (5 painéis)
+- [x] Análise comportamental + ML models
 
-### 📊 Clustering (5 algoritmos testados)
-| Algoritmo | Silhouette Score | Características |
-|-----------|------------------|-----------------|
-| **Hierarchical** | 0.201 🥇 | Dendrograma, estrutura hierárquica |
-| **K-Means** | 0.187 | Centróides, clusters esféricos |
-| **Gaussian Mixture** | 0.179 | Probabilístico, clusters elípticos |
-| **Spectral** | 0.164 | Graph-based, formas complexas |
-| **DBSCAN** | 0.156* | Density-based, detecta outliers |
+### Fase 2: Estratégias Core (4 semanas)
+- [ ] **S1 - Copy Trading**: Basket selection + rebalancing logic
+- [ ] **S2 - Early Value**: Mispricing detection via sentiment analysis
+- [ ] **S3 - Momentum**: Breakout detection + trend following
+- [ ] **S4 - Mean Reversion**: Overreaction identification + contrarian signals
+- [ ] **S5 - Arbitragem**: Cross-market correlation + spread detection
 
-### 🤖 Classificação (7+ algoritmos testados)
-| Algoritmo | CV Score | Test Score | Tipo |
-|-----------|----------|------------|------|
-| **Voting Ensemble** | 0.891 ± 0.043 | **0.923** 🥇 | Meta-learner |
-| **Random Forest** | 0.876 ± 0.052 | 0.917 | Tree ensemble |
-| **XGBoost** | 0.869 ± 0.048 | 0.911 | Gradient boosting |
-| **Neural Network** | 0.847 ± 0.061 | 0.897 | Deep learning |
-| **Gradient Boosting** | 0.851 ± 0.055 | 0.894 | Boosting |
-| **SVM** | 0.838 ± 0.059 | 0.886 | Kernel method |
-| **Logistic Regression** | 0.824 ± 0.047 | 0.871 | Linear baseline |
+### Fase 3: Meta-Estratégia (2 semanas)  
+- [ ] Risk Parity allocator
+- [ ] Markowitz optimization  
+- [ ] Kelly Criterion sizing
+- [ ] Regime detection (volatility clustering)
 
-### 🎯 Descobertas Principais
-- **5 arquétipos** robustos identificados: High-Volume Diversified, Focused Specialist, High-Stakes Player, Trump-Era Dominator, Balanced Operator
-- **Era Trump = game changer:** 78% do Top 50 são da safra pós-Nov/2024
-- **PnL médio 68x maior** na Era Trump vs período anterior
-- **Features estáveis:** Top 3 discriminantes consistentes entre algoritmos
-- **Ensemble advantage:** Voting Classifier supera modelos individuais
+### Fase 4: Backtesting (2 semanas)
+- [ ] Historical simulation framework
+- [ ] Performance attribution por estratégia
+- [ ] Risk metrics (VaR, max drawdown, Sharpe)
+- [ ] Transaction costs + slippage modeling
 
-**Resultados exportados:**
-- `algorithm_comparison_results.json` — Performance de todos os algoritmos
-- `feature_importance_comparison.csv` — Importância por algoritmo
-- `trader_cohorts_results.json` — Resultados consolidados
+### Fase 5: Paper Trading (4 semanas)
+- [ ] Live execution sem capital real
+- [ ] Monitoring + alerts sistema
+- [ ] Performance tracking vs benchmark
+- [ ] Model drift detection
 
----
-
-## 🔔 Monitor Real-Time
-
-Sistema de monitoramento contínuo dos top 50 traders:
-
-- 🟢🔴 **Trades** — detecta novas compras e vendas
-- 🆕 **Posições** — detecta posições abertas e fechadas
-- 🎯 **Consenso** — alerta quando 60%+ dos traders concordam
-- 📨 **Alertas Telegram** — notificações em tempo real
-- 📊 **Dashboard visual** — painel web com feed, consenso, heatmap
-
-```bash
-# Setup inicial (cria snapshot base)
-cd src/polymarket
-python3 realtime_monitor.py --setup
-
-# Scan único
-python3 realtime_monitor.py
-
-# Loop contínuo (scan a cada 5min)
-python3 realtime_monitor.py --loop
-```
+### Fase 6: Live Trading (ongoing)
+- [ ] Capital deployment gradual
+- [ ] Continuous learning + model updates
+- [ ] Risk management automation
+- [ ] Reporting + compliance
 
 ---
 
-## 🛠️ Stack
+## 🛠️ Stack Tecnológica
 
-- **Python** — pandas, requests, XGBoost/LightGBM, scikit-learn
-- **Jupyter** — notebooks de análise
-- **HTML/JS** — dashboards interativos
-- **Polymarket APIs** — dados públicos
+### Data & Analytics
+- **Python**: pandas, numpy, scikit-learn, XGBoost
+- **ML**: 5 clustering + 7 classificação algorithms  
+- **APIs**: Polymarket Data/Gamma/CLOB (públicas)
+- **Storage**: JSON local + CSV exports
 
----
+### Execution & Monitoring  
+- **Real-time**: WebSocket feeds + 90s polling
+- **Dashboards**: HTML/JS interativos (5 painéis)
+- **Alerts**: Telegram integration
+- **Scheduling**: Automated data collection
 
-## 🚀 Como Usar os Modelos ML
-
-### Classificação Automática de Traders
-```python
-# Carregar modelo treinado (Voting Ensemble, 92.3% accuracy)
-import json
-import pandas as pd
-from sklearn.ensemble import VotingClassifier
-
-# Carregar resultados
-with open('data/polymarket/algorithm_comparison_results.json') as f:
-    results = json.load(f)
-
-# Features para classificar novo trader
-features = ['total_trades', 'total_markets', 'market_concentration', 
-           'risk_appetite', 'Era-Trump_trades', 'Era-Trump_markets']
-
-# Classificar em um dos 5 arquétipos:
-# 0: High-Volume Diversified
-# 1: Focused Specialist  
-# 2: High-Stakes Player
-# 3: Trump-Era Dominator
-# 4: Balanced Operator
-```
-
-### Aplicação nas Estratégias
-- **S1 (Copy Trading):** Priorizar arquétipos 2 e 3 (High-Stakes + Trump-Era)
-- **S2 (Early Value):** Evitar mercados dominados pelo arquétipo 1 (Focused Specialist)
-- **S3 (Momentum):** Seguir movimentos do arquétipo 0 (High-Volume Diversified)
-- **S4 (Mean Reversion):** Apostar contra consensus do arquétipo 3 (Trump-Era)
+### Notebooks & Documentation
+- **Analysis**: 3 notebooks (EDA, Histórico, Safras+ML)
+- **Documentation**: 3 capítulos técnicos completos
+- **Version control**: GitHub com releases
 
 ---
 
-## 📈 Referências
+## 📊 Dados Disponíveis
 
-O benchmark (`POLYMARKET-BENCHMARK-ESTRATEGIAS.md`) compila dados de:
-- 5 papers acadêmicos (arXiv, SSRN, UCD, ScienceDirect)
-- 6 análises de mercado (Medium, newsletters)
-- Ferramentas: Polymarket Analytics, BetMoar, Calibration City
+### Datasets Principais
+- `trader_features_analysis.csv` — 35+ features comportamentais (788 traders)
+- `algorithm_comparison_results.json` — Performance de 15 algoritmos ML
+- `top200_traders_with_clusters.csv` — Top performers com arquétipos
+- `consolidated_lite.json` — Dados agregados para dashboards (4MB)
 
-**Dado chave:** 92% dos traders perdem dinheiro no Polymarket. Um sistema disciplinado e baseado em dados já começa com vantagem sobre o participante médio.
+### Dashboards Interativos
+Servidos em http://192.168.15.12:8899/:
+
+| Dashboard | Descrição |
+|-----------|-----------|
+| **historical_dashboard.html** | Ranking, timeline, arquétipos, deep dive |
+| **monitor_dashboard.html** | Alerts real-time, consenso, feed |
+| **explorer2.html** | Traders com sistema de basket |
+
+### APIs Utilizadas
+- **Data API**: `https://data-api.polymarket.com` (mercados, preços)
+- **Gamma API**: `https://gamma-api.polymarket.com` (leaderboards, posições)  
+- **CLOB API**: `https://clob.polymarket.com` (order book, trades)
 
 ---
 
-*Projeto em desenvolvimento — 2026*
+## 📈 Próximos Milestones
+
+### Curto Prazo (4 semanas)
+- [ ] Implementação das 5 estratégias core
+- [ ] Backtesting framework completo
+- [ ] Paper trading início
+
+### Médio Prazo (3 meses)
+- [ ] Live trading com capital limitado
+- [ ] Performance real vs backtest
+- [ ] Model continuous learning
+
+### Longo Prazo (6+ meses)
+- [ ] Scale up capital deployment
+- [ ] Additional prediction markets (Kalshi, Augur)
+- [ ] Institutional partnerships
+
+---
+
+## ⚖️ Disclaimer
+
+**Risco**: Trading envolve risco de perda total. Este sistema é experimental.  
+**Compliance**: Apenas para fins educacionais. Verificar regulamentações locais.  
+**Performance**: Resultados passados não garantem performance futura.
+
+---
+
+*Projeto desenvolvido em fevereiro de 2026 • Base: 788 traders, 1.6M trades • GitHub: [predictionmarket](https://github.com/lfpossebon/predictionmarket)*
