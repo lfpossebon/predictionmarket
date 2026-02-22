@@ -4,40 +4,171 @@ Sistema de trading multi-estratégia para mercados de previsão, combinando aná
 
 ---
 
-## 🌍 Contexto de Mercado
+## 🌍 Mercado Global de Prediction Markets
 
-### O Polymarket em Números
+### Tamanho do Mercado
 
-- **Volume**: $3.7 bilhões negociados em 2024 (10x vs 2023)
-- **Usuários**: 100K+ traders ativos mensalmente  
-- **Mercados**: 1000+ mercados simultâneos (Política, Crypto, Esportes, Economia)
-- **Crescimento**: 400% desde eleição Trump (Nov/2024)
-- **Oportunidade**: 92% dos traders perdem dinheiro — espaço para alpha significativo
+- **Volume total 2025**: $44 bilhões (crescimento 130x vs início 2024)
+- **Mercados ativos**: 85,000+ simultâneos globalmente
+- **Crescimento explosivo**: De <$100M/mês (jan/2024) para >$13B/mês (dez/2025)
+- **Oportunidade**: 92% dos traders perdem dinheiro — espaço significativo para alpha
+
+### 🇺🇸 Estados Unidos — Líderes de Mercado
+
+| Plataforma | Volume Semanal* | Regulamentação | Características |
+|------------|----------------|-----------------|-----------------|
+| **Polymarket** | ~$3.2B | Sem CFTC oversight | Crypto-native, APIs abertas |
+| **Kalshi** | ~$3.1B | CFTC regulado | Institucional, compliance total |
+| **PredictIt** | ~$50M | Limitado (CFTC) | Política, limite $850/posição |
+| **Manifold** | Research | Não-monetário | Academia, forecasting |
+| **Metaculus** | Research | Não-monetário | Científico, long-term |
+
+*Dados de fevereiro 2026 — guerra Polymarket vs Kalshi por dominância
+
+### 🇪🇺 Europa — Ambiente Mais Restritivo  
+
+| País/Região | Status | Regulamentação | Observações |
+|-------------|--------|----------------|-------------|
+| **Reino Unido** | Restrito | Betting exchanges (UKGC) | Licença obrigatória |
+| **União Europeia** | Fragmentado | MiCA (jul/2026) | Implementação em andamento |
+| **Alemanha** | Limitado | BaFin + Gaming | Restrições de marketing |
+| **França** | Proibido | ARJEL | Sem licenças emitidas |
+
+**Players locais**: Smarkets, Betfair (betting exchanges tradicionais)
+
+### 🌏 Ásia-Pacífico — Mercado Emergente
+
+| País | Status | Volume Estimado | Características |
+|------|-------|-----------------|-----------------|
+| **Singapura** | Permitido (limitado) | ~$100M | Sandbox regulatório |
+| **Hong Kong** | Incerto | ~$50M | Discussões regulatórias |
+| **Japão** | Restrito | <$10M | Gaming laws aplicáveis |
+| **Coreia do Sul** | Proibido | N/A | Regulamentação rígida |
+
+### 🔗 Blockchain/DeFi — Protocols Descentralizados
+
+| Protocol | TVL/Market Cap | Chain | Status |
+|----------|----------------|-------|--------|
+| **Gnosis** | $463M | Ethereum/xDai | Ativo desde 2015 |
+| **Augur** | $13M (pico) | Ethereum | Declining |
+| **Omen** | ~$5M | Gnosis Chain | Nicho, DAOs |
+| **Zeitgeist** | <$1M | Substrate | Cross-chain focus |
 
 ### Marco Histórico: A Era Trump
 
-A **eleição presidencial de novembro/2024** dividiu o Polymarket em duas eras:
+A **eleição presidencial de novembro/2024** foi o divisor de águas:
 
-| Período | Volume Médio | Traders Ativos | Característica |
-|---------|--------------|----------------|----------------|
-| **Pré-Trump** | $2M/dia | ~5K | Nicho, traders veteranos |
-| **Era Trump** | $45M/dia | ~25K | Mainstream, alta volatilidade |
-| **Pós-Posse** | $30M/dia | ~15K | Consolidação, novos temas |
+| Período | Volume Global/Dia | Características |
+|---------|-------------------|-----------------|
+| **Pré-Trump** | ~$50M | Nicho, early adopters |
+| **Era Trump** | ~$400M | Mainstream, FOMO |
+| **Pós-Posse** | ~$250M | Consolidação, novos temas |
 
-### APIs Públicas Disponíveis
+### APIs e Transparência
 
-Diferente de mercados tradicionais, o Polymarket oferece **APIs abertas** sem autenticação:
-- **Data API**: Mercados, preços, histórico
-- **Gamma API**: Leaderboards, posições de traders  
-- **CLOB API**: Order book, trades em tempo real
+**Vantagem competitiva única**: Diferente de mercados tradicionais, muitas plataformas oferecem dados públicos:
+- **Polymarket**: APIs abertas (Data, Gamma, CLOB)
+- **Kalshi**: API limitada, dados pagos
+- **Manifold**: Open source, dados públicos
+- **Augur/Gnosis**: On-chain, totalmente transparente
 
-**Vantagem competitiva**: Transparência total permite análise comportamental impossível em outros mercados.
+---
+
+## ⚖️ Panorama Regulatório Global
+
+### 🇺🇸 Estados Unidos — Precedente Estabelecido
+
+**CFTC (Commodity Futures Trading Commission)**
+- **Status**: Prediction markets = commodity derivatives
+- **Marco**: Kalshi venceu lawsuit contra CFTC (Out/2024)
+- **Compliance**: Segregação de fundos, limites de posição, reporting
+- **Evolução**: CFTC Chairman Selig (2026) sinalizou expansão regulatória
+
+**Jurisdição vs Estados**
+- **Federal**: CFTC oversight para contratos de commodities
+- **Estadual**: Alguns estados tentam regular como gambling
+- **Batalha legal**: Ongoing disputes sobre autoridade regulatória
+
+### 🇪🇺 União Europeia — Fragmentação e MiCA
+
+**Markets in Crypto-Assets (MiCA)**
+- **Implementação**: Julho 1, 2026 (enforcement completo)
+- **Escopo**: Prediction markets crypto podem ser afetados
+- **Compliance**: Reporting obrigatório, segregação, transparência
+- **Impacto**: Polymarket e similares precisam adaptar ou sair
+
+**Por País**:
+- 🇬🇧 **Reino Unido**: Gambling Commission — betting intermediary license obrigatória
+- 🇩🇪 **Alemanha**: BaFin + gaming authorities — dupla regulamentação
+- 🇫🇷 **França**: ARJEL — prediction markets = gambling (proibido)
+- 🇳🇱 **Holanda**: KSA — consulta pública em andamento
+- 🇨🇭 **Suíça**: FINMA — abordagem crypto-friendly, caso-a-caso
+
+### 🌏 Ásia-Pacífico — Patchwork de Abordagens
+
+| País | Abordagem | Status | Observações |
+|------|-----------|--------|-------------|
+| 🇸🇬 **Singapura** | Sandbox | Permitido | MAS monitoring, limites |
+| 🇭🇰 **Hong Kong** | Wait-and-see | Indefinido | SFC avaliando |
+| 🇯🇵 **Japão** | Gaming laws | Restrito | JFSA cautelosa |
+| 🇰🇷 **Coreia do Sul** | Anti-gambling | Proibido | FSS enforcement rígido |
+| 🇦🇺 **Austrália** | ACMA/AUSTRAC | Limitado | Regulamentação dupla |
+
+### 🏛️ Desafios Regulatórios Principais
+
+#### **1. Classificação Fundamental**
+- **EUA**: Commodity derivatives (CFTC)
+- **Europa**: Gambling products (nacional)
+- **Blockchain**: Securities vs utilities vs commodities
+
+#### **2. Compliance Requirements**
+- **KYC/AML**: Variável por jurisdição
+- **Fund segregation**: Proteção do cliente
+- **Market manipulation**: Monitoramento e reporting
+- **Tax implications**: Capital gains vs gambling winnings
+
+#### **3. Cross-Border Challenges**
+- **VPN usage**: Enforcement limitations
+- **Decentralized protocols**: Jurisdictional ambiguity
+- **API access**: Data sovereignty issues
+- **Settlement**: Cross-border fund transfers
+
+### 🚨 Risk Factors Regulatórios
+
+#### **Alto Risco**
+- **Market manipulation** — Whales manipulando odds
+- **Money laundering** — Crypto anonymity
+- **Underage gambling** — KYC insuficiente
+- **Political interference** — Election betting sensitivities
+
+#### **Médio Risco**  
+- **Tax evasion** — Reporting gaps
+- **Consumer protection** — Insufficient disclosures
+- **Market integrity** — Insider information
+- **Operational resilience** — Platform outages
+
+### 🔮 Outlook Regulatório 2026-2027
+
+#### **Tendências Esperadas**
+1. **Harmonização gradual** — EUA e Europa convergindo
+2. **Institutional adoption** — Bancos entrando via compliance
+3. **Stablecoin integration** — Regulamentação de payment rails
+4. **AI/ML monitoring** — Automated market surveillance
+
+#### **Cenários Possíveis**
+- **🟢 Bull case**: Global framework harmonizado, institutional capital
+- **🟡 Base case**: Fragmentação regional, compliance creep
+- **🔴 Bear case**: Crackdown coordenado, market fragmentation
+
+**Strategic implication**: **Multi-jurisdictional compliance** será vantagem competitiva decisiva.
 
 ---
 
 ## 🔬 Diagnóstico — O Que Descobrimos
 
-### Análise de 788 Traders (1.6M Trades, 32K Posições)
+### Análise Completa: 788 Polymarket Traders (1.6M Trades, 32K Posições)
+
+**Base**: Polymarket como case study — maior plataforma crypto-native com APIs públicas
 
 Aplicamos **15 algoritmos** de machine learning em dados históricos completos e identificamos padrões claros:
 
@@ -100,6 +231,20 @@ Aloca capital dinamicamente entre S1-S5 baseado em:
 - **Risk-adjusted returns** (Sharpe, Calmar ratio)
 
 **Target allocation inicial**: S1 (30%), S2 (25%), S3 (20%), S4 (15%), S5 (10%)
+
+### Expansão Multi-Platform
+
+**Fase 1**: Polymarket (maior transparência, APIs abertas)  
+**Fase 2**: Kalshi (CFTC compliance, institutional volume)  
+**Fase 3**: Cross-platform arbitrage (Poly vs Kalshi spreads)  
+**Fase 4**: International expansion (Gnosis, regional players)
+
+### Compliance-First Approach
+
+- **Jurisdictional mapping**: EUA (CFTC), EU (MiCA), UK (UKGC)
+- **KYC/AML integration**: Multi-platform identity verification  
+- **Tax optimization**: Capital gains vs gambling treatment
+- **Operational resilience**: Multi-region infrastructure
 
 ---
 
@@ -183,9 +328,16 @@ Servidos em http://192.168.15.12:8899/:
 | **explorer2.html** | Traders com sistema de basket |
 
 ### APIs Utilizadas
+
+**Polymarket (Base de Análise)**:
 - **Data API**: `https://data-api.polymarket.com` (mercados, preços)
 - **Gamma API**: `https://gamma-api.polymarket.com` (leaderboards, posições)  
 - **CLOB API**: `https://clob.polymarket.com` (order book, trades)
+
+**Expansão Futura**:
+- **Kalshi API**: `https://trading-api.kalshi.com` (CFTC regulado)
+- **Gnosis Conditional Tokens**: On-chain data via The Graph
+- **PredictIt API**: `https://www.predictit.org/api` (política americana)
 
 ---
 
