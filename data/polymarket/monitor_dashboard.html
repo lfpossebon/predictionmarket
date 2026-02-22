@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🔔 Polymarket Monitor — Real-Time</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0a0a0f; color: #e0e0e0; }
+
+.header {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  padding: 20px 30px;
+  border-bottom: 1px solid #2a2a4a;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.header h1 { font-size: 1.4em; }
+.header h1 span { color: #00d4aa; }
+.header .status { display: flex; align-items: center; gap: 12px; font-size: 0.85em; color: #888; }
+.header .status .dot { width: 8px; height: 8px; border-radius: 50%; background: #00d4aa; animation: pulse 2s infinite; }
+@keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.3; } }
+
+.container { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; padding: 20px; max-width: 1600px; margin: 0 auto; }
+@media (max-width: 1000px) { .container { grid-template-columns: 1fr; } }
+
+.card {
+  background: #12121a; border: 1px solid #2a2a3a; border-radius: 12px;
+  overflow: hidden;
+}
+.card-header {
+  padding: 14px 18px; background: #1a1a2a; border-bottom: 1px solid #2a2a3a;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.card-header h2 { font-size: 1em; font-weight: 600; }
+.card-header .badge { background: #00d4aa22; color: #00d4aa; padding: 2px 10px; border-radius: 20px; font-size: 0.8em; }
+.card-body { padding: 14px 18px; max-height: 500px; overflow-y: auto; }
+
+/* Alerts */
+.alert-item {
+  padding: 12px; margin-bottom: 8px; border-radius: 8px;
+  border-left: 3px solid #333; background: #16161e;
+}
+.alert-item.buy { border-left-color: #00d4aa; }
+.alert-item.sell { border-left-color: #ff4757; }
+.alert-item.new { border-left-color: #ffa502; }
+.alert-item.close { border-left-color: #747d8c; }
+.alert-item.consensus { border-left-color: #7c4dff; background: #1a1630; }
+.alert-time { font-size: 0.75em; color: #666; margin-bottom: 4px; }
+.alert-title { font-size: 0.9em; font-weight: 600; margin-bottom: 2px; }
+.alert-detail { font-size: 0.8em; color: #999; }
+.alert-value { font-size: 0.85em; color: #00d4aa; font-weight: 600; }
+
+/* Stats */
+.stats-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.stat-box {
+  background: #16161e; border-radius: 8px; padding: 16px; text-align: center;
+}
+.stat-value { font-size: 1.8em; font-weight: 700; color: #00d4aa; }
+.stat-label { font-size: 0.75em; color: #888; margin-top: 4px; }
+
+/* Consensus */
+.consensus-item {
+  padding: 12px; margin-bottom: 8px; border-radius: 8px;
+  background: #1a1630; border: 1px solid #2a2050;
+}
+.consensus-bar-bg { height: 6px; background: #2a2a3a; border-radius: 3px; margin-top: 8px; }
+.consensus-bar { height: 6px; background: linear-gradient(90deg, #7c4dff, #00d4aa); border-radius: 3px; transition: width 0.5s; }
+.consensus-pct { font-size: 1.2em; font-weight: 700; color: #7c4dff; }
+
+/* Traders table */
+.traders-table { width: 100%; font-size: 0.8em; }
+.traders-table th { text-align: left; padding: 8px; color: #666; border-bottom: 1px solid #2a2a3a; font-weight: 500; }
+.traders-table td { padding: 8px; border-bottom: 1px solid #1a1a2a; }
+.traders-table tr:hover { background: #1a1a2a; }
+.trader-name { color: #00d4aa; font-weight: 600; }
+.pnl-pos { color: #00d4aa; }
+.pnl-neg { color: #ff4757; }
+
+/* Activity feed */
+.feed-item { 
+  display: flex; gap: 10px; padding: 8px 0; border-bottom: 1px solid #1a1a2a;
+  font-size: 0.85em;
+}
+.feed-emoji { font-size: 1.2em; }
+.feed-text { flex: 1; }
+.feed-text .name { color: #00d4aa; font-weight: 600; }
+.feed-text .market { color: #ccc; }
+.feed-text .meta { color: #666; font-size: 0.85em; }
+
+/* Full width cards */
+.full-width { grid-column: 1 / -1; }
+
+/* Refresh button */
+.btn-refresh {
+  background: #00d4aa22; color: #00d4aa; border: 1px solid #00d4aa44;
+  padding: 6px 14px; border-radius: 6px; cursor: pointer; font-size: 0.8em;
+}
+.btn-refresh:hover { background: #00d4aa33; }
+
+.empty { color: #555; text-align: center; padding: 30px; font-style: italic; }
+.loading { text-align: center; padding: 30px; color: #666; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🔔 Polymarket <span>Monitor</span></h1>
+  <div class="status">
+    <div class="dot" id="statusDot"></div>
+    <span id="statusText">Conectando...</span>
+    <span id="lastUpdate"></span>
+    <button class="btn-refresh" onclick="refresh()">⟳ Atualizar</button>
+  </div>
+</div>
+
+<div class="container">
+  <!-- Stats -->
+  <div class="card">
+    <div class="card-header">
+      <h2>📊 Resumo</h2>
+      <span class="badge" id="scanCount">—</span>
+    </div>
+    <div class="card-body">
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-value" id="statTraders">—</div>
+          <div class="stat-label">Traders Monitorados</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-value" id="statAlerts">—</div>
+          <div class="stat-label">Alertas Hoje</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-value" id="statPositions">—</div>
+          <div class="stat-label">Posições Rastreadas</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-value" id="statConsensus">—</div>
+          <div class="stat-label">Sinais de Consenso</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Consensus -->
+  <div class="card">
+    <div class="card-header">
+      <h2>🎯 Consenso Ativo</h2>
+      <span class="badge" id="consensusCount">0</span>
+    </div>
+    <div class="card-body" id="consensusPanel">
+      <div class="empty">Analisando consenso...</div>
+    </div>
+  </div>
+
+  <!-- Activity Feed -->
+  <div class="card full-width">
+    <div class="card-header">
+      <h2>📡 Feed de Atividade</h2>
+      <span class="badge" id="feedCount">0</span>
+    </div>
+    <div class="card-body" id="feedPanel" style="max-height: 600px;">
+      <div class="loading">Carregando alertas...</div>
+    </div>
+  </div>
+
+  <!-- Top Traders -->
+  <div class="card">
+    <div class="card-header">
+      <h2>🏆 Top Traders Monitorados</h2>
+    </div>
+    <div class="card-body" id="tradersPanel">
+      <div class="loading">Carregando...</div>
+    </div>
+  </div>
+
+  <!-- Market Heatmap -->
+  <div class="card">
+    <div class="card-header">
+      <h2>🔥 Mercados Mais Ativos</h2>
+    </div>
+    <div class="card-body" id="marketsPanel">
+      <div class="loading">Carregando...</div>
+    </div>
+  </div>
+</div>
+
+<script>
+const BASE = window.location.origin;
+const MONITOR_DIR = 'monitor';
+
+let state = null;
+let alerts = [];
+
+async function loadJSON(path) {
+  try {
+    const r = await fetch(`${BASE}/${path}?t=${Date.now()}`);
+    if (!r.ok) return null;
+    return await r.json();
+  } catch { return null; }
+}
+
+function timeAgo(iso) {
+  if (!iso) return '';
+  const diff = (Date.now() - new Date(iso).getTime()) / 1000;
+  if (diff < 60) return `${Math.floor(diff)}s atrás`;
+  if (diff < 3600) return `${Math.floor(diff/60)}min atrás`;
+  if (diff < 86400) return `${Math.floor(diff/3600)}h atrás`;
+  return `${Math.floor(diff/86400)}d atrás`;
+}
+
+function formatUSD(v) {
+  if (!v || isNaN(v)) return '$0';
+  if (Math.abs(v) >= 1e6) return `$${(v/1e6).toFixed(1)}M`;
+  if (Math.abs(v) >= 1e3) return `$${(v/1e3).toFixed(1)}K`;
+  return `$${v.toFixed(0)}`;
+}
+
+function renderStats() {
+  if (!state) return;
+  
+  const traders = Object.keys(state.known_positions || {}).length;
+  const positions = Object.values(state.known_positions || {}).reduce((sum, p) => sum + Object.keys(p).length, 0);
+  const todayAlerts = alerts.length;
+  
+  document.getElementById('statTraders').textContent = traders;
+  document.getElementById('statAlerts').textContent = todayAlerts;
+  document.getElementById('statPositions').textContent = positions;
+  document.getElementById('scanCount').textContent = `Scan #${state.scan_count || 0}`;
+  document.getElementById('lastUpdate').textContent = timeAgo(state.last_scan);
+  document.getElementById('statusText').textContent = state.last_scan ? `Ativo — ${timeAgo(state.last_scan)}` : 'Aguardando...';
+}
+
+function renderConsensus() {
+  const panel = document.getElementById('consensusPanel');
+  
+  if (!state || !state.known_positions) {
+    panel.innerHTML = '<div class="empty">Sem dados de consenso</div>';
+    return;
+  }
+  
+  // Calcular consenso a partir das posições
+  const marketVotes = {};
+  const totalTraders = Object.keys(state.known_positions).length;
+  
+  for (const [wallet, positions] of Object.entries(state.known_positions)) {
+    for (const [key, pos] of Object.entries(positions)) {
+      const cid = key.split('_')[0];
+      if (!marketVotes[cid]) marketVotes[cid] = { YES: 0, NO: 0, title: pos.title, totalValue: 0 };
+      if (pos.outcome === 'Yes' || pos.outcome === 'YES') {
+        marketVotes[cid].YES++;
+        marketVotes[cid].totalValue += pos.value || 0;
+      } else if (pos.outcome === 'No' || pos.outcome === 'NO') {
+        marketVotes[cid].NO++;
+        marketVotes[cid].totalValue += pos.value || 0;
+      }
+    }
+  }
+  
+  // Filtrar consenso > 40%
+  const consensus = [];
+  for (const [cid, votes] of Object.entries(marketVotes)) {
+    const maxSide = votes.YES >= votes.NO ? 'YES' : 'NO';
+    const maxCount = Math.max(votes.YES, votes.NO);
+    const pct = maxCount / totalTraders;
+    if (pct >= 0.3 && maxCount >= 3) {
+      consensus.push({ cid, title: votes.title, outcome: maxSide, count: maxCount, total: totalTraders, pct, value: votes.totalValue });
+    }
+  }
+  
+  consensus.sort((a, b) => b.pct - a.pct);
+  
+  document.getElementById('consensusCount').textContent = consensus.filter(c => c.pct >= 0.6).length;
+  document.getElementById('statConsensus').textContent = consensus.filter(c => c.pct >= 0.6).length;
+  
+  if (consensus.length === 0) {
+    panel.innerHTML = '<div class="empty">Nenhum consenso detectado ainda</div>';
+    return;
+  }
+  
+  panel.innerHTML = consensus.slice(0, 15).map(c => `
+    <div class="consensus-item">
+      <div style="display:flex; justify-content:space-between; align-items:center;">
+        <div style="flex:1;">
+          <div style="font-size:0.85em; font-weight:600;">${c.title ? c.title.substring(0, 55) : 'Mercado desconhecido'}${c.title && c.title.length > 55 ? '...' : ''}</div>
+          <div style="font-size:0.75em; color:#999; margin-top:2px;">
+            ${c.outcome} — ${c.count}/${c.total} traders — ${formatUSD(c.value)}
+          </div>
+        </div>
+        <div class="consensus-pct">${(c.pct*100).toFixed(0)}%</div>
+      </div>
+      <div class="consensus-bar-bg"><div class="consensus-bar" style="width:${c.pct*100}%"></div></div>
+    </div>
+  `).join('');
+}
+
+function parseAlertType(msg) {
+  if (msg.includes('🟢')) return { type: 'buy', emoji: '🟢' };
+  if (msg.includes('🔴') && msg.includes('SELL')) return { type: 'sell', emoji: '🔴' };
+  if (msg.includes('🆕')) return { type: 'new', emoji: '🆕' };
+  if (msg.includes('📤')) return { type: 'close', emoji: '📤' };
+  if (msg.includes('🎯')) return { type: 'consensus', emoji: '🎯' };
+  return { type: '', emoji: '📌' };
+}
+
+function renderFeed() {
+  const panel = document.getElementById('feedPanel');
+  
+  if (alerts.length === 0) {
+    panel.innerHTML = '<div class="empty">Sem alertas ainda — o monitor está criando a base de referência.<br>Novos alertas aparecerão quando detectar mudanças.</div>';
+    document.getElementById('feedCount').textContent = '0';
+    return;
+  }
+  
+  document.getElementById('feedCount').textContent = alerts.length;
+  
+  // Mostrar alertas mais recentes primeiro
+  const sorted = [...alerts].reverse();
+  
+  panel.innerHTML = sorted.slice(0, 100).map(a => {
+    const { type, emoji } = parseAlertType(a.message);
+    const lines = a.message.split('\n').filter(l => !l.startsWith('🔔') && !l.startsWith('─') && l.trim());
+    const title = lines[0] || '';
+    const details = lines.slice(1).join(' · ');
+    
+    return `
+      <div class="alert-item ${type}">
+        <div class="alert-time">${timeAgo(a.timestamp)}</div>
+        <div class="alert-title">${title}</div>
+        <div class="alert-detail">${details}</div>
+      </div>
+    `;
+  }).join('');
+}
+
+function renderTraders() {
+  const panel = document.getElementById('tradersPanel');
+  
+  if (!state || !state.known_positions) {
+    panel.innerHTML = '<div class="empty">Carregando traders...</div>';
+    return;
+  }
+  
+  // Contar posições por trader
+  const traders = [];
+  for (const [wallet, positions] of Object.entries(state.known_positions)) {
+    const posCount = Object.keys(positions).length;
+    const totalValue = Object.values(positions).reduce((sum, p) => sum + (p.value || 0), 0);
+    const totalPnl = Object.values(positions).reduce((sum, p) => sum + (p.pnl || 0), 0);
+    // Try to get username from first position or use short wallet
+    const firstPos = Object.values(positions)[0];
+    traders.push({ wallet: wallet.substring(0, 10), positions: posCount, value: totalValue, pnl: totalPnl });
+  }
+  
+  traders.sort((a, b) => b.value - a.value);
+  
+  panel.innerHTML = `
+    <table class="traders-table">
+      <thead><tr><th>Wallet</th><th>Posições</th><th>Valor</th><th>PnL</th></tr></thead>
+      <tbody>
+        ${traders.slice(0, 30).map(t => `
+          <tr>
+            <td class="trader-name">${t.wallet}...</td>
+            <td>${t.positions}</td>
+            <td>${formatUSD(t.value)}</td>
+            <td class="${t.pnl >= 0 ? 'pnl-pos' : 'pnl-neg'}">${t.pnl >= 0 ? '+' : ''}${formatUSD(t.pnl)}</td>
+          </tr>
+        `).join('')}
+      </tbody>
+    </table>
+  `;
+}
+
+function renderMarkets() {
+  const panel = document.getElementById('marketsPanel');
+  
+  if (!state || !state.known_positions) {
+    panel.innerHTML = '<div class="empty">Carregando mercados...</div>';
+    return;
+  }
+  
+  // Agregar mercados por posições dos traders
+  const markets = {};
+  for (const [wallet, positions] of Object.entries(state.known_positions)) {
+    for (const [key, pos] of Object.entries(positions)) {
+      const cid = key.split('_')[0];
+      if (!markets[cid]) markets[cid] = { title: pos.title, traders: 0, value: 0 };
+      markets[cid].traders++;
+      markets[cid].value += pos.value || 0;
+    }
+  }
+  
+  const sorted = Object.values(markets).sort((a, b) => b.traders - a.traders);
+  
+  panel.innerHTML = `
+    <table class="traders-table">
+      <thead><tr><th>Mercado</th><th>Traders</th><th>Valor Total</th></tr></thead>
+      <tbody>
+        ${sorted.slice(0, 20).map(m => `
+          <tr>
+            <td>${m.title ? m.title.substring(0, 45) : '?'}${m.title && m.title.length > 45 ? '...' : ''}</td>
+            <td style="color:#7c4dff; font-weight:600;">${m.traders}</td>
+            <td>${formatUSD(m.value)}</td>
+          </tr>
+        `).join('')}
+      </tbody>
+    </table>
+  `;
+}
+
+async function refresh() {
+  document.getElementById('statusText').textContent = 'Atualizando...';
+  
+  state = await loadJSON(`${MONITOR_DIR}/monitor_state.json`);
+  alerts = await loadJSON(`${MONITOR_DIR}/alerts_log.json`) || [];
+  
+  renderStats();
+  renderConsensus();
+  renderFeed();
+  renderTraders();
+  renderMarkets();
+  
+  if (state) {
+    document.getElementById('statusDot').style.background = '#00d4aa';
+  } else {
+    document.getElementById('statusDot').style.background = '#ff4757';
+    document.getElementById('statusText').textContent = 'Monitor offline';
+  }
+}
+
+// Auto-refresh a cada 60s
+refresh();
+setInterval(refresh, 60000);
+</script>
+</body>
+</html>
