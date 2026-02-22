@@ -32,14 +32,28 @@ src/polymarket/
 └── alerts.py                # Alertas via Telegram
 
 data/polymarket/
-├── POLYMARKET-PROJETO-COMPLETO.md    # Documentação completa do projeto
+├── POLYMARKET-PROJETO-COMPLETO.md       # Documentação completa do projeto
 ├── POLYMARKET-BENCHMARK-ESTRATEGIAS.md  # Benchmark de 8 estratégias
-├── explorar_api.py          # Script para exploração interativa da API
-├── polymarket_eda.ipynb     # Notebook de EDA
-├── explorer2.html           # Dashboard de traders (com sistema de basket)
-├── plano.html               # Plano visual do projeto
-├── benchmark.html           # Dashboard de benchmarks
-└── *.json                   # Dados de EDA e benchmarks
+├── explorar_api.py              # Script para exploração interativa da API
+├── consolidate_lite.py          # Gera JSON consolidado para dashboards
+├── consolidate_historical.py    # Gera JSON completo (401MB, uso offline)
+│
+├── polymarket_eda.ipynb         # 📓 Notebook 1: EDA inicial
+├── historical_analysis.ipynb    # 📓 Notebook 2: Análise histórica de traders
+│
+├── explorer2.html               # 📊 Dashboard: traders + sistema de basket
+├── monitor_dashboard.html       # 📊 Dashboard: monitor real-time + alertas
+├── historical_dashboard.html    # 📊 Dashboard: análise histórica interativa
+├── plano.html                   # 📊 Dashboard: plano visual do projeto
+├── benchmark.html               # 📊 Dashboard: benchmark de estratégias
+│
+├── historical/                  # Dados históricos (não versionado)
+│   ├── traders/                 # 788 JSONs individuais (1.6GB)
+│   ├── consolidated_lite.json   # Agregado para dashboards (4MB)
+│   ├── extraction_summary.json  # Resumo da extração
+│   └── traders_index.json       # Índice de traders
+│
+└── *.json                       # Dados de EDA e benchmarks
 ```
 
 ---
@@ -80,17 +94,23 @@ python3 historical_extractor.py --test
 Servir localmente e acessar no browser:
 ```bash
 cd data/polymarket
+python3 consolidate_lite.py   # Gerar dados consolidados (roda 1x após extração)
 python3 -m http.server 8899
 ```
-- **Monitor Real-Time:** http://localhost:8899/monitor_dashboard.html — alertas, consenso, feed de atividade
-- **Explorer:** http://localhost:8899/explorer2.html — traders com sistema de basket
-- **Plano:** http://localhost:8899/plano.html — plano visual do projeto
-- **Benchmark:** http://localhost:8899/benchmark.html — benchmark de estratégias
+
+| Dashboard | URL | Descrição |
+|-----------|-----|-----------|
+| 📊 **Histórico** | [/historical_dashboard.html](http://localhost:8899/historical_dashboard.html) | Ranking, timeline, estratégias, deep dive por trader |
+| 🔔 **Monitor** | [/monitor_dashboard.html](http://localhost:8899/monitor_dashboard.html) | Alertas real-time, consenso, feed de atividade |
+| 👥 **Explorer** | [/explorer2.html](http://localhost:8899/explorer2.html) | Traders com sistema de basket |
+| 📋 **Plano** | [/plano.html](http://localhost:8899/plano.html) | Plano visual do projeto |
+| 📈 **Benchmark** | [/benchmark.html](http://localhost:8899/benchmark.html) | Benchmark de estratégias |
 
 ---
 
 ## 📊 Dados
 
+- **788 traders** com histórico completo (1.6M trades, 32K posições, 1.6GB)
 - **891+ traders** coletados de 7 categorias × 4 períodos
 - **APIs públicas** do Polymarket (sem autenticação):
   - Data API: `https://data-api.polymarket.com`
@@ -101,19 +121,20 @@ python3 -m http.server 8899
 
 ## 🔬 Pipeline de Data Science
 
-| Notebook | Escopo |
-|----------|--------|
-| 1 | Coleta e EDA |
-| 2 | Análise por Tema/Categoria |
-| 3 | Detecção de Sybils |
-| 4 | Feature Engineering (35+ features) |
-| 5 | Modelo S1 — Copy Trading |
-| 6 | Modelo S2 — Early Value |
-| 7 | Modelo S3 — Momentum |
-| 8 | Modelo S4 — Mean Reversion |
-| 9 | Modelo S5 — Arbitragem |
-| 10 | Meta-Estratégia (Blend) |
-| 11 | Backtest Integrado |
+| Notebook | Escopo | Status |
+|----------|--------|--------|
+| 1 | Coleta e EDA (`polymarket_eda.ipynb`) | ✅ |
+| 2 | **Análise Histórica de Traders** (`historical_analysis.ipynb`) | ✅ |
+| 3 | Análise por Tema/Categoria | 🔲 |
+| 4 | Detecção de Sybils | 🔲 |
+| 5 | Feature Engineering (35+ features) | 🔲 |
+| 6 | Modelo S1 — Copy Trading | 🔲 |
+| 7 | Modelo S2 — Early Value | 🔲 |
+| 8 | Modelo S3 — Momentum | 🔲 |
+| 9 | Modelo S4 — Mean Reversion | 🔲 |
+| 10 | Modelo S5 — Arbitragem | 🔲 |
+| 11 | Meta-Estratégia (Blend) | 🔲 |
+| 12 | Backtest Integrado | 🔲 |
 
 ---
 
