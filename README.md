@@ -34,12 +34,14 @@ src/polymarket/
 data/polymarket/
 ├── POLYMARKET-PROJETO-COMPLETO.md       # Documentação completa do projeto
 ├── POLYMARKET-BENCHMARK-ESTRATEGIAS.md  # Benchmark de 8 estratégias
+├── TRADER-COHORTS-ANALYSIS.md           # 🧬 Análise de safras de traders
 ├── explorar_api.py              # Script para exploração interativa da API
 ├── consolidate_lite.py          # Gera JSON consolidado para dashboards
 ├── consolidate_historical.py    # Gera JSON completo (401MB, uso offline)
 │
 ├── polymarket_eda.ipynb         # 📓 Notebook 1: EDA inicial
-├── historical_analysis.ipynb    # 📓 Notebook 2: Análise histórica de traders
+├── historical_analysis.ipynb    # 📓 Notebook 2: Análise histórica de traders  
+├── trader_cohorts_analysis.ipynb # 📓 Notebook 3: Análise de safras (pré/pós Trump)
 │
 ├── explorer2.html               # 📊 Dashboard: traders + sistema de basket
 ├── monitor_dashboard.html       # 📊 Dashboard: monitor real-time + alertas
@@ -125,16 +127,17 @@ python3 -m http.server 8899
 |----------|--------|--------|
 | 1 | Coleta e EDA (`polymarket_eda.ipynb`) | ✅ |
 | 2 | **Análise Histórica de Traders** (`historical_analysis.ipynb`) | ✅ |
-| 3 | Análise por Tema/Categoria | 🔲 |
-| 4 | Detecção de Sybils | 🔲 |
-| 5 | Feature Engineering (35+ features) | 🔲 |
-| 6 | Modelo S1 — Copy Trading | 🔲 |
-| 7 | Modelo S2 — Early Value | 🔲 |
-| 8 | Modelo S3 — Momentum | 🔲 |
-| 9 | Modelo S4 — Mean Reversion | 🔲 |
-| 10 | Modelo S5 — Arbitragem | 🔲 |
-| 11 | Meta-Estratégia (Blend) | 🔲 |
-| 12 | Backtest Integrado | 🔲 |
+| 3 | **Análise de Safras/Coortes** (`trader_cohorts_analysis.ipynb`) | ✅ |
+| 4 | Análise por Tema/Categoria | 🔲 |
+| 5 | Detecção de Sybils | 🔲 |
+| 6 | Feature Engineering (35+ features) | 🔲 |
+| 7 | Modelo S1 — Copy Trading | 🔲 |
+| 8 | Modelo S2 — Early Value | 🔲 |
+| 9 | Modelo S3 — Momentum | 🔲 |
+| 10 | Modelo S4 — Mean Reversion | 🔲 |
+| 11 | Modelo S5 — Arbitragem | 🔲 |
+| 12 | Meta-Estratégia (Blend) | 🔲 |
+| 13 | Backtest Integrado | 🔲 |
 
 ---
 
