@@ -1,5 +1,5 @@
 {
-  "last_scan": "2026-02-23T01:48:43.181676",
+  "last_scan": "2026-02-23T01:50:25.135560",
   "tracked_wallets": [],
   "known_positions": {
     "0x94f199fb7789f1aef7fff6b758d6b375100f4c7a": {
@@ -5343,22 +5343,22 @@
         "title": "Solana Up or Down - February 22, 11PM ET",
         "outcome": "Up",
         "size": 1553.5222,
-        "value": 108.7465,
-        "pnl": 35.8863
+        "value": 54.3732,
+        "pnl": -18.4869
       },
       "0xa09f8d50e754f573e9f5cdc03b01f0630ecbc60b6eb991613942e3e195ee1462_Up": {
         "title": "XRP Up or Down - February 22, 11PM ET",
         "outcome": "Up",
         "size": 1549.6563,
-        "value": 77.4828,
-        "pnl": -165.728
+        "value": 15.4965,
+        "pnl": -227.7143
       },
       "0xcf5c8803427735067136a811c55f99910e9784e4420eed7eba41557d979edd94_Up": {
         "title": "Bitcoin Up or Down - February 22, 11PM ET",
         "outcome": "Up",
         "size": 1464.8992,
-        "value": 25.6357,
-        "pnl": -166.0741
+        "value": 20.5085,
+        "pnl": -171.2013
       },
       "0x4e9eeaee1dc08d43519a3222b7450c32871912f74e9e8e0f5459a469dbece430_Up": {
         "title": "XRP Up or Down - February 13, 5AM ET",
@@ -5367,19 +5367,19 @@
         "value": 810.5314,
         "pnl": 312.2513
       },
+      "0x2fbec20f8303eb7b0346d282e450f5ac35a9f298ef9fa15a2e00752d6dd1b337_Up": {
+        "title": "Bitcoin Up or Down - February 22, 11:45PM-11:50PM ET",
+        "outcome": "Up",
+        "size": 716.4887,
+        "value": 283.013,
+        "pnl": -36.667
+      },
       "0xfede1453833421ced1ac08ad7d0f5a2781ce0f840e75dd9b2736124c2978dbf7_Up": {
         "title": "Ethereum Up or Down - February 22, 11PM ET",
         "outcome": "Up",
         "size": 648.6477,
-        "value": 38.9188,
-        "pnl": -2.7957
-      },
-      "0x2fbec20f8303eb7b0346d282e450f5ac35a9f298ef9fa15a2e00752d6dd1b337_Up": {
-        "title": "Bitcoin Up or Down - February 22, 11:45PM-11:50PM ET",
-        "outcome": "Up",
-        "size": 533.4901,
-        "value": 269.4125,
-        "pnl": 20.51
+        "value": 22.7026,
+        "pnl": -19.0119
       },
       "0x4e9eeaee1dc08d43519a3222b7450c32871912f74e9e8e0f5459a469dbece430_Down": {
         "title": "XRP Up or Down - February 13, 5AM ET",
@@ -5392,36 +5392,36 @@
         "title": "Bitcoin Up or Down - February 22, 11:45PM-11:50PM ET",
         "outcome": "Down",
         "size": 437.2551,
-        "value": 216.4412,
-        "pnl": 11.6453
+        "value": 264.5393,
+        "pnl": 59.7434
       },
       "0xfede1453833421ced1ac08ad7d0f5a2781ce0f840e75dd9b2736124c2978dbf7_Down": {
         "title": "Ethereum Up or Down - February 22, 11PM ET",
         "outcome": "Down",
         "size": 303.1148,
-        "value": 284.9279,
-        "pnl": 78.8864
+        "value": 292.5058,
+        "pnl": 86.4643
       },
       "0x1f3cfb3278b6bbf670cc2cd187ab7af52b696b8c82b74cc49b3e5878fe68e20c_Down": {
         "title": "Solana Up or Down - February 22, 11PM ET",
         "outcome": "Down",
         "size": 270.7407,
-        "value": 251.7888,
-        "pnl": 59.1727
+        "value": 261.2648,
+        "pnl": 68.6487
       },
       "0xa09f8d50e754f573e9f5cdc03b01f0630ecbc60b6eb991613942e3e195ee1462_Down": {
         "title": "XRP Up or Down - February 22, 11PM ET",
         "outcome": "Down",
         "size": 107.99,
-        "value": 102.5904,
-        "pnl": 33.1662
+        "value": 106.9101,
+        "pnl": 37.4859
       },
       "0xcf5c8803427735067136a811c55f99910e9784e4420eed7eba41557d979edd94_Down": {
         "title": "Bitcoin Up or Down - February 22, 11PM ET",
         "outcome": "Down",
         "size": 101.0,
-        "value": 99.2325,
-        "pnl": 8.3324
+        "value": 99.586,
+        "pnl": 8.6859
       },
       "0x9ccd93e91b45a33b9c56c258bd14911d704def024abcd913409835f248f1cc61_Down": {
         "title": "Bitcoin Up or Down - February 22, 10:20AM-10:25AM ET",
@@ -5583,8 +5583,8 @@
         "title": "Rayo Vallecano de Madrid vs. Real Oviedo: O/U 1.5",
         "outcome": "Under",
         "size": 22260.0,
-        "value": 7011.9,
-        "pnl": 333.8999
+        "value": 6789.3,
+        "pnl": 111.3
       },
       "0x85dc99b36ae1a8e8fc65bbdfe06ca28e0946868c6935ced16d4e58651deff743_Yes": {
         "title": "Will Go Ahead Eagles win on 2026-02-22?",
@@ -6861,8 +6861,8 @@
         "title": "Will Millonarios FC vs. Deportivo Pereira end in a draw?",
         "outcome": "Yes",
         "size": 40.76,
-        "value": 19.3813,
-        "pnl": 15.6412
+        "value": 19.3609,
+        "pnl": 15.6208
       },
       "0xc5d57e14b4ff68365c2beff342cdad356994010de33579a19a40ac0651eda0e2_Yes": {
         "title": "Will CF Pachuca win on 2026-02-01?",
@@ -6954,15 +6954,15 @@
         "title": "Bitcoin Up or Down - February 22, 11PM ET",
         "outcome": "Up",
         "size": 18984.517,
-        "value": 332.229,
-        "pnl": -4051.182
+        "value": 265.7832,
+        "pnl": -4117.6278
       },
       "0xcf5c8803427735067136a811c55f99910e9784e4420eed7eba41557d979edd94_Down": {
         "title": "Bitcoin Up or Down - February 22, 11PM ET",
         "outcome": "Down",
-        "size": 11999.5873,
-        "value": 11789.5945,
-        "pnl": 2500.8219
+        "size": 12833.873,
+        "value": 12654.1988,
+        "pnl": 2536.9871
       },
       "0xcf9ef7631e749759033173a5c623a62104d11039bd0ab3566765193d647324ee_Down": {
         "title": "Bitcoin Up or Down - February 22, 11:00PM-11:15PM ET",
@@ -7041,19 +7041,19 @@
         "value": 0.0,
         "pnl": -2784.5543
       },
+      "0xfede1453833421ced1ac08ad7d0f5a2781ce0f840e75dd9b2736124c2978dbf7_Up": {
+        "title": "Ethereum Up or Down - February 22, 11PM ET",
+        "outcome": "Up",
+        "size": 6401.9474,
+        "value": 224.0681,
+        "pnl": -538.7687
+      },
       "0xa2a3985a1e05badd161e8257691dd64ebaa3ddf3993ec1ec59d89482c3a86d3b_Down": {
         "title": "Bitcoin Up or Down - February 22, 11:40PM-11:45PM ET",
         "outcome": "Down",
         "size": 6393.6291,
         "value": 0.0,
         "pnl": -1218.7216
-      },
-      "0xfede1453833421ced1ac08ad7d0f5a2781ce0f840e75dd9b2736124c2978dbf7_Up": {
-        "title": "Ethereum Up or Down - February 22, 11PM ET",
-        "outcome": "Up",
-        "size": 6065.0541,
-        "value": 363.9032,
-        "pnl": -389.4735
       },
       "0x0538b355f5d651f3cce55d50627575e2f999f8b57e4ef3c10c5f4a69f28daaf9_Up": {
         "title": "Ethereum Up or Down - February 22, 11:15PM-11:30PM ET",
@@ -7082,6 +7082,20 @@
         "size": 5683.6369,
         "value": 5683.6369,
         "pnl": 2858.7727
+      },
+      "0x2fbec20f8303eb7b0346d282e450f5ac35a9f298ef9fa15a2e00752d6dd1b337_Up": {
+        "title": "Bitcoin Up or Down - February 22, 11:45PM-11:50PM ET",
+        "outcome": "Up",
+        "size": 5403.9158,
+        "value": 2134.5467,
+        "pnl": -126.9001
+      },
+      "0x2fbec20f8303eb7b0346d282e450f5ac35a9f298ef9fa15a2e00752d6dd1b337_Down": {
+        "title": "Bitcoin Up or Down - February 22, 11:45PM-11:50PM ET",
+        "outcome": "Down",
+        "size": 5275.6048,
+        "value": 3191.7409,
+        "pnl": -94.37
       },
       "0x0538b355f5d651f3cce55d50627575e2f999f8b57e4ef3c10c5f4a69f28daaf9_Down": {
         "title": "Ethereum Up or Down - February 22, 11:15PM-11:30PM ET",
@@ -7226,16 +7240,9 @@
       "0xfede1453833421ced1ac08ad7d0f5a2781ce0f840e75dd9b2736124c2978dbf7_Down": {
         "title": "Ethereum Up or Down - February 22, 11PM ET",
         "outcome": "Down",
-        "size": 2904.8169,
-        "value": 2730.5279,
-        "pnl": 821.0581
-      },
-      "0x2fbec20f8303eb7b0346d282e450f5ac35a9f298ef9fa15a2e00752d6dd1b337_Up": {
-        "title": "Bitcoin Up or Down - February 22, 11:45PM-11:50PM ET",
-        "outcome": "Up",
-        "size": 2766.1285,
-        "value": 1396.8949,
-        "pnl": 60.3817
+        "size": 2909.7769,
+        "value": 2807.9347,
+        "pnl": 893.7554
       },
       "0x2e93c62409470d4a2aef9294e85d95bda96e9b7704859de887a4269d83e342cf_Up": {
         "title": "Ethereum Up or Down - February 22, 9PM ET",
@@ -7251,12 +7258,12 @@
         "value": 2678.6558,
         "pnl": 337.7141
       },
-      "0x2fbec20f8303eb7b0346d282e450f5ac35a9f298ef9fa15a2e00752d6dd1b337_Down": {
-        "title": "Bitcoin Up or Down - February 22, 11:45PM-11:50PM ET",
+      "0x44f843a015ef2e04c21b23fc32e9b41dc668dc96a9de3d15d3422b9a986b927f_Down": {
+        "title": "Bitcoin Up or Down - February 22, 11:45PM-12:00AM ET",
         "outcome": "Down",
-        "size": 2490.0034,
-        "value": 1232.5517,
-        "pnl": -123.8926
+        "size": 2631.4427,
+        "value": 1355.193,
+        "pnl": 18.4437
       },
       "0x123fda530f1f2db0437037f76593d74be24e0ed33a65f088f32dedc421cc262d_Up": {
         "title": "Bitcoin Up or Down - February 22, 8:00PM-12:00AM ET",
@@ -7282,9 +7289,16 @@
       "0x1f3cfb3278b6bbf670cc2cd187ab7af52b696b8c82b74cc49b3e5878fe68e20c_Up": {
         "title": "Solana Up or Down - February 22, 11PM ET",
         "outcome": "Up",
-        "size": 2091.5031,
-        "value": 146.4052,
-        "pnl": -141.2852
+        "size": 2101.4928,
+        "value": 73.5522,
+        "pnl": -214.3376
+      },
+      "0x9a998824c11abc9653d38aef5f163f5fa434d873c54e6036e7d4e93aa88a5629_Down": {
+        "title": "Ethereum Up or Down - February 22, 11:45PM-11:50PM ET",
+        "outcome": "Down",
+        "size": 2089.9589,
+        "value": 909.1321,
+        "pnl": 181.9099
       },
       "0x49bc12006937ae899dcdab9e2186adf33cdc85a0030bc47404d5b111174715ae_Down": {
         "title": "XRP Up or Down - February 22, 10PM ET",
@@ -7313,6 +7327,13 @@
         "size": 1775.129,
         "value": 0.0,
         "pnl": -246.6488
+      },
+      "0x9a998824c11abc9653d38aef5f163f5fa434d873c54e6036e7d4e93aa88a5629_Up": {
+        "title": "Ethereum Up or Down - February 22, 11:45PM-11:50PM ET",
+        "outcome": "Up",
+        "size": 1773.4531,
+        "value": 1001.8236,
+        "pnl": -275.9404
       },
       "0x1a4330ea71d6661417145b0789f4ab77b6f35f666f784848a5224248f43e2d14_Up": {
         "title": "Ethereum Up or Down - February 22, 11:05PM-11:10PM ET",
@@ -7405,13 +7426,6 @@
         "value": 0.0,
         "pnl": -573.3193
       },
-      "0x44f843a015ef2e04c21b23fc32e9b41dc668dc96a9de3d15d3422b9a986b927f_Down": {
-        "title": "Bitcoin Up or Down - February 22, 11:45PM-12:00AM ET",
-        "outcome": "Down",
-        "size": 1299.3262,
-        "value": 617.1799,
-        "pnl": -8.7848
-      },
       "0x9e1b7b46af17ec459a8c654ab78159d422cb1ed24736f6ca6e38ae63875284a2_Down": {
         "title": "Ethereum Up or Down - February 22, 11:00PM-11:15PM ET",
         "outcome": "Down",
@@ -7430,15 +7444,15 @@
         "title": "XRP Up or Down - February 22, 11PM ET",
         "outcome": "Up",
         "size": 1203.9484,
-        "value": 60.1974,
-        "pnl": -186.2412
+        "value": 12.0394,
+        "pnl": -234.3992
       },
       "0x1f3cfb3278b6bbf670cc2cd187ab7af52b696b8c82b74cc49b3e5878fe68e20c_Down": {
         "title": "Solana Up or Down - February 22, 11PM ET",
         "outcome": "Down",
         "size": 1142.3035,
-        "value": 1062.3423,
-        "pnl": 300.9455
+        "value": 1102.3229,
+        "pnl": 340.9261
       },
       "0x4dc84c29ca52d30a75b375f284443584052dd68d3a83791b3cb1666901067d3c_Down": {
         "title": "Solana Up or Down - February 22, 11:00PM-11:15PM ET",
@@ -7453,6 +7467,13 @@
         "size": 1106.0768,
         "value": 1106.0768,
         "pnl": 325.4298
+      },
+      "0x44f843a015ef2e04c21b23fc32e9b41dc668dc96a9de3d15d3422b9a986b927f_Up": {
+        "title": "Bitcoin Up or Down - February 22, 11:45PM-12:00AM ET",
+        "outcome": "Up",
+        "size": 1088.5256,
+        "value": 527.9349,
+        "pnl": -21.7879
       },
       "0x6b91dbbaa13d8b2290be2d0c4a2b06a76c90816e194f7f02cf8c3f642b75e294_Down": {
         "title": "Solana Up or Down - February 22, 8:00PM-12:00AM ET",
@@ -7559,19 +7580,12 @@
         "value": 642.1226,
         "pnl": 223.6204
       },
-      "0x9a998824c11abc9653d38aef5f163f5fa434d873c54e6036e7d4e93aa88a5629_Down": {
-        "title": "Ethereum Up or Down - February 22, 11:45PM-11:50PM ET",
-        "outcome": "Down",
-        "size": 602.1499,
-        "value": 279.9997,
-        "pnl": 51.9023
-      },
-      "0x9a998824c11abc9653d38aef5f163f5fa434d873c54e6036e7d4e93aa88a5629_Up": {
-        "title": "Ethereum Up or Down - February 22, 11:45PM-11:50PM ET",
+      "0x2f35d31f7de25449fbe219e3dd134bda2b36a295e7eec2d689f72838139bd05e_Up": {
+        "title": "Ethereum Up or Down - February 22, 11:45PM-12:00AM ET",
         "outcome": "Up",
-        "size": 598.323,
-        "value": 320.1028,
-        "pnl": -87.7973
+        "size": 636.7431,
+        "value": 353.3924,
+        "pnl": -47.8576
       },
       "0xa791b8680eee89608828a13d7493578668fa322b8d48de918baac0215469d3a2_Down": {
         "title": "Solana Up or Down - February 22, 11:00PM-11:05PM ET",
@@ -7580,12 +7594,19 @@
         "value": 588.556,
         "pnl": 142.198
       },
+      "0x2f35d31f7de25449fbe219e3dd134bda2b36a295e7eec2d689f72838139bd05e_Down": {
+        "title": "Ethereum Up or Down - February 22, 11:45PM-12:00AM ET",
+        "outcome": "Down",
+        "size": 580.8326,
+        "value": 258.4705,
+        "pnl": 13.6518
+      },
       "0xa09f8d50e754f573e9f5cdc03b01f0630ecbc60b6eb991613942e3e195ee1462_Down": {
         "title": "XRP Up or Down - February 22, 11PM ET",
         "outcome": "Down",
         "size": 580.2044,
-        "value": 551.1941,
-        "pnl": 152.1701
+        "value": 574.4023,
+        "pnl": 175.3783
       },
       "0x85e25a6ee23fa4c82a6347b9428db8a57120add8a9f3a29f15131dc728e6a384_Down": {
         "title": "XRP Up or Down - February 22, 8:00PM-12:00AM ET",
@@ -7614,27 +7635,6 @@
         "size": 435.4005,
         "value": 0.0,
         "pnl": -103.4311
-      },
-      "0x1cf572aa6f2915ab0727f8c392691c0f0cd706cc29e05d00afe4b1ba71685b5b_Up": {
-        "title": "Ethereum Up or Down - February 22, 11:25PM-11:30PM ET",
-        "outcome": "Up",
-        "size": 422.3573,
-        "value": 0.0,
-        "pnl": -104.8181
-      },
-      "0x85e25a6ee23fa4c82a6347b9428db8a57120add8a9f3a29f15131dc728e6a384_Up": {
-        "title": "XRP Up or Down - February 22, 8:00PM-12:00AM ET",
-        "outcome": "Up",
-        "size": 408.1114,
-        "value": 2.0405,
-        "pnl": -58.291
-      },
-      "0x0b4b2f97e3b0ddc6b428d7b252428c0baf06b230e00809ed3c1183a01ffc912b_Up": {
-        "title": "XRP Up or Down - February 22, 11:00PM-11:15PM ET",
-        "outcome": "Up",
-        "size": 400.3242,
-        "value": 0.0,
-        "pnl": -101.3316
       }
     },
     "0x204f72f35326db932158cba6adff0b9a1da95e14": {
@@ -8041,8 +8041,8 @@
         "title": "Rayo Vallecano de Madrid vs. Real Oviedo: O/U 1.5",
         "outcome": "Under",
         "size": 3356.1841,
-        "value": 1057.1979,
-        "pnl": -2.8327
+        "value": 1023.6361,
+        "pnl": -36.3945
       },
       "0xfd68e0031d70edeb23a8f06398654f1949586ad61c6279ec3cbea25b7165d867_Yes": {
         "title": "Will ACF Fiorentina win on 2026-02-23?",
@@ -8513,9 +8513,23 @@
       "0xfede1453833421ced1ac08ad7d0f5a2781ce0f840e75dd9b2736124c2978dbf7_Down": {
         "title": "Ethereum Up or Down - February 22, 11PM ET",
         "outcome": "Down",
-        "size": 1414.4788,
-        "value": 1364.972,
-        "pnl": 314.3056
+        "size": 1537.9788,
+        "value": 1484.1495,
+        "pnl": 315.6347
+      },
+      "0x2fbec20f8303eb7b0346d282e450f5ac35a9f298ef9fa15a2e00752d6dd1b337_Up": {
+        "title": "Bitcoin Up or Down - February 22, 11:45PM-11:50PM ET",
+        "outcome": "Up",
+        "size": 1014.9303,
+        "value": 400.8974,
+        "pnl": -59.8444
+      },
+      "0x2fbec20f8303eb7b0346d282e450f5ac35a9f298ef9fa15a2e00752d6dd1b337_Down": {
+        "title": "Bitcoin Up or Down - February 22, 11:45PM-11:50PM ET",
+        "outcome": "Down",
+        "size": 955.1589,
+        "value": 577.8711,
+        "pnl": 132.1662
       },
       "0xcf5c8803427735067136a811c55f99910e9784e4420eed7eba41557d979edd94_Down": {
         "title": "Bitcoin Up or Down - February 22, 11PM ET",
@@ -8523,20 +8537,6 @@
         "size": 939.7495,
         "value": 926.593,
         "pnl": 65.1368
-      },
-      "0x2fbec20f8303eb7b0346d282e450f5ac35a9f298ef9fa15a2e00752d6dd1b337_Down": {
-        "title": "Bitcoin Up or Down - February 22, 11:45PM-11:50PM ET",
-        "outcome": "Down",
-        "size": 860.5255,
-        "value": 520.6179,
-        "pnl": 118.6431
-      },
-      "0x2fbec20f8303eb7b0346d282e450f5ac35a9f298ef9fa15a2e00752d6dd1b337_Up": {
-        "title": "Bitcoin Up or Down - February 22, 11:45PM-11:50PM ET",
-        "outcome": "Up",
-        "size": 804.8726,
-        "value": 317.9246,
-        "pnl": -52.9888
       },
       "0x72314ad0a33602b4332e820b24425b3f36c1879e274135656fb5bf08d5bfaabf_Down": {
         "title": "Bitcoin Up or Down - December 18, 2:45PM-3:00PM ET",
@@ -8559,6 +8559,13 @@
         "value": 50.3422,
         "pnl": 5.6033
       },
+      "0x446a7a2b9d7fac826635dade2d0357b8904b5a66ff662288045e67cb14c28539_Down": {
+        "title": "XRP Up or Down - February 22, 11:45PM-11:50PM ET",
+        "outcome": "Down",
+        "size": 74.3598,
+        "value": 29.0003,
+        "pnl": 9.5574
+      },
       "0xc9098269d3413d2e682d30f051b9628cd6a2a5b5acc8e1a4c14bd87f0d92fe7c_Down": {
         "title": "Solana Up or Down - February 22, 11:45PM-11:50PM ET",
         "outcome": "Down",
@@ -8573,12 +8580,19 @@
         "value": 33.9061,
         "pnl": 0.8212
       },
-      "0x446a7a2b9d7fac826635dade2d0357b8904b5a66ff662288045e67cb14c28539_Down": {
-        "title": "XRP Up or Down - February 22, 11:45PM-11:50PM ET",
+      "0x35ddafe6567a5e2605102915681b303ae95aa5495afb8272edbfda4c08365d13_Up": {
+        "title": "Bitcoin Up or Down - February 22, 11:50PM-11:55PM ET",
+        "outcome": "Up",
+        "size": 48.7534,
+        "value": 24.6204,
+        "pnl": -2.1658
+      },
+      "0x35ddafe6567a5e2605102915681b303ae95aa5495afb8272edbfda4c08365d13_Down": {
+        "title": "Bitcoin Up or Down - February 22, 11:50PM-11:55PM ET",
         "outcome": "Down",
-        "size": 43.3598,
-        "value": 16.9103,
-        "pnl": 3.0563
+        "size": 23.8653,
+        "value": 11.8133,
+        "pnl": 0.3579
       },
       "0x72314ad0a33602b4332e820b24425b3f36c1879e274135656fb5bf08d5bfaabf_Up": {
         "title": "Bitcoin Up or Down - December 18, 2:45PM-3:00PM ET",
@@ -9202,8 +9216,8 @@
         "title": "Will Kevin Warsh be formally nominated to be Chair of the Federal Reserve by February 28, 2026?",
         "outcome": "Yes",
         "size": 7317.51,
-        "value": 2689.1849,
-        "pnl": 55.2398
+        "value": 2678.2086,
+        "pnl": 44.2635
       },
       "0x9dde2865d61deaeae5e1ed23c3cc2d3645f354f807d46d8108df293f8681b9a2_No": {
         "title": "Will Norway win the most gold medals in the 2026 Winter Olympics?",
@@ -12836,12 +12850,26 @@
         "value": 5005.496,
         "pnl": 23.1419
       },
+      "0x9a998824c11abc9653d38aef5f163f5fa434d873c54e6036e7d4e93aa88a5629_Down": {
+        "title": "Ethereum Up or Down - February 22, 11:45PM-11:50PM ET",
+        "outcome": "Down",
+        "size": 3233.8926,
+        "value": 1406.7432,
+        "pnl": -1738.2852
+      },
       "0x6b91dbbaa13d8b2290be2d0c4a2b06a76c90816e194f7f02cf8c3f642b75e294_Down": {
         "title": "Solana Up or Down - February 22, 8:00PM-12:00AM ET",
         "outcome": "Down",
         "size": 2379.042,
         "value": 2377.8524,
         "pnl": 23.5976
+      },
+      "0xc9098269d3413d2e682d30f051b9628cd6a2a5b5acc8e1a4c14bd87f0d92fe7c_Up": {
+        "title": "Solana Up or Down - February 22, 11:45PM-11:50PM ET",
+        "outcome": "Up",
+        "size": 1772.518,
+        "value": 1010.158,
+        "pnl": -744.3813
       },
       "0x85e25a6ee23fa4c82a6347b9428db8a57120add8a9f3a29f15131dc728e6a384_Down": {
         "title": "XRP Up or Down - February 22, 8:00PM-12:00AM ET",
@@ -12875,36 +12903,43 @@
         "title": "Bitcoin Up or Down - February 23, 12:00AM-12:15AM ET",
         "outcome": "Up",
         "size": 500.0,
-        "value": 255.0,
-        "pnl": 9.9999
+        "value": 257.5,
+        "pnl": 12.4999
       },
       "0x0c28960c0c18019d78fd9ba19679b5bc146d858717966202b9f9e70752b9effd_Down": {
         "title": "Bitcoin Up or Down - February 23, 12:00AM-12:15AM ET",
         "outcome": "Down",
         "size": 500.0,
-        "value": 245.0,
-        "pnl": 0.0
+        "value": 242.5,
+        "pnl": -2.5
       },
       "0x68dd25512a32933a90d18c702bb1bde39ccec1749b5f3036a3f57f927aed9673_Up": {
         "title": "Bitcoin Up or Down - February 23, 12:05AM-12:10AM ET",
         "outcome": "Up",
         "size": 499.612,
-        "value": 252.304,
-        "pnl": 7.494
+        "value": 249.806,
+        "pnl": 4.996
       },
       "0x68dd25512a32933a90d18c702bb1bde39ccec1749b5f3036a3f57f927aed9673_Down": {
         "title": "Bitcoin Up or Down - February 23, 12:05AM-12:10AM ET",
         "outcome": "Down",
         "size": 499.6101,
-        "value": 247.307,
-        "pnl": 2.498
+        "value": 249.805,
+        "pnl": 4.996
+      },
+      "0x2fbec20f8303eb7b0346d282e450f5ac35a9f298ef9fa15a2e00752d6dd1b337_Down": {
+        "title": "Bitcoin Up or Down - February 22, 11:45PM-11:50PM ET",
+        "outcome": "Down",
+        "size": 194.5635,
+        "value": 117.7109,
+        "pnl": 22.3747
       },
       "0x2fbec20f8303eb7b0346d282e450f5ac35a9f298ef9fa15a2e00752d6dd1b337_Up": {
         "title": "Bitcoin Up or Down - February 22, 11:45PM-11:50PM ET",
         "outcome": "Up",
         "size": 160.0,
-        "value": 80.8,
-        "pnl": 2.3999
+        "value": 63.2,
+        "pnl": -15.2
       },
       "0xa536cb1399e01d4589c1187d98e63b6c346e07c0545d41894bcf9f1901ecfeb3_Up": {
         "title": "Ethereum Up or Down - February 23, 12:15AM-12:30AM ET",
@@ -12924,22 +12959,22 @@
         "title": "Ethereum Up or Down - February 23, 12:00AM-12:15AM ET",
         "outcome": "Down",
         "size": 99.9752,
-        "value": 49.4877,
-        "pnl": 0.4998
+        "value": 48.488,
+        "pnl": -0.4998
       },
       "0x294b7391e8f65fac0c302dbaf8258f75cd746d108d4b2caf50bc1e491c7508aa_Up": {
         "title": "Ethereum Up or Down - February 23, 12:00AM-12:15AM ET",
         "outcome": "Up",
         "size": 99.9429,
-        "value": 50.4711,
-        "pnl": 1.499
+        "value": 51.4706,
+        "pnl": 2.4985
       },
       "0xd84853bd204cb96929f385f9a2b02be97ee84abd6ab07c605a1d281e6dff92bb_Up": {
         "title": "Solana Up or Down - February 22, 11:45PM-12:00AM ET",
         "outcome": "Up",
         "size": 74.3744,
-        "value": 39.0466,
-        "pnl": 2.6031
+        "value": 43.8809,
+        "pnl": 7.4374
       },
       "0x86b7731d97276603002b549106479295ccb7a783237a9facc938450b4e0cd1ee_Down": {
         "title": "Bitcoin Up or Down - February 23, 7:20AM-7:25AM ET",
@@ -12952,8 +12987,8 @@
         "title": "Solana Up or Down - February 22, 11:45PM-12:00AM ET",
         "outcome": "Down",
         "size": 57.198,
-        "value": 27.169,
-        "pnl": -0.858
+        "value": 23.4511,
+        "pnl": -4.5759
       },
       "0x2675f92ea719a7d08baedf48f5b2b2f077bec513fb9a64c8c7f1586e4d2d9300_Down": {
         "title": "Bitcoin Up or Down - February 23, 3:40AM-3:45AM ET",
@@ -12961,13 +12996,6 @@
         "size": 48.4317,
         "value": 24.458,
         "pnl": 0.7264
-      },
-      "0x2fbec20f8303eb7b0346d282e450f5ac35a9f298ef9fa15a2e00752d6dd1b337_Down": {
-        "title": "Bitcoin Up or Down - February 22, 11:45PM-11:50PM ET",
-        "outcome": "Down",
-        "size": 38.9635,
-        "value": 19.2869,
-        "pnl": 0.1947
       },
       "0xc862c5fd26c989629f9df822558e22e4b51c7c141a18ab139d3acdab91e75118_Down": {
         "title": "Ethereum Up or Down - February 23, 10:10AM-10:15AM ET",
@@ -12980,8 +13008,8 @@
         "title": "Bitcoin Up or Down - February 22, 11PM ET",
         "outcome": "Up",
         "size": 20.0,
-        "value": 0.35,
-        "pnl": -9.25
+        "value": 0.28,
+        "pnl": -9.32
       },
       "0x4175d6a1ec000c92ba08db1a595570ac8eab92d14e03ae8603ac3066228bc7f0_Up": {
         "title": "Bitcoin Up or Down - February 23, 9:20AM-9:25AM ET",
@@ -13260,6 +13288,20 @@
         "value": 0.0,
         "pnl": -1214.1896
       },
+      "0x2fbec20f8303eb7b0346d282e450f5ac35a9f298ef9fa15a2e00752d6dd1b337_Up": {
+        "title": "Bitcoin Up or Down - February 22, 11:45PM-11:50PM ET",
+        "outcome": "Up",
+        "size": 5325.6904,
+        "value": 2103.6477,
+        "pnl": 51.2916
+      },
+      "0x2fbec20f8303eb7b0346d282e450f5ac35a9f298ef9fa15a2e00752d6dd1b337_Down": {
+        "title": "Bitcoin Up or Down - February 22, 11:45PM-11:50PM ET",
+        "outcome": "Down",
+        "size": 5237.3118,
+        "value": 3168.5736,
+        "pnl": -210.3514
+      },
       "0x0f6d21e3db0c03e8ac9a056886f2e89fb00ed8518079ecb11e0aeb9cee2ff677_Up": {
         "title": "Bitcoin Up or Down - February 22, 11:05PM-11:10PM ET",
         "outcome": "Up",
@@ -13379,26 +13421,12 @@
         "value": 0.0,
         "pnl": -272.421
       },
-      "0x2fbec20f8303eb7b0346d282e450f5ac35a9f298ef9fa15a2e00752d6dd1b337_Up": {
-        "title": "Bitcoin Up or Down - February 22, 11:45PM-11:50PM ET",
-        "outcome": "Up",
-        "size": 2353.4018,
-        "value": 1188.4679,
-        "pnl": 27.3747
-      },
       "0x1038abf9ea4592fb067b96522371b65fe284a1ce8a2180166c59aed2a9335dd0_Down": {
         "title": "Bitcoin Up or Down - February 22, 11:15PM-11:20PM ET",
         "outcome": "Down",
         "size": 2300.9718,
         "value": 2300.9718,
         "pnl": 307.7503
-      },
-      "0x2fbec20f8303eb7b0346d282e450f5ac35a9f298ef9fa15a2e00752d6dd1b337_Down": {
-        "title": "Bitcoin Up or Down - February 22, 11:45PM-11:50PM ET",
-        "outcome": "Down",
-        "size": 2216.6134,
-        "value": 1097.2236,
-        "pnl": -4.369
       },
       "0x40ac5854ce0d970749cc9063b63848eed18ba591f3aadcf97b69c424092c0946_Up": {
         "title": "Ethereum Up or Down - February 22, 11:00PM-11:05PM ET",
@@ -13484,6 +13512,20 @@
         "value": 0.0,
         "pnl": -740.0564
       },
+      "0x9a998824c11abc9653d38aef5f163f5fa434d873c54e6036e7d4e93aa88a5629_Down": {
+        "title": "Ethereum Up or Down - February 22, 11:45PM-11:50PM ET",
+        "outcome": "Down",
+        "size": 1293.4566,
+        "value": 562.6536,
+        "pnl": 74.1046
+      },
+      "0x9a998824c11abc9653d38aef5f163f5fa434d873c54e6036e7d4e93aa88a5629_Up": {
+        "title": "Ethereum Up or Down - February 22, 11:45PM-11:50PM ET",
+        "outcome": "Up",
+        "size": 1244.5185,
+        "value": 703.0285,
+        "pnl": -214.3907
+      },
       "0x1cf572aa6f2915ab0727f8c392691c0f0cd706cc29e05d00afe4b1ba71685b5b_Down": {
         "title": "Ethereum Up or Down - February 22, 11:25PM-11:30PM ET",
         "outcome": "Down",
@@ -13504,6 +13546,13 @@
         "size": 987.6381,
         "value": 0.0,
         "pnl": -168.6095
+      },
+      "0x44f843a015ef2e04c21b23fc32e9b41dc668dc96a9de3d15d3422b9a986b927f_Down": {
+        "title": "Bitcoin Up or Down - February 22, 11:45PM-12:00AM ET",
+        "outcome": "Down",
+        "size": 957.6004,
+        "value": 493.1642,
+        "pnl": 35.8774
       },
       "0x1cf572aa6f2915ab0727f8c392691c0f0cd706cc29e05d00afe4b1ba71685b5b_Up": {
         "title": "Ethereum Up or Down - February 22, 11:25PM-11:30PM ET",
@@ -13575,13 +13624,6 @@
         "value": 775.2284,
         "pnl": 211.8621
       },
-      "0x9a998824c11abc9653d38aef5f163f5fa434d873c54e6036e7d4e93aa88a5629_Down": {
-        "title": "Ethereum Up or Down - February 22, 11:45PM-11:50PM ET",
-        "outcome": "Down",
-        "size": 736.5516,
-        "value": 342.4965,
-        "pnl": 107.7633
-      },
       "0x9ced9df96c70ad19bca0b72826ae72253d741123b3f3d63e1c6cc4022ed5d005_Up": {
         "title": "Ethereum Up or Down - February 22, 11:30PM-11:35PM ET",
         "outcome": "Up",
@@ -13589,12 +13631,12 @@
         "value": 0.0,
         "pnl": -242.9653
       },
-      "0x9a998824c11abc9653d38aef5f163f5fa434d873c54e6036e7d4e93aa88a5629_Up": {
-        "title": "Ethereum Up or Down - February 22, 11:45PM-11:50PM ET",
+      "0x44f843a015ef2e04c21b23fc32e9b41dc668dc96a9de3d15d3422b9a986b927f_Up": {
+        "title": "Bitcoin Up or Down - February 22, 11:45PM-12:00AM ET",
         "outcome": "Up",
-        "size": 659.8966,
-        "value": 353.0447,
-        "pnl": -121.4362
+        "size": 579.6858,
+        "value": 281.1476,
+        "pnl": -5.1638
       },
       "0x7346937a5e2e54746db52331ad626a0dbf9a6a8ad49ec569c4ee395e99fba39f_Up": {
         "title": "Solana Up or Down - February 22, 11:30PM-11:45PM ET",
@@ -13602,13 +13644,6 @@
         "size": 558.3347,
         "value": 0.0,
         "pnl": -131.5888
-      },
-      "0x44f843a015ef2e04c21b23fc32e9b41dc668dc96a9de3d15d3422b9a986b927f_Down": {
-        "title": "Bitcoin Up or Down - February 22, 11:45PM-12:00AM ET",
-        "outcome": "Down",
-        "size": 556.1478,
-        "value": 264.1702,
-        "pnl": 0.5939
       },
       "0x7346937a5e2e54746db52331ad626a0dbf9a6a8ad49ec569c4ee395e99fba39f_Down": {
         "title": "Solana Up or Down - February 22, 11:30PM-11:45PM ET",
@@ -13630,6 +13665,20 @@
         "size": 526.1194,
         "value": 526.1194,
         "pnl": 150.277
+      },
+      "0x2f35d31f7de25449fbe219e3dd134bda2b36a295e7eec2d689f72838139bd05e_Up": {
+        "title": "Ethereum Up or Down - February 22, 11:45PM-12:00AM ET",
+        "outcome": "Up",
+        "size": 505.5184,
+        "value": 280.5627,
+        "pnl": -31.8031
+      },
+      "0x2f35d31f7de25449fbe219e3dd134bda2b36a295e7eec2d689f72838139bd05e_Down": {
+        "title": "Ethereum Up or Down - February 22, 11:45PM-12:00AM ET",
+        "outcome": "Down",
+        "size": 504.9426,
+        "value": 224.6994,
+        "pnl": 21.2948
       },
       "0x2da6dfed60f09b2f9e07c3ca610d03b4c7dceba200b646045afb137f974efaf0_Up": {
         "title": "Ethereum Up or Down - February 22, 11:20PM-11:25PM ET",
@@ -13708,13 +13757,6 @@
         "value": 360.2829,
         "pnl": 189.2299
       },
-      "0x44f843a015ef2e04c21b23fc32e9b41dc668dc96a9de3d15d3422b9a986b927f_Up": {
-        "title": "Bitcoin Up or Down - February 22, 11:45PM-12:00AM ET",
-        "outcome": "Up",
-        "size": 355.4584,
-        "value": 186.6156,
-        "pnl": 4.972
-      },
       "0xdcd10d6871124e46f3c74336d8130c3fed4cbd498e226bc999a624497dcab585_Down": {
         "title": "Solana Up or Down - February 22, 11:15PM-11:30PM ET",
         "outcome": "Down",
@@ -13728,6 +13770,13 @@
         "size": 348.1983,
         "value": 348.1983,
         "pnl": 155.0961
+      },
+      "0xc9098269d3413d2e682d30f051b9628cd6a2a5b5acc8e1a4c14bd87f0d92fe7c_Up": {
+        "title": "Solana Up or Down - February 22, 11:45PM-11:50PM ET",
+        "outcome": "Up",
+        "size": 326.8785,
+        "value": 186.288,
+        "pnl": -22.0833
       },
       "0x30a5fbcc9d3ce2bea605cb2828af8e4fb5b42bb46bc834b2edd0f1997dfe3ecd_Down": {
         "title": "XRP Up or Down - February 22, 11:30PM-11:45PM ET",
@@ -13785,6 +13834,13 @@
         "value": 0.0,
         "pnl": -71.2496
       },
+      "0x446a7a2b9d7fac826635dade2d0357b8904b5a66ff662288045e67cb14c28539_Down": {
+        "title": "XRP Up or Down - February 22, 11:45PM-11:50PM ET",
+        "outcome": "Down",
+        "size": 265.7311,
+        "value": 103.6351,
+        "pnl": 63.942
+      },
       "0x542514397d616f14881ff6dd93937acd028a3cdeaffae43ec9d158a5e51234ed_Down": {
         "title": "XRP Up or Down - February 22, 11:40PM-11:45PM ET",
         "outcome": "Down",
@@ -13813,13 +13869,6 @@
         "value": 240.8155,
         "pnl": 65.186
       },
-      "0xc9098269d3413d2e682d30f051b9628cd6a2a5b5acc8e1a4c14bd87f0d92fe7c_Up": {
-        "title": "Solana Up or Down - February 22, 11:45PM-11:50PM ET",
-        "outcome": "Up",
-        "size": 234.8785,
-        "value": 120.9624,
-        "pnl": -19.8362
-      },
       "0xd4a74c76f10b94eb148f02819e089f2380db09ec0f65e890acf257d989abb04f_Down": {
         "title": "XRP Up or Down - February 22, 11:10PM-11:15PM ET",
         "outcome": "Down",
@@ -13827,12 +13876,12 @@
         "value": 0.0,
         "pnl": -73.2564
       },
-      "0x2f35d31f7de25449fbe219e3dd134bda2b36a295e7eec2d689f72838139bd05e_Up": {
-        "title": "Ethereum Up or Down - February 22, 11:45PM-12:00AM ET",
-        "outcome": "Up",
-        "size": 205.4228,
-        "value": 108.8741,
-        "pnl": -18.4381
+      "0xc9098269d3413d2e682d30f051b9628cd6a2a5b5acc8e1a4c14bd87f0d92fe7c_Down": {
+        "title": "Solana Up or Down - February 22, 11:45PM-11:50PM ET",
+        "outcome": "Down",
+        "size": 213.7159,
+        "value": 91.8978,
+        "pnl": 42.5892
       },
       "0x0c77de7ce45c01ddc3e4d5713cf951c7bab2eea4153fd6f4dd3190e393beb905_Down": {
         "title": "XRP Up or Down - February 22, 11:05PM-11:10PM ET",
@@ -13869,6 +13918,13 @@
         "value": 0.0,
         "pnl": -66.5292
       },
+      "0x446a7a2b9d7fac826635dade2d0357b8904b5a66ff662288045e67cb14c28539_Up": {
+        "title": "XRP Up or Down - February 22, 11:45PM-11:50PM ET",
+        "outcome": "Up",
+        "size": 170.9955,
+        "value": 104.3072,
+        "pnl": -28.4665
+      },
       "0x151488ffb3c9f244b4ac435c50d5629ed2ab52ce2f8805491c6d3e17aab6696b_Up": {
         "title": "XRP Up or Down - February 22, 11:20PM-11:25PM ET",
         "outcome": "Up",
@@ -13903,34 +13959,6 @@
         "size": 129.0602,
         "value": 129.0602,
         "pnl": 9.1421
-      },
-      "0xf5400794c1232c7c87eb8e1a4481c38b7e75a9ad2dde55739323e91c5511048d_Down": {
-        "title": "XRP Up or Down - February 22, 11:15PM-11:30PM ET",
-        "outcome": "Down",
-        "size": 127.057,
-        "value": 127.057,
-        "pnl": 17.4607
-      },
-      "0x46d9c443cb267f3b81ce3759841cf6cf45e1c80040032b41ce3028033bdee0f3_Down": {
-        "title": "Solana Up or Down - February 22, 11:40PM-11:45PM ET",
-        "outcome": "Down",
-        "size": 125.3792,
-        "value": 0.0,
-        "pnl": -9.2518
-      },
-      "0x446a7a2b9d7fac826635dade2d0357b8904b5a66ff662288045e67cb14c28539_Up": {
-        "title": "XRP Up or Down - February 22, 11:45PM-11:50PM ET",
-        "outcome": "Up",
-        "size": 120.5167,
-        "value": 60.8609,
-        "pnl": -25.5989
-      },
-      "0x446a7a2b9d7fac826635dade2d0357b8904b5a66ff662288045e67cb14c28539_Down": {
-        "title": "XRP Up or Down - February 22, 11:45PM-11:50PM ET",
-        "outcome": "Down",
-        "size": 101.1158,
-        "value": 50.0523,
-        "pnl": 21.3932
       }
     },
     "0x4133bcbad1d9c41de776646696f41c34d0a65e70": {
@@ -18865,9 +18893,9 @@
       "0x797d586ad45522306490b0cc9b2f21bdf957f3843476fae99f3bcc2cec83b74b_No": {
         "title": "US strikes Iran by June 30, 2026?",
         "outcome": "No",
-        "size": 8282.0169,
-        "value": 2774.4756,
-        "pnl": -30.9002
+        "size": 8302.0169,
+        "value": 2781.1756,
+        "pnl": -30.7922
       },
       "0x998bc71817b2d76921d1999ce0f3431cfd5945583667a371280ca2b430b0c06e_Yes": {
         "title": "2026 Balance of Power: R Senate, D House",
@@ -20189,7 +20217,7 @@
     "0xc2e7800b5af46e6093872b177b7a5e7f0563be51": "0x200b0a6b68e7e8839621659448055835167a5081b99de9c6a9b0b26a3e45888e",
     "0xd25c72ac0928385610611c8148803dc717334d20": "0x200a5b38a172fa7219685642de9fae69d2655c1cf537a12e682585e9004afd31",
     "0x6a72f61820b26b1fe4d956e17b6dc2a1ea3033ee": "0xd4b011bf901d3511bdd8818331f000a8b6778392012c207ef50029c26f591a1e",
-    "0xdb27bf2ac5d428a9c63dbc914611036855a6c56e": "0x4197d70bc38ed07e96981cd406268edfe22390a2b9a17d1d3ff72541d2cd1a60",
+    "0xdb27bf2ac5d428a9c63dbc914611036855a6c56e": "0xed7f6130f50dba8d60482c1af913c060447314e1e610f6c1b606fc338bad09d7",
     "0x876426b52898c295848f56760dd24b55eda2604a": "0xddd162eda3ad42a0c129d312366d1d117ff2f13f1383f13777837f495b20b8a7",
     "0x492442eab586f242b53bda933fd5de859c8a3782": "0xff400bd3934ed3a975cb0d3ced510475a1ae94273795cb84cfa0467bd7342d13",
     "0x03e8a544e97eeff5753bc1e90d46e5ef22af1697": "0x69195bf2ee61117116c7218b6d08f841e603799a2350bd05a19dad9532bc9593",
@@ -20198,19 +20226,19 @@
     "0x96489abcb9f583d6835c8ef95ffc923d05a86825": "0xf3915096d54fab1644e4b787899efbcfd7c41ecef274e4c6bb260166495864a0",
     "0x23796015f5159c76921dc869b7f95a7c57e2bf16": "0x214da72a941a0ab0cef260f2d2803dc4a961fe55cd494c4baeab30534582d8a2",
     "0x1d8a377c5020f612ce63a0a151970df64baae842": "0x3f02cc5573982ed2bedf2786963a68ee84a28c5607216dea470c9311657f1ec9",
-    "0x13414a77a4be48988851c73dfd824d0168e70853": "0x8780342ff9e1b9e1405d9600cfd39d3855ef450181db1c021a08dfb02b6cadff",
+    "0x13414a77a4be48988851c73dfd824d0168e70853": "0xc46a57319e3630dd0fdbe60eb8e731b56e85f027f19b8a5c4a0ac6543fa69250",
     "0xd0b4c4c020abdc88ad9a884f999f3d8cff8ffed6": "0x6a6f61deeeec80539c3008fc016884cb36337303c0dad226afe0599d815ce908",
     "0x2005d16a84ceefa912d4e380cd32e7ff827875ea": "0x91919943fff45a0af4e33bc45775d19d5175685ecb546d476317778ff27b792f",
     "0x9976874011b081e1e408444c579f48aa5b5967da": "0x81dcd96ba1c88e7c57fc0ce98668b436444e172a515b3a298bbb9f7a90d18acd",
     "0xccb290b1c145d1c95695d3756346bba9f1398586": "0xcf5a93ece186d0db332cd63bc60449761732af176470629c97b61811d94ef3f8",
-    "0x63ce342161250d705dc0b16df89036c8e5f9ba9a": "0x9f0181a7d462d53fff73e6f529faddf1e9a0f09d798e78eb6d353355cfee14f7",
+    "0x63ce342161250d705dc0b16df89036c8e5f9ba9a": "0xa99088aa3198911d414a0ce20e997f0a4f92d28fabcf3bb6a2aaee6486d0357c",
     "0x507e52ef684ca2dd91f90a9d26d149dd3288beae": "0x91b76d4442c04f471be7c543596040816a9c57eb992a2831e2993ba4bfb0ca35",
     "0x4bd74aef0ee5f1ec0718890f55c15f047e28373e": "0xcb6ba01db420b27e04452544588b0aad58ea357ba3b6a79bf517d952a855ca00",
     "0x2c335066fe58fe9237c3d3dc7b275c2a034a0563": "0x7b08f3bfee41cacb5adf05c19e22578572f31ea6c03a63d605ea405f87b38aab",
-    "0x1979ae6b7e6534de9c4539d0c205e582ca637c9d": "0x037b3b93cc4c0d5693a3bb9762f72b9bb3e503cfc1a3a28c8aa58d701348b394",
+    "0x1979ae6b7e6534de9c4539d0c205e582ca637c9d": "0x1a9d16b2a0f60e7d18cf3ed7842f8b8cd3721ef3513a5d488abdc04456a679db",
     "0x204f72f35326db932158cba6adff0b9a1da95e14": "0x135d9cade5312e50f0dcb988fff194618d2c10aa6545639bc11005519ee9bd56",
     "0x93abbc022ce98d6f45d4444b594791cc4b7a9723": "0x61186600a9d394a37a8addc570ef787d5472d0636061ed0f399e84d3325bb206",
-    "0xd0d6053c3c37e727402d84c14069780d360993aa": "0xbfc4894e48ef3c8a5f1addb83c5444f5da3b228db4ba42a4c6d5931ff22bf25e",
+    "0xd0d6053c3c37e727402d84c14069780d360993aa": "0x9d542d89d21e7df560b0993f72ee25bcd3614eadc10a1608fbd4ac223ec152c3",
     "0x7744bfd749a70020d16a1fcbac1d064761c9999e": "0xa6c788dd8654e7363cfa6cd8e253f9a8af91ffb23dadce5d5a4bec6845ec091b",
     "0xd6a3f0ec6c4a8ad680d580610c82ca57ff139489": "0x4849b91c53c15e4091d9f39957166cd04d218f13dde75c5ab5fdce26492ef10c",
     "0x91654fd592ea5339fc0b1b2f2b30bfffa5e75b98": "0xc1e2e04f69c6b8a44dddedeebeec5c12e8e1f2a7c6afa696c23209afd9c38edf",
@@ -20221,9 +20249,9 @@
     "0x72b40c0012682ef52228ad53ef955f9e4f177d67": "0x77b4f337964645308e5c3d9a653ab8ff2c5fd4b6836b3eda75dc2fd1805da7e7",
     "0xe6a3778e5c3f93958534684ed7308b4625622f0d": "0x95a66720349c8225576e8f53d2e77877c6a6f969e6c2e87e4b59cb8f3f512a93",
     "0x1461cc6e1a05e20710c416307db62c28f1d122d8": "0xda747efd6b835c91f6cf62a4902704ccadb4925b801a0ccfcb0f9fb7062a197d",
-    "0xd84c2b6d65dc596f49c7b6aadd6d74ca91e407b9": "0xf0d503549aa678a1c886f1f0541b4edefb197d2c88888c452cc3d60f5639f7d4",
+    "0xd84c2b6d65dc596f49c7b6aadd6d74ca91e407b9": "0x39615dd6b49057c3a1e8e994c0395c2d69e10e1ae587e5dd2816d75c8d9b179d",
     "0x9c16127eccf031df45461ef1e04b52ea286a09cb": "0x658e503021ad352da4b78c6753c55421d88b92f29efc808cf5448d54fd844c3f",
-    "0x1d0034134e339a309700ff2d34e99fa2d48b0313": "0x4303155a7481f204ec92bc941056961fbac092d00b1fde4eaa88e52c192600b8",
+    "0x1d0034134e339a309700ff2d34e99fa2d48b0313": "0x242757ec0d7201f7ad9854b61642199d15e7d59b07287de19977f40e262d0066",
     "0x4133bcbad1d9c41de776646696f41c34d0a65e70": "0x9c1182abf3b912378f21681e8d020ddedd7decefd89a6d29b190e244781f65f6",
     "0x1f1dd8cf3d2c653edbdf319b81079bd753409a6f": "0xe55f3fd79845c4f5e8d06bb5ef22c984fc40a45cfd23b145c6e33362bf958c3a",
     "0xd7a58948a0aba3015f057ab4ecc5bef039e47c26": "0x8da14096315b34d491994d86994a290ad77811dc2d8a6f8b7b982993e7c8508c",
@@ -20238,7 +20266,7 @@
     "0xd6bcc06d32bd3431a412f3ba1c14cee75301a49e": "0xf5358fbd49707f8809d3ed0bc75c3d0dfd93ccc5ef03ca64271ba8f2bf3eeee1",
     "0xe423ec79a3cdb7f70dba1d289a12f657c4b2bff2": "0xaf8ccfb31ebeed4687a1fae3ab859df5ad88fe91ff9a04bb5daa2fc6dec04851",
     "0x37e4728b3c4607fb2b3b205386bb1d1fb1a8c991": "0x09542e583f288d36579ee87f4a72e2bfef06734bf8bf18ee3865bbc5f6c77258",
-    "0xbacd00c9080a82ded56f504ee8810af732b0ab35": "0xa91c6e792176fa5d9ba8d60475fd72fe969fbc8564317a681111653945f1423c",
+    "0xbacd00c9080a82ded56f504ee8810af732b0ab35": "0x796f7c8eab8491e91e0ce043bdd3d7821e92e3c9cd831e30b2f2c8f3570118a0",
     "0x3b5c629f114098b0dee345fb78b7a3a013c7126e": "0x77312835971c0e8110db5712d1540e33e74e3adadcae6a4a2c7f521a4d41571f",
     "0xa71093cafc0c099b4ccab24c3cb8018d817923c4": "0x4557a20c8d8967745a7f599dfb616695b2c5fed549d2cf51cf8f174f054247d1",
     "0x0b9cae2b0dfe7a71c413e0604eaac1c352f87e44": "0x171dd4bb3e4fad78dec330cd2e3b6e1262586cca1a4013ad86f7494fc4923855",
@@ -20246,5 +20274,5 @@
     "0x6a57d263cd7c8eba88b857edeb7103851f012afa": "0x6abe8699d2e66b01c426cc3303ce042ff52ecd371f03bbfb207c78eae5a8449e"
   },
   "market_prices": {},
-  "scan_count": 412
+  "scan_count": 413
 }
