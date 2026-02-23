@@ -1,5 +1,7 @@
 # Dados grandes (histórico de traders)
 data/polymarket/historical/traders/
+data/polymarket/historical/consolidated.json
+data/polymarket/historical/consolidated_lite.json
 
 # Ambiente
 .env
