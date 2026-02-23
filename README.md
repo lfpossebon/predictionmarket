@@ -513,6 +513,20 @@ Servidos em http://192.168.15.12:8899/:
 
 **Investment thesis**: $180K MVP → $2-5M Series A → 10-50x ROI potential
 
+### 🚀 **DECISION: MVP 30 Days** — Budget Approved
+
+**Status**: GO for MVP development (22 Feb → 22 Mar 2026)  
+**Budget**: R$45K approved  
+**Target**: Compete with Triad Markets, capture Brazil first-mover advantage  
+**Strategy**: Compliance-first, mobile-native, cultural relevance
+
+**Implementation docs**:
+- `PREDICTBR-MVP30.md` — Complete 30-day execution plan
+- `HIRING-TEMPLATES.md` — Job postings, interview guides, contracts  
+- `TECH-SETUP-GUIDE.md` — Full tech stack, code examples, deployment
+
+**Next steps**: Team hiring (48h), development start (26 Feb), soft launch (22 Mar)
+
 ---
 
 ## ⚖️ Disclaimer
