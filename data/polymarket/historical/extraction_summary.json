@@ -1,0 +1,125 @@
+{
+  "extraction_date": "2026-02-22T16:09:22.579930",
+  "total_traders": 788,
+  "traders_with_trades": 788,
+  "total_trades": 1634932,
+  "total_positions": 31958,
+  "date_range": {
+    "min": "1634928840",
+    "max": "1771787256"
+  },
+  "category_distribution": {
+    "CULTURE": 158,
+    "POLITICS": 157,
+    "OVERALL": 146,
+    "CRYPTO": 145,
+    "FINANCE": 143,
+    "SPORTS": 135,
+    "ECONOMICS": 126
+  },
+  "top_10_pnl": [
+    {
+      "username": "Theo4",
+      "pnl": 22053952.526606,
+      "trades": 3100
+    },
+    {
+      "username": "Fredi9999",
+      "pnl": 16619506.63173015,
+      "trades": 3100
+    },
+    {
+      "username": "zxgngl",
+      "pnl": 11447932.086431,
+      "trades": 3100
+    },
+    {
+      "username": "kch123",
+      "pnl": 10665695.657654764,
+      "trades": 3100
+    },
+    {
+      "username": "Len9311238",
+      "pnl": 8709972.988069998,
+      "trades": 3100
+    },
+    {
+      "username": "RepTrump",
+      "pnl": 7532409.671579,
+      "trades": 3100
+    },
+    {
+      "username": "PrincessCaro",
+      "pnl": 6083643.099591745,
+      "trades": 3100
+    },
+    {
+      "username": "walletmobile",
+      "pnl": 5942685.45339684,
+      "trades": 3100
+    },
+    {
+      "username": "DrPufferfish",
+      "pnl": 5732085.660528754,
+      "trades": 3100
+    },
+    {
+      "username": "BetTom42",
+      "pnl": 5642135.735356,
+      "trades": 3100
+    }
+  ],
+  "top_10_by_trades": [
+    {
+      "username": "Theo4",
+      "trades": 3100,
+      "pnl": 22053952.526606
+    },
+    {
+      "username": "Fredi9999",
+      "trades": 3100,
+      "pnl": 16619506.63173015
+    },
+    {
+      "username": "zxgngl",
+      "trades": 3100,
+      "pnl": 11447932.086431
+    },
+    {
+      "username": "kch123",
+      "trades": 3100,
+      "pnl": 10665695.657654764
+    },
+    {
+      "username": "Len9311238",
+      "trades": 3100,
+      "pnl": 8709972.988069998
+    },
+    {
+      "username": "RepTrump",
+      "trades": 3100,
+      "pnl": 7532409.671579
+    },
+    {
+      "username": "PrincessCaro",
+      "trades": 3100,
+      "pnl": 6083643.099591745
+    },
+    {
+      "username": "walletmobile",
+      "trades": 3100,
+      "pnl": 5942685.45339684
+    },
+    {
+      "username": "DrPufferfish",
+      "trades": 3100,
+      "pnl": 5732085.660528754
+    },
+    {
+      "username": "BetTom42",
+      "trades": 3100,
+      "pnl": 5642135.735356
+    }
+  ],
+  "errors": []
+}
