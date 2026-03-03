@@ -5,27 +5,27 @@
 - **Personalidade:** Direta, informal, sem puxa-saquismo. Português BR.
 - **Regra crítica:** SEMPRE avisar quando INICIO e FINALIZO atividades
 
-## PROJETO ATIVO - PredictionBrazil  
-- **Status:** Frontend MVP live (app.pmarket.ai), Backend com erros TS pending
-- **Objetivo:** Deploy completo backend + integração frontend
-- **Pendente:** Corrigir ~15 erros TypeScript para build funcionar
+## PROJETOS ATIVOS
+- **Inteligência Competitiva Bradesco Principal:** Pipeline diário funcionando
+- **Tradução Seminário Lacan S13:** Background task
 
 ## SISTEMA
-- **OpenClaw:** 2026.2.26 (atualizado 21:13), Mac Mini, funcionando
-- **Canais:** Telegram + WhatsApp (funcional) 
-- **Repo:** github.com/lfpossebon/predictionmarket
+- **OpenClaw:** 2026.2.26 (atualizado), Mac Mini, funcionando
+- **Canal principal:** Telegram (WhatsApp descontinuado por instabilidade)
+- **Repo workspace:** github.com/lfpossebon/clawd
 
-## MEMÓRIA CRÍTICA
-- **25/02:** MVP frontend 100% deployado em app.pmarket.ai
-- **26/02:** LFP exigiu comunicação clara início/fim atividades
-- **26/02 21:13:** Backend build 100% corrigido, rodando local porta 3001
-- **Resolução contexto:** Comprimido para <20k tokens, latência melhorada
+## REGRAS COMUNICAÇÃO (02/03/2026)
+- **Máxima agilidade:** Responder SEMPRE instantaneamente
+- **Task communication:** 🚀 Iniciando... / ✅ Concluído... obrigatório
+- **Não abandonar tasks** sem comunicar status
 
 ## HEARTBEAT (após 22h apenas)
-- Memória diária obrigatória  
-- Git push diário se houver mudanças
-- Sync Supabase só sob demanda
+- Memória diária obrigatória consolidando o dia
+- Git push workspace se houver mudanças relevantes
+- Sync Supabase só sob demanda do LFP
 
-## STATUS ATUAL
-✅ **CONCLUÍDO:** Backend TypeScript errors corrigidos, build funcionando
-🚀 **PRÓXIMO:** Deploy backend na nuvem (Render/Vercel/Railway)
+## MELHORIAS ESTRUTURAIS (02/03/2026)
+✅ **MEMORY.md:** Limpo, foco apenas projetos ativos  
+✅ **Comunicação:** Protocol estabelecido início/fim tasks
+✅ **Task management:** One thing at a time, kill loops improdutivos
+✅ **Contexto:** Comprimido para <20k tokens, performance melhorada
