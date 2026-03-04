@@ -1,0 +1,19 @@
+{
+  "supabase": {
+    "url": "https://oyzxviwhctkhqhqkjsoy.supabase.co",
+    "api_key": "${SUPABASE_KEY}",
+    "table": "documentos"
+  },
+  "sync": {
+    "destination": "/Users/possebon/clawd/knowledge/",
+    "log_file": "/Users/possebon/clawd/logs/sync.log",
+    "status_filter": "ativo"
+  },
+  "categories": [
+    "geral",
+    "tecnico",
+    "processos",
+    "referencias",
+    "tutoriais"
+  ]
+}
